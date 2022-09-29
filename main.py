@@ -138,8 +138,11 @@ class VidinisHeavyMetal:
         self.master = master
         self.ironm = tk.Button(self.master, text = "Iron Maiden", width = 15, command = self.open_ironm)
         self.blacksab = tk.Button(self.master, text = "Black Sabbath", width = 15, command = self.open_black_sab)
+        self.judasp = tk.Button(self.master, text = "Judas Priest", width = 15, command = self.open_judasp)
         self.ironm.pack()
         self.blacksab.pack()
+        self.judasp.pack()
+        
 
     def open_ironm(self):
         self.random_ironm = ['https://music.youtube.com/watch?v=bePCRKGUwAY',
@@ -168,6 +171,20 @@ class VidinisHeavyMetal:
                                 'https://music.youtube.com/watch?v=0BXG1zvBWKo'
                             ]
         webbrowser.open(choice(self.random_blacksab), new = 2)
+
+    def open_judasp(self):
+        self.random_judasp = ['https://music.youtube.com/watch?v=4s1gBIVOTtk',
+                            'https://music.youtube.com/watch?v=BXtPycm5dGc',
+                            'https://music.youtube.com/watch?v=PjTLOaD6fr4',
+                            'https://music.youtube.com/watch?v=XUiTEob4Kzg',
+                            'https://music.youtube.com/watch?v=dp-KXWfisHA',
+                            'https://music.youtube.com/watch?v=LNyIhirtXUI',
+                            'https://music.youtube.com/watch?v=OwUpV1_tteY',
+                            'https://music.youtube.com/watch?v=EnGWEvDXrAE',
+                            'https://music.youtube.com/watch?v=aORXZiGeIdA',
+                            'https://music.youtube.com/watch?v=qJS80JB-sn8'
+                        ]
+        webbrowser.open(choice(self.random_judasp), new = 2)
 
 
 langas = tk.Tk()
