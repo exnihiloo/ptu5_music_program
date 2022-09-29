@@ -237,10 +237,12 @@ class VidinisPunk:
         self.sexpistols = tk.Button(self.master, text = "Sex Pistols", width = 15, command = self.open_sex_pistols)
         self.offspring = tk.Button(self.master, text = "The Offspring", width = 15, command = self.open_offspinrg)
         self.misfits = tk.Button(self.master, text = "Misfits", width = 15, command = self.open_misfits)
+        self.clash = tk.Button(self.master, text = "The Clash", width = 15, command = self.open_clash)
         self.ramones.pack()
         self.sexpistols.pack()
         self.offspring.pack()
         self.misfits.pack()
+        self.clash.pack()
 
     
     def open_ramones(self):
@@ -299,6 +301,21 @@ class VidinisPunk:
                                 'https://music.youtube.com/watch?v=ynmK-j2Db6k'
                             ]
         webbrowser.open(choice(self.random_misfits), new = 2)
+
+    
+    def open_clash(self):
+        self.random_clash = ['https://music.youtube.com/watch?v=XN7iEFVLf5c',
+                            'https://music.youtube.com/watch?v=wjZMcWaniA4',
+                            'https://music.youtube.com/watch?v=yhcreVY_qLI',
+                            'https://music.youtube.com/watch?v=0pCFVX6lzHU',
+                            'https://music.youtube.com/watch?v=KuKtSzqx9i8',
+                            'https://music.youtube.com/watch?v=lvmoVYGUQKQ',
+                            'https://music.youtube.com/watch?v=-Aj92HNB8Tc',
+                            'https://music.youtube.com/watch?v=_MgIEKfG0LE',
+                            'https://music.youtube.com/watch?v=pc4rzuAhwsI',
+                            'https://music.youtube.com/watch?v=qkj0wUcbUeE'
+                        ]
+        webbrowser.open(choice(self.random_clash), new = 2)
 
 
 langas = tk.Tk()
