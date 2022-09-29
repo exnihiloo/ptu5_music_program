@@ -31,31 +31,45 @@ class VidinisRock:
         self.doors.pack()
 
     def open_qeen(self):
-        self.random_queen = ['https://www.youtube.com/watch?v=ro9QAtTnihc&list=PLqIK01W9QdPmZoPyEmIDrnT23J4NGloCh&index=4',
-                    'https://www.youtube.com/watch?v=Nzas1p0BqWc&list=PLqIK01W9QdPmZoPyEmIDrnT23J4NGloCh&index=5',
-                    'https://www.youtube.com/watch?v=yl3TsqL0ZPw&list=PLqIK01W9QdPmZoPyEmIDrnT23J4NGloCh&index=7',
-                    'https://www.youtube.com/watch?v=2CW9Pd3W15I&list=PLqIK01W9QdPmZoPyEmIDrnT23J4NGloCh&index=10',
-                    'https://www.youtube.com/watch?v=ja8lWt5Dvk4&list=PLqIK01W9QdPmZoPyEmIDrnT23J4NGloCh&index=11'
+        self.random_queen = ['https://music.youtube.com/watch?v=yl3TsqL0ZPw',
+                    'https://music.youtube.com/watch?v=3O0D6MvWFf4',
+                    'https://music.youtube.com/watch?v=CczcMarUoVk',
+                    'https://music.youtube.com/watch?v=RJo21ubguDE',
+                    'https://music.youtube.com/watch?v=lXPftnU63mQ',
+                    'https://music.youtube.com/watch?v=x8hUwP_5Qc4',
+                    'https://music.youtube.com/watch?v=wIqa9uVnXCQ',
+                    'https://music.youtube.com/watch?v=bR-gZQLO26w',
+                    'https://music.youtube.com/watch?v=91BmiDSbUwU',
+                    'https://music.youtube.com/watch?v=-tJYN-eG1zk'
                     ]
         webbrowser.open(choice(self.random_queen), new = 2)
         
 
     def open_acdc(self):
-        self.random_acdc = ['https://www.youtube.com/watch?v=v2AC41dglnM',
-                            'https://www.youtube.com/watch?v=gEPmA3USJdI',
-                            'https://www.youtube.com/watch?v=pAgnJDJN4VA',
-                            'https://www.youtube.com/watch?v=Lo2qQmj0_h4',
-                            'https://www.youtube.com/watch?v=wLoWd2KyUro'
+        self.random_acdc = ['https://music.youtube.com/watch?v=9vWNauaZAgg',
+                            'https://music.youtube.com/watch?v=ikFFVfObwss',
+                            'https://music.youtube.com/watch?v=GL56LY6fE0E',
+                            'https://music.youtube.com/watch?v=NhsK5WExrnE',
+                            'https://music.youtube.com/watch?v=iaaRYZPu9dc',
+                            'https://music.youtube.com/watch?v=lhg9bYNLvOg',
+                            'https://music.youtube.com/watch?v=waF-lPzvFUc',
+                            'https://music.youtube.com/watch?v=wAfPLyLzCkQ',
+                            'https://music.youtube.com/watch?v=zEv7PkfGKRA',
+                            'https://music.youtube.com/watch?v=kq_GSIw0X0w'
                         ]
         webbrowser.open(choice(self.random_acdc), new = 2)
 
     def open_doors(self):
-        self.random_doors = ['https://www.youtube.com/watch?v=iv8GW1GaoIc',
-                            'https://www.youtube.com/watch?v=mbj1RFaoyLk',
-                            'https://www.youtube.com/watch?v=PAK5blgfKWM',
-                            'https://www.youtube.com/watch?v=IsbIXm30c8k',
-                            'https://www.youtube.com/watch?v=NFeUko-lQHg',
-                            'https://www.youtube.com/watch?v=-NyC6mrutj0'
+        self.random_doors = ['https://music.youtube.com/watch?v=vHXjcdNIN-Q',
+                            'https://music.youtube.com/watch?v=lJZTgynPGT8',
+                            'https://music.youtube.com/watch?v=-NyC6mrutj0',
+                            'https://music.youtube.com/watch?v=rtU0ss9Zki4',
+                            'https://music.youtube.com/watch?v=dV0buYqrRo4',
+                            'https://music.youtube.com/watch?v=BXqPNlng6uI',
+                            'https://music.youtube.com/watch?v=VUI-ELCdjxo',
+                            'https://music.youtube.com/watch?v=jKU74Uns9_0',
+                            'https://music.youtube.com/watch?v=nbtEkZIvMAg',
+                            'https://music.youtube.com/watch?v=AVez4RS7IJw'
                         ]
         webbrowser.open(choice(self.random_doors), new = 2)
 
