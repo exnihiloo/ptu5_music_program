@@ -9,9 +9,11 @@ class PagrindinisLangas:
         self.rock_langas = tk.Button(self.master, text = "\U0001F918 Rock", width = 15, command = self.new_window)
         self.reggae_langas = tk.Button(self.master, text = "\u262E Reggae", width = 15, command = self.new_window2)
         self.hmetal_langas = tk.Button(self.master, text = "\U0001F3B8 Heavy Metal", width = 15, command = self.new_window3)
+        self.punk_langas = tk.Button(self.master, text = "\U0001F577 Punk", width = 15, command = self.new_window4)
         self.rock_langas.pack()
         self.reggae_langas.pack()
         self.hmetal_langas.pack()
+        self.punk_langas.pack()
 
     def new_window(self):
         self.vidinis = tk.Toplevel(self.master)
@@ -24,6 +26,10 @@ class PagrindinisLangas:
     def new_window3(self):
         self.vidinis3 = tk.Toplevel(self.master)
         self.app = VidinisHeavyMetal(self.vidinis3)
+    
+    def new_window4(self):
+        self.vidinis4 = tk.Toplevel(self.master)
+        self.app = VidinisPunk(self.vidinis4)
 
 
 class VidinisRock:
@@ -141,11 +147,13 @@ class VidinisHeavyMetal:
         self.judasp = tk.Button(self.master, text = "Judas Priest", width = 15, command = self.open_judasp)
         self.dio = tk.Button(self.master, text = "Dio", width = 15, command = self.open_dio)
         self.saxon = tk.Button(self.master, text = "Saxon", width = 15, command = self.open_saxon)
+        self.uzdaryti_metal = tk.Button(self.master, text = "Uždaryti", command = self.uzdaryti)
         self.ironm.pack()
         self.blacksab.pack()
         self.judasp.pack()
         self.dio.pack()
         self.saxon.pack()
+        self.uzdaryti_metal.pack()
         
 
     def open_ironm(self):
@@ -217,6 +225,17 @@ class VidinisHeavyMetal:
                             'https://music.youtube.com/watch?v=Byr9Td7P8eQ '
                         ]
         webbrowser.open(choice(self.random_saxon), new = 2)
+
+    def uzdaryti(self):
+        self.master.destroy()
+
+
+class VidinisPunk:
+    def __init__(self, master):
+        self.master = master
+
+
+
 
 langas = tk.Tk()
 langas.title("Shuffle Music")
