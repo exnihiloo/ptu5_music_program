@@ -235,8 +235,10 @@ class VidinisPunk:
         self.master = master
         self.ramones = tk.Button(self.master, text = "Ramones", width = 15, command = self.open_ramones)
         self.sexpistols = tk.Button(self.master, text = "Sex Pistols", width = 15, command = self.open_sex_pistols)
+        self.offspring = tk.Button(self.master, text = "The Offspring", width = 15, command = self.open_offspinrg)
         self.ramones.pack()
         self.sexpistols.pack()
+        self.offspring.pack()
 
     
     def open_ramones(self):
@@ -267,6 +269,20 @@ class VidinisPunk:
                                     'https://music.youtube.com/watch?v=RBFLY-SR_w4'
                                 ]
         webbrowser.open(choice(self.random_sex_pistols), new = 2)
+
+    def open_offspinrg(self):
+        self.random_offspring = ['https://music.youtube.com/watch?v=-uQi0vJK9lk',
+                                'https://music.youtube.com/watch?v=7ifeDVAE_Zg',
+                                'https://music.youtube.com/watch?v=mQYJYY4VkWA',
+                                'https://music.youtube.com/watch?v=hnno3h-ZW_8',
+                                'https://music.youtube.com/watch?v=BepGmpLT9HA',
+                                'https://music.youtube.com/watch?v=ldGdFnvSCSQ',
+                                'https://music.youtube.com/watch?v=V92CRYaOQCI',
+                                'https://music.youtube.com/watch?v=GtzKW_ONjJ0',
+                                'https://music.youtube.com/watch?v=R1xM-r4TF6Q',
+                                'https://music.youtube.com/watch?v=3Os_bMAcZ6w'
+                            ]       
+        webbrowser.open(choice(self.random_offspring), new = 2)
 
 
 
