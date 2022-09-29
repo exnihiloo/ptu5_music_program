@@ -10,10 +10,12 @@ class PagrindinisLangas:
         self.reggae_langas = tk.Button(self.master, text = "\u262E Reggae", width = 15, command = self.new_window2)
         self.hmetal_langas = tk.Button(self.master, text = "\U0001F3B8 Heavy Metal", width = 15, command = self.new_window3)
         self.punk_langas = tk.Button(self.master, text = "\U0001F577 Punk", width = 15, command = self.new_window4)
+        self.black_metal_langas = tk.Button(self.master, text = "\U0001F480 Black Metal", width = 15, command = self.new_window5)
         self.rock_langas.pack()
         self.reggae_langas.pack()
         self.hmetal_langas.pack()
         self.punk_langas.pack()
+        self.black_metal_langas.pack()
 
     def new_window(self):
         self.vidinis = tk.Toplevel(self.master)
@@ -30,6 +32,10 @@ class PagrindinisLangas:
     def new_window4(self):
         self.vidinis4 = tk.Toplevel(self.master)
         self.app = VidinisPunk(self.vidinis4)
+
+    def new_window5(self):
+        self.vidinis5 = tk.Toplevel(self.master)
+        self.app = VidinisBlackMetal(self.vidinis5)
 
 
 class VidinisRock:
@@ -316,6 +322,11 @@ class VidinisPunk:
                             'https://music.youtube.com/watch?v=qkj0wUcbUeE'
                         ]
         webbrowser.open(choice(self.random_clash), new = 2)
+
+
+class VidinisBlackMetal:
+    def __init__(self, master):
+        self.master = master
 
 
 langas = tk.Tk()
