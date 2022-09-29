@@ -30,6 +30,34 @@ class VidinisRock:
         self.acdc.pack()
         self.doors.pack()
 
+    def open_qeen(self):
+        self.random_queen = ['https://www.youtube.com/watch?v=ro9QAtTnihc&list=PLqIK01W9QdPmZoPyEmIDrnT23J4NGloCh&index=4',
+                    'https://www.youtube.com/watch?v=Nzas1p0BqWc&list=PLqIK01W9QdPmZoPyEmIDrnT23J4NGloCh&index=5',
+                    'https://www.youtube.com/watch?v=yl3TsqL0ZPw&list=PLqIK01W9QdPmZoPyEmIDrnT23J4NGloCh&index=7',
+                    'https://www.youtube.com/watch?v=2CW9Pd3W15I&list=PLqIK01W9QdPmZoPyEmIDrnT23J4NGloCh&index=10',
+                    'https://www.youtube.com/watch?v=ja8lWt5Dvk4&list=PLqIK01W9QdPmZoPyEmIDrnT23J4NGloCh&index=11'
+                    ]
+        webbrowser.open(choice(self.random_queen), new = 2)
+        
+
+    def open_acdc(self):
+        self.random_acdc = ['https://www.youtube.com/watch?v=v2AC41dglnM',
+                            'https://www.youtube.com/watch?v=gEPmA3USJdI',
+                            'https://www.youtube.com/watch?v=pAgnJDJN4VA',
+                            'https://www.youtube.com/watch?v=Lo2qQmj0_h4',
+                            'https://www.youtube.com/watch?v=wLoWd2KyUro'
+                        ]
+        webbrowser.open(choice(self.random_acdc), new = 2)
+
+    def open_doors(self):
+        self.random_doors = ['https://www.youtube.com/watch?v=iv8GW1GaoIc',
+                            'https://www.youtube.com/watch?v=mbj1RFaoyLk',
+                            'https://www.youtube.com/watch?v=PAK5blgfKWM',
+                            'https://www.youtube.com/watch?v=IsbIXm30c8k',
+                            'https://www.youtube.com/watch?v=NFeUko-lQHg',
+                            'https://www.youtube.com/watch?v=-NyC6mrutj0'
+                        ]
+        webbrowser.open(choice(self.random_doors), new = 2)
 
 class VidinisReggae:
     def __init__(self, master):
