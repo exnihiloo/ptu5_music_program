@@ -8,8 +8,10 @@ class PagrindinisLangas:
         self.master = master
         self.rock_langas = tk.Button(self.master, text = "\U0001F918 Rock", width = 15, command = self.new_window)
         self.reggae_langas = tk.Button(self.master, text = "\u262E Reggae", width = 15, command = self.new_window2)
+        self.hmetal_langas = tk.Button(self.master, text = "\U0001F3B8 Heavy Metal", width = 15, command = self.new_window3)
         self.rock_langas.pack()
         self.reggae_langas.pack()
+        self.hmetal_langas.pack()
 
     def new_window(self):
         self.vidinis = tk.Toplevel(self.master)
@@ -18,6 +20,10 @@ class PagrindinisLangas:
     def new_window2(self):
         self.vidinis2 = tk.Toplevel(self.master)
         self.app = VidinisReggae(self.vidinis2)
+
+    def new_window3(self):
+        self.vidinis3 = tk.Toplevel(self.master)
+        self.app = VidinisHeavyMetal(self.vidinis3)
 
 
 class VidinisRock:
@@ -28,13 +34,13 @@ class VidinisRock:
         self.doors = tk.Button(self.master, text = "The Doors", width = 15, command = self.open_doors)
         self.ledzep = tk.Button(self.master, text = "Led Zeppelin", width = 15, command = self.open_ledzep)
         self.deep_purple = tk.Button(self.master, text = "Deep Purple", width = 15, command = self.open_deep_purple)
-        self.uzdaryti = tk.Button(self.master, text = "Uždaryti", command = self.uzdaryti) 
+        self.uzdarytirock = tk.Button(self.master, text = "Uždaryti", command = self.uzdaryti) 
         self.queen.pack()
         self.acdc.pack()
         self.doors.pack()
         self.ledzep.pack()
         self.deep_purple.pack()
-        self.uzdaryti.pack()
+        self.uzdarytirock.pack()
 
     def open_qeen(self):
         self.random_queen = ['https://music.youtube.com/watch?v=yl3TsqL0ZPw',
@@ -125,6 +131,12 @@ class VidinisReggae:
                             'https://www.youtube.com/watch?v=jJzJewlOfVs'
                         ]
         webbrowser.open(choice(self.random_bobm), new = 2)
+
+
+class VidinisHeavyMetal:
+    def __init__(self, master):
+        self.master = master
+
 
 
 
