@@ -26,9 +26,11 @@ class VidinisRock:
         self.queen = tk.Button(self.master, text = "Queen", width = 15, command = self.open_qeen)
         self.acdc = tk.Button(self.master, text = "AC/DC", width = 15, command = self.open_acdc)
         self.doors = tk.Button(self.master, text = "The Doors", width = 15, command = self.open_doors)
+        self.ledzep = tk.Button(self.master, text = "Led Zeppelin", width = 15, command = self.open_ledzep)
         self.queen.pack()
         self.acdc.pack()
         self.doors.pack()
+        self.ledzep.pack()
 
     def open_qeen(self):
         self.random_queen = ['https://music.youtube.com/watch?v=yl3TsqL0ZPw',
@@ -72,6 +74,21 @@ class VidinisRock:
                             'https://music.youtube.com/watch?v=AVez4RS7IJw'
                         ]
         webbrowser.open(choice(self.random_doors), new = 2)
+
+
+    def open_ledzep(self):
+        self.random_ledzep = ['https://music.youtube.com/watch?v=X791IzOwt3Q',
+                            'https://music.youtube.com/watch?v=0bcIjILqORM',
+                            'https://music.youtube.com/watch?v=tzVJPgCn-Z8',
+                            'https://music.youtube.com/watch?v=yO2n7QoyieM',
+                            'https://music.youtube.com/watch?v=5eHkjPCGXKQ',
+                            'https://music.youtube.com/watch?v=yBuub4Xe1mw',
+                            'https://music.youtube.com/watch?v=UyOg0mt2R2k',
+                            'https://music.youtube.com/watch?v=RCN6eRVav5k',
+                            'https://music.youtube.com/watch?v=TRt4hQs3nH0',
+                            'https://music.youtube.com/watch?v=3EH7QMVnSRI'
+                        ]
+        webbrowser.open(choice(self.random_ledzep), new = 2)
 
 class VidinisReggae:
     def __init__(self, master):
