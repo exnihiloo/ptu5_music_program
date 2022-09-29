@@ -137,7 +137,9 @@ class VidinisHeavyMetal:
     def __init__(self, master):
         self.master = master
         self.ironm = tk.Button(self.master, text = "Iron Maiden", width = 15, command = self.open_ironm)
+        self.blacksab = tk.Button(self.master, text = "Black Sabbath", width = 15, command = self.open_black_sab)
         self.ironm.pack()
+        self.blacksab.pack()
 
     def open_ironm(self):
         self.random_ironm = ['https://music.youtube.com/watch?v=bePCRKGUwAY',
@@ -153,6 +155,19 @@ class VidinisHeavyMetal:
                         ]
         webbrowser.open(choice(self.random_ironm), new = 2)
 
+    def open_black_sab(self):
+        self.random_blacksab = ['https://music.youtube.com/watch?v=m7nwbJLO9qo',
+                                'https://music.youtube.com/watch?v=9kgQQuPZ8K0',
+                                'https://music.youtube.com/watch?v=-R5XnrZn47Q',
+                                'https://music.youtube.com/watch?v=cYZE4vKDqzs',
+                                'https://music.youtube.com/watch?v=_eBCxYVma1g',
+                                'https://music.youtube.com/watch?v=b3-QqGVt-tM',
+                                'https://music.youtube.com/watch?v=VcLRrG0W9hE',
+                                'https://music.youtube.com/watch?v=f-e8-DUqt0I',
+                                'https://music.youtube.com/watch?v=kkcHZQ_hZWk',
+                                'https://music.youtube.com/watch?v=0BXG1zvBWKo'
+                            ]
+        webbrowser.open(choice(self.random_blacksab), new = 2)
 
 
 langas = tk.Tk()
