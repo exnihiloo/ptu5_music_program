@@ -136,7 +136,22 @@ class VidinisReggae:
 class VidinisHeavyMetal:
     def __init__(self, master):
         self.master = master
+        self.ironm = tk.Button(self.master, text = "Iron Maiden", width = 15, command = self.open_ironm)
+        self.ironm.pack()
 
+    def open_ironm(self):
+        self.random_ironm = ['https://music.youtube.com/watch?v=bePCRKGUwAY',
+                            'https://music.youtube.com/watch?v=HAQQUDbuudY',
+                            'https://music.youtube.com/watch?v=W4DfbinBgL4',
+                            'https://music.youtube.com/watch?v=Q_XJ-7jNqws',
+                            'https://music.youtube.com/watch?v=ULsr-fFVjVs',
+                            'https://music.youtube.com/watch?v=Mw-o_cSdqmI',
+                            'https://music.youtube.com/watch?v=YCmUqAffWS8',
+                            'https://music.youtube.com/watch?v=oNwOA84zAcE',
+                            'https://music.youtube.com/watch?v=X5P_muGUJR4',
+                            'https://music.youtube.com/watch?v=jThfgcOqwlY'
+                        ]
+        webbrowser.open(choice(self.random_ironm), new = 2)
 
 
 
