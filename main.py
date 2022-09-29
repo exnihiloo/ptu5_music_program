@@ -139,9 +139,11 @@ class VidinisHeavyMetal:
         self.ironm = tk.Button(self.master, text = "Iron Maiden", width = 15, command = self.open_ironm)
         self.blacksab = tk.Button(self.master, text = "Black Sabbath", width = 15, command = self.open_black_sab)
         self.judasp = tk.Button(self.master, text = "Judas Priest", width = 15, command = self.open_judasp)
+        self.dio = tk.Button(self.master, text = "Dio", width = 15, command = self.open_dio)
         self.ironm.pack()
         self.blacksab.pack()
         self.judasp.pack()
+        self.dio.pack()
         
 
     def open_ironm(self):
@@ -186,6 +188,19 @@ class VidinisHeavyMetal:
                         ]
         webbrowser.open(choice(self.random_judasp), new = 2)
 
+    def open_dio(self):
+        self.radom_dio = ['https://music.youtube.com/watch?v=uDtgnYZsw7A',
+                        'https://music.youtube.com/watch?v=7XyHOdMvHg0',
+                        'https://music.youtube.com/watch?v=OjvZvRVk8Z0',
+                        'https://music.youtube.com/watch?v=Im-O4wXD0pg',
+                        'https://music.youtube.com/watch?v=jRCS-wT5wE4',
+                        'https://music.youtube.com/watch?v=0wfgdSZ4TIk',
+                        'https://music.youtube.com/watch?v=XhlkabrJIy8',
+                        'https://music.youtube.com/watch?v=12UCCXufGjk',
+                        'https://music.youtube.com/watch?v=WUqDezHZ7B0',
+                        'https://music.youtube.com/watch?v=FYJJwW1RETI'
+                    ]
+        webbrowser.open(choice(self.radom_dio), new = 2)
 
 langas = tk.Tk()
 langas.title("Shuffle Music")
