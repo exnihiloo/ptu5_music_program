@@ -233,6 +233,23 @@ class VidinisHeavyMetal:
 class VidinisPunk:
     def __init__(self, master):
         self.master = master
+        self.ramones = tk.Button(self.master, text = "Ramones", width = 15, command = self.open_ramones)
+        self.ramones.pack()
+
+    
+    def open_ramones(self):
+        self.random_ramones = ['https://music.youtube.com/watch?v=skdE0KAFCEA',
+                                'https://music.youtube.com/watch?v=QP4uTN6CXo8', 
+                                'https://music.youtube.com/watch?v=qO3F5Kayz8I',
+                                'https://music.youtube.com/watch?v=8O9P5Us_eVo',
+                                'https://music.youtube.com/watch?v=VXTLKfUR72o',
+                                'https://music.youtube.com/watch?v=5CM5YgUBxLw',
+                                'https://music.youtube.com/watch?v=pOpdKnoG8hE',
+                                'https://music.youtube.com/watch?v=Y2ef-HLjElw',
+                                'https://music.youtube.com/watch?v=whIMah7Yi_4',
+                                'https://music.youtube.com/watch?v=5AvUUPZnYNs'
+                            ]
+        webbrowser.open(choice(self.random_ramones), new = 2)
 
 
 
