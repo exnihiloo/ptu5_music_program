@@ -27,10 +27,14 @@ class VidinisRock:
         self.acdc = tk.Button(self.master, text = "AC/DC", width = 15, command = self.open_acdc)
         self.doors = tk.Button(self.master, text = "The Doors", width = 15, command = self.open_doors)
         self.ledzep = tk.Button(self.master, text = "Led Zeppelin", width = 15, command = self.open_ledzep)
+        self.deep_purple = tk.Button(self.master, text = "Deep Purple", width = 15, command = self.open_deep_purple)
+        self.uzdaryti = tk.Button(self.master, text = "Uždaryti", command = self.uzdaryti) 
         self.queen.pack()
         self.acdc.pack()
         self.doors.pack()
         self.ledzep.pack()
+        self.deep_purple.pack()
+        self.uzdaryti.pack()
 
     def open_qeen(self):
         self.random_queen = ['https://music.youtube.com/watch?v=yl3TsqL0ZPw',
@@ -89,6 +93,23 @@ class VidinisRock:
                             'https://music.youtube.com/watch?v=3EH7QMVnSRI'
                         ]
         webbrowser.open(choice(self.random_ledzep), new = 2)
+
+    def open_deep_purple(self):
+        self.random_deep_purple = ['https://music.youtube.com/watch?v=1L3XxUxEb6U',
+                                'https://music.youtube.com/watch?v=z6Y4_jigI-4',
+                                'https://music.youtube.com/watch?v=ybQnFhTr2I8',
+                                'https://music.youtube.com/watch?v=_hJEyDOn6Ho',
+                                'https://music.youtube.com/watch?v=pLLuifWR4Mg',
+                                'https://music.youtube.com/watch?v=0pxllXxQ8kw',
+                                'https://music.youtube.com/watch?v=Xt9W_tf32dQ',
+                                'https://music.youtube.com/watch?v=W_jfHvcAXRY',
+                                'https://music.youtube.com/watch?v=jgbf03MJyS4',
+                                'https://music.youtube.com/watch?v=Y4eH033TGOo'
+                            ]
+        webbrowser.open(choice(self.random_deep_purple), new = 2)
+
+    def uzdaryti(self):
+        self.master.destroy()
 
 class VidinisReggae:
     def __init__(self, master):
