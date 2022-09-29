@@ -236,9 +236,11 @@ class VidinisPunk:
         self.ramones = tk.Button(self.master, text = "Ramones", width = 15, command = self.open_ramones)
         self.sexpistols = tk.Button(self.master, text = "Sex Pistols", width = 15, command = self.open_sex_pistols)
         self.offspring = tk.Button(self.master, text = "The Offspring", width = 15, command = self.open_offspinrg)
+        self.misfits = tk.Button(self.master, text = "Misfits", width = 15, command = self.open_misfits)
         self.ramones.pack()
         self.sexpistols.pack()
         self.offspring.pack()
+        self.misfits.pack()
 
     
     def open_ramones(self):
@@ -284,7 +286,19 @@ class VidinisPunk:
                             ]       
         webbrowser.open(choice(self.random_offspring), new = 2)
 
-
+    def open_misfits(self):
+        self.random_misfits = ['https://music.youtube.com/watch?v=RgwZ76_-0sw',
+                                'https://music.youtube.com/watch?v=UuzA4U1njO8',
+                                'https://music.youtube.com/watch?v=JlWPpQmjnVQ',
+                                'https://music.youtube.com/watch?v=GHKWwQMsDpY',
+                                'https://music.youtube.com/watch?v=AMYt_GntfnE',
+                                'https://music.youtube.com/watch?v=g2qCdXE21og',
+                                'https://music.youtube.com/watch?v=Ckw8jB2VFUM',
+                                'https://music.youtube.com/watch?v=GSpZUCUXzQE',
+                                'https://music.youtube.com/watch?v=npIouDk6J2g',
+                                'https://music.youtube.com/watch?v=ynmK-j2Db6k'
+                            ]
+        webbrowser.open(choice(self.random_misfits), new = 2)
 
 
 langas = tk.Tk()
