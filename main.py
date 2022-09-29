@@ -11,6 +11,33 @@ class PagrindinisLangas:
         self.rock_langas.pack()
         self.reggae_langas.pack()
 
+    def new_window(self):
+        self.vidinis = tk.Toplevel(self.master)
+        self.app = VidinisRock(self.vidinis)
+
+    def new_window2(self):
+        self.vidinis2 = tk.Toplevel(self.master)
+        self.app = VidinisReggae(self.vidinis2)
+
+
+class VidinisRock:
+    def __init__(self, master):
+        self.master = master
+        self.queen = tk.Button(self.master, text = "Queen", width = 15, command = self.open_qeen)
+        self.acdc = tk.Button(self.master, text = "AC/DC", width = 15, command = self.open_acdc)
+        self.doors = tk.Button(self.master, text = "The Doors", width = 15, command = self.open_doors)
+        self.queen.pack()
+        self.acdc.pack()
+        self.doors.pack()
+
+
+class VidinisReggae:
+    def __init__(self, master):
+        self.master = master
+        self.bobm = tk.Button(self.master, text = "Bob Marley", width = 15, command = self.open_bobm)
+        self.bobm.pack()
+
+
 
 
 langas = tk.Tk()
