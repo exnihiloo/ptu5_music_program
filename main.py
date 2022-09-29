@@ -234,7 +234,9 @@ class VidinisPunk:
     def __init__(self, master):
         self.master = master
         self.ramones = tk.Button(self.master, text = "Ramones", width = 15, command = self.open_ramones)
+        self.sexpistols = tk.Button(self.master, text = "Sex Pistols", width = 15, command = self.open_sex_pistols)
         self.ramones.pack()
+        self.sexpistols.pack()
 
     
     def open_ramones(self):
@@ -250,6 +252,21 @@ class VidinisPunk:
                                 'https://music.youtube.com/watch?v=5AvUUPZnYNs'
                             ]
         webbrowser.open(choice(self.random_ramones), new = 2)
+
+    
+    def open_sex_pistols(self):
+        self.random_sex_pistols = ['https://music.youtube.com/watch?v=nE-AXzHFT1U',
+                                    'https://music.youtube.com/watch?v=YJRnwaEUNkM',
+                                    'https://music.youtube.com/watch?v=r7_KZE0y5e8',
+                                    'https://music.youtube.com/watch?v=3EqT5E609oU',
+                                    'https://music.youtube.com/watch?v=qzlt-nO74qk',
+                                    'https://music.youtube.com/watch?v=Jb1cOIk3sDw',
+                                    'https://music.youtube.com/watch?v=QJxxiCJCbUM',
+                                    'https://music.youtube.com/watch?v=GxAD3AyRSyc',
+                                    'https://music.youtube.com/watch?v=vjRA5Blr55Q',
+                                    'https://music.youtube.com/watch?v=RBFLY-SR_w4'
+                                ]
+        webbrowser.open(choice(self.random_sex_pistols), new = 2)
 
 
 
