@@ -65,6 +65,14 @@ class VidinisReggae:
         self.bobm = tk.Button(self.master, text = "Bob Marley", width = 15, command = self.open_bobm)
         self.bobm.pack()
 
+    def open_bobm(self):
+        self.random_bobm = ['https://www.youtube.com/watch?v=5M0NqIRglGA',
+                            'https://www.youtube.com/watch?v=69RdQFDuYPI',
+                            'https://www.youtube.com/watch?v=1Ogjp1hzmZU',
+                            'https://www.youtube.com/watch?v=hRd2dSdIvbU',
+                            'https://www.youtube.com/watch?v=jJzJewlOfVs'
+                        ]
+        webbrowser.open(choice(self.random_bobm), new = 2)
 
 
 
