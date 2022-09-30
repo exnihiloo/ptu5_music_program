@@ -135,9 +135,11 @@ class VidinisReggae:
         self.bobm = tk.Button(self.master, text = "Bob Marley & The Wailers", width = 15, command = self.open_bobm)
         self.peter = tk.Button(self.master, text = "Peter Tosh", width = 15, command = self.open_peter_tosh)
         self.mouse = tk.Button(self.master, text = "Eek-A-Mouse", width = 15, command = self.open_eekmouse)
+        self.damianm = tk.Button(self.master, text = "Damian Marley", width = 15, command = self.open_damian_marley)
         self.bobm.pack()
         self.peter.pack()
         self.mouse.pack()
+        self.damianm.pack()
 
     def open_bobm(self):
         self.random_bobm = ['https://music.youtube.com/watch?v=1A95dcLxAuA',
@@ -180,6 +182,20 @@ class VidinisReggae:
                                 'https://music.youtube.com/watch?v=yO7d0iELipc'
                             ]
         webbrowser.open(choice(self.random_eekmouse), new = 2)
+
+    def open_damian_marley(self):
+        self.random_damian_marley = ['https://music.youtube.com/watch?v=lF7jYuwqbik',
+                                    'https://music.youtube.com/watch?v=UmRmikGECjw',
+                                    'https://music.youtube.com/watch?v=uDsJB_zUquo',
+                                    'https://music.youtube.com/watch?v=y4NlW43QNQQ',
+                                    'https://music.youtube.com/watch?v=E8qgqTf9bZQ',
+                                    'https://music.youtube.com/watch?v=sQRJnU1LR2A',
+                                    'https://music.youtube.com/watch?v=sQpC15NICSg',
+                                    'https://music.youtube.com/watch?v=e2d-LfagPRk',
+                                    'https://music.youtube.com/watch?v=eiAIo0l1F9I',
+                                    'https://music.youtube.com/watch?v=1ML2w6BZv8s'
+                                ]
+        webbrowser.open(choice(self.random_damian_marley), new = 2)
 
 class VidinisHeavyMetal:
     def __init__(self, master):
