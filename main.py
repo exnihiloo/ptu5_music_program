@@ -137,11 +137,13 @@ class VidinisReggae:
         self.mouse = tk.Button(self.master, text = "Eek-A-Mouse", width = 15, command = self.open_eekmouse)
         self.damianm = tk.Button(self.master, text = "Damian Marley", width = 15, command = self.open_damian_marley)
         self.albarosie = tk.Button(self.master, text = "Alborosie", width = 15, command = self.open_albarosie)
+        self.uzdarytireggae = tk.Button(self.master, text = "\u2573 Uždaryti", command = self.uzdaryti) 
         self.bobm.pack()
         self.peter.pack()
         self.mouse.pack()
         self.damianm.pack()
         self.albarosie.pack()
+        self.uzdarytireggae.pack()
 
     def open_bobm(self):
         self.random_bobm = ['https://music.youtube.com/watch?v=1A95dcLxAuA',
@@ -212,6 +214,9 @@ class VidinisReggae:
                                 'https://music.youtube.com/watch?v=VlX0b_axejQ'
                             ]
         webbrowser.open(choice(self.random_albarosie), new = 2)
+
+    def uzdaryti(self):
+        self.master.destroy()
 
 class VidinisHeavyMetal:
     def __init__(self, master):
