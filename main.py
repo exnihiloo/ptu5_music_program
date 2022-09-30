@@ -820,11 +820,13 @@ class VidinisJazz:
         self.fitzgerald = tk.Button(self.master, text = "Ella Fitzgerald", width = 15, command = self.open_fitzgerald, highlightbackground = "DarkGoldenrod1")
         self.countb = tk.Button(self.master, text = "Count Basie", width = 15, command = self.open_countb, highlightbackground = "DarkGoldenrod1")
         self.ninasimone = tk.Button(self.master, text = "Nina Simone", width = 15, command = self.open_nina_simone, highlightbackground = "DarkGoldenrod1")
+        self.uzdaryti_jazz = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti, highlightbackground = "DarkGoldenrod1")
         self.candyd.pack()
         self.amstrong.pack()
         self.fitzgerald.pack()
         self.countb.pack()
         self.ninasimone.pack()
+        self.uzdaryti_jazz.pack()
 
     
     def open_candy_duler(self):
@@ -896,6 +898,9 @@ class VidinisJazz:
                                     'https://music.youtube.com/watch?v=KpDth46l_Vg'
                                 ]
         webbrowser.open(choice(self.random_nina_simone), new = 2)
+    
+    def uzdaryti(self):
+        self.master.destroy()
 
     
 langas = tk.Tk()
