@@ -334,9 +334,11 @@ class VidinisBlackMetal:
         self.mayhem = tk.Button(self.master, text = "Mayhem", width = 15, command = self.open_mayhem)
         self.marduk = tk.Button(self.master, text = "Marduk", width = 15, command = self.open_marduk)
         self.luctus = tk.Button(self.master, text = "Luctus", width = 15, command = self.open_luctus)
+        self.watain = tk.Button(self.master, text = "Watain", width = 15, command = self.open_watain)
         self.mayhem.pack()
         self.marduk.pack()
         self.luctus.pack()
+        self.watain.pack()
 
 
     def open_mayhem(self):
@@ -381,6 +383,19 @@ class VidinisBlackMetal:
                         ]
         webbrowser.open(choice(self.random_luctus), new = 2)
 
+    def open_watain(self):
+        self.random_watain = ['https://music.youtube.com/watch?v=QZJolwCj1Tc',
+                            'https://music.youtube.com/watch?v=y1shqeyKVPI',
+                            'https://music.youtube.com/watch?v=gMjzuY_OpvE',
+                            'https://music.youtube.com/watch?v=utukmmZpGHM',
+                            'https://music.youtube.com/watch?v=NQlG091nQLA',
+                            'https://music.youtube.com/watch?v=9dRdUsZ7JBA',
+                            'https://music.youtube.com/watch?v=LBsPaP3VwW0',
+                            'https://music.youtube.com/watch?v=Z_itZMagBsg',
+                            'https://music.youtube.com/watch?v=MHk1jKZoYz4',
+                            'https://music.youtube.com/watch?v=dbAVc1v2sMU'
+                        ]
+        webbrowser.open(choice(self.random_watain), new = 2)
 
 
 
