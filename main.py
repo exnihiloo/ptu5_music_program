@@ -699,8 +699,10 @@ class VidinisPop:
 class VidinisDisco:
     def __init__(self, master):
         self.master = master
-        self.abba = tk.Button(self.master, text = "Abba", width = 15, command = self.open_abba )
+        self.abba = tk.Button(self.master, text = "Abba", width = 15, command = self.open_abba)
+        self.beegees = tk.Button(self.master, text = "Bee Gees", width = 15, command = self.open_beegees)
         self.abba.pack()
+        self.beegees.pack()
 
     def open_abba(self):
         self.random_abba = ['https://music.youtube.com/watch?v=pa2j0Bh83ms',
@@ -715,6 +717,20 @@ class VidinisDisco:
                             'https://music.youtube.com/watch?v=b-U3-Sla8GM'
                         ]
         webbrowser.open(choice(self.random_abba), new = 2)
+
+    def open_beegees(self):
+        self.random_bee_gees = ['https://music.youtube.com/watch?v=W_dDNNEdIJg',
+                                'https://music.youtube.com/watch?v=lQkB4i0KQa8',
+                                'https://music.youtube.com/watch?v=UmoAMZg8MvI',
+                                'https://music.youtube.com/watch?v=4ZWKR2zJESk',
+                                'https://music.youtube.com/watch?v=gdqVP35IQqQ',
+                                'https://music.youtube.com/watch?v=1sqE6P3XyiQ',
+                                'https://music.youtube.com/watch?v=Lc8uj8eId7E',
+                                'https://music.youtube.com/watch?v=LQviz__oHug',
+                                'https://music.youtube.com/watch?v=-t7PTruoz6s',
+                                'https://music.youtube.com/watch?v=SYVT-FMeFts'
+                            ]
+        webbrowser.open(choice(self.random_bee_gees), new = 2)
 
     
 langas = tk.Tk()
