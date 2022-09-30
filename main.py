@@ -500,7 +500,22 @@ class VidinisBlackMetal:
 class VidinisRap:
     def __init__(self, master):
         self.master = master
+        self.eminem = tk.Button(self.master, text = "Eminem", width = 15, command = self.open_eminem)
+        self.eminem.pack()
 
+    def open_eminem(self):
+        self.random_eminem = ['https://music.youtube.com/watch?v=HIqQ0PfuPo8',
+                            'https://music.youtube.com/watch?v=tqxRidAWER8',
+                            'https://music.youtube.com/watch?v=zlJ0Aj9y67c',
+                            'https://music.youtube.com/watch?v=-grPV-Fae6I',
+                            'https://music.youtube.com/watch?v=9kznlAwE-8o',
+                            'https://music.youtube.com/watch?v=hWqLuSnyqbI',
+                            'https://music.youtube.com/watch?v=BdfpV-cIkuA',
+                            'https://music.youtube.com/watch?v=MBJFPq2Llps',
+                            'https://music.youtube.com/watch?v=Obim8BYGnOE',
+                            'https://music.youtube.com/watch?v=HX0qXWwVKEA'
+                        ]
+        webbrowser.open(choice(self.random_eminem), new = 2)
 
 langas = tk.Tk()
 langas.title("Shuffle Music")
