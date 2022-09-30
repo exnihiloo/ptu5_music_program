@@ -21,26 +21,32 @@ class PagrindinisLangas:
 
     def new_window(self):
         self.vidinis = tk.Toplevel(self.master)
+        self.vidinis.title("\U0001F918 Rock")
         self.app = VidinisRock(self.vidinis)
 
     def new_window2(self):
         self.vidinis2 = tk.Toplevel(self.master)
+        self.vidinis2.title("\u262E Reggae")
         self.app = VidinisReggae(self.vidinis2)
 
     def new_window3(self):
         self.vidinis3 = tk.Toplevel(self.master)
+        self.vidinis3.title("\U0001F3B8 Heavy Metal")
         self.app = VidinisHeavyMetal(self.vidinis3)
     
     def new_window4(self):
         self.vidinis4 = tk.Toplevel(self.master)
+        self.vidinis4.title("\U0001F577 Punk")
         self.app = VidinisPunk(self.vidinis4)
 
     def new_window5(self):
         self.vidinis5 = tk.Toplevel(self.master)
+        self.vidinis5.title("\U0001F480 Black Metal")
         self.app = VidinisBlackMetal(self.vidinis5)
 
     def new_window6(self):
         self.vidinis6 = tk.Toplevel(self.master)
+        self.vidinis6.title("\U0001F576 Rap")
         self.app = VidinisRap(self.vidinis6)
 
 class VidinisRock:
