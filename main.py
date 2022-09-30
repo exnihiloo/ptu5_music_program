@@ -704,11 +704,13 @@ class VidinisDisco:
         self.sandra = tk.Button(self.master, text = "Sandra", width = 15, command = self.open_sandra)
         self.boneym = tk.Button(self.master, text = "Boney M.", width = 15, command = self.open_boneym)
         self.dsummer = tk.Button(self.master, text = "Donna Summer.", width = 15, command = self.open_dsummer)
+        self.uzdaryti_disco = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti)
         self.abba.pack()
         self.beegees.pack()
         self.sandra.pack()
         self.boneym.pack()
         self.dsummer.pack()
+        self.uzdaryti_disco.pack()
 
     def open_abba(self):
         self.random_abba = ['https://music.youtube.com/watch?v=pa2j0Bh83ms',
@@ -779,6 +781,9 @@ class VidinisDisco:
                                 'https://music.youtube.com/watch?v=Hs5FrKcMZs0'
                             ]
         webbrowser.open(choice(self.random_dsummer), new = 2)
+
+    def uzdaryti(self):
+        self.master.destroy()
 
     
 langas = tk.Tk()
