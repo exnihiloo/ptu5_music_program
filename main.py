@@ -917,9 +917,11 @@ class VidinisBlues:
         self.mightysam = tk.Button(self.master, text = "Mighty Sam McClain", width = 15, command = self.open_mightysam, highlightbackground = "burlywood4")
         self.myers = tk.Button(self.master, text = "Sam Myers", width = 15, command = self.open_myers, highlightbackground = "burlywood4")
         self.cummings = tk.Button(self.master, text = "Albert Cummings", width = 15, command = self.open_cummings, highlightbackground = "burlywood4")
+        self.rodgers = tk.Button(self.master, text = "Mighty Mo Rodgers", width = 15, command = self.open_rodgers, highlightbackground = "burlywood4")
         self.mightysam.pack()
         self.myers.pack()
         self.cummings.pack()
+        self.rodgers.pack()
 
     def open_mightysam(self):
         self.random_mightysam = ['https://music.youtube.com/watch?v=_w2LNOL4rmk',
@@ -962,6 +964,20 @@ class VidinisBlues:
                                 'https://music.youtube.com/watch?v=5EHpHkqI394'
                             ]
         webbrowser.open(choice(self.random_cummings), new = 2)
+
+    def open_rodgers(self):
+        self.random_rodgers = ['https://music.youtube.com/watch?v=oUJbLSQZ3vA',
+                                'https://music.youtube.com/watch?v=RFBgE_61BPc',
+                                'https://music.youtube.com/watch?v=FFYSw9uNK2c',
+                                'https://music.youtube.com/watch?v=k4dh9bm3DH8',
+                                'https://music.youtube.com/watch?v=GRnQT6gmg10',
+                                'https://music.youtube.com/watch?v=g0wu5vLX4Ug',
+                                'https://music.youtube.com/watch?v=UZ1vGjG7lu0',
+                                'https://music.youtube.com/watch?v=Y3x5RzSkovM',
+                                'https://music.youtube.com/watch?v=4x6o8kZe50w',
+                                'https://music.youtube.com/watch?v=PQ0Y3JwLw0g'
+                            ]
+        webbrowser.open(choice(self.random_rodgers), new = 2)
     
 langas = tk.Tk()
 langas.title("Your daily dose of music")
