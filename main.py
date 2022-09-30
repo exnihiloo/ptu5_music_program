@@ -332,7 +332,9 @@ class VidinisBlackMetal:
     def __init__(self, master):
         self.master = master
         self.mayhem = tk.Button(self.master, text = "Mayhem", width = 15, command = self.open_mayhem)
+        self.marduk = tk.Button(self.master, text = "Marduk", width = 15, command = self.open_marduk)
         self.mayhem.pack()
+        self.marduk.pack()
 
 
     def open_mayhem(self):
@@ -348,6 +350,20 @@ class VidinisBlackMetal:
                             'https://music.youtube.com/watch?v=_vEAZQZEIBk'
                         ]
         webbrowser.open(choice(self.random_mayhem), new = 2)
+
+    def open_marduk(self):
+        self.random_marduk = ['https://music.youtube.com/watch?v=uWk7QDaNKQw',
+                            'https://music.youtube.com/watch?v=sDNdtU_wc74',
+                            'https://music.youtube.com/watch?v=0jZ7JsLuw6I',
+                            'https://music.youtube.com/watch?v=eUh4YwJhydk',
+                            'https://music.youtube.com/watch?v=9j5UmXXZqwk',
+                            'https://music.youtube.com/watch?v=2AR-GcoJUdk',
+                            'https://music.youtube.com/watch?v=0AyqNRDyxR4',
+                            'https://music.youtube.com/watch?v=FCoQyLWahI8',
+                            'https://music.youtube.com/watch?v=yvdhNrzWGtA',
+                            'https://music.youtube.com/watch?v=llp-X-axKQs'
+                        ]
+        webbrowser.open(choice(self.random_marduk), new = 2)
 
 langas = tk.Tk()
 langas.title("Shuffle Music")
