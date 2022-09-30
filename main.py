@@ -88,7 +88,7 @@ class PagrindinisLangas:
         self.vidinis9.title("\U0001F3B7 Jazz")
         self.vidinis9.configure(bg = "DarkGoldenrod1")
         self.vidinis9.geometry("300x200")
-        self.app = VidinisJazz(self.vidinis8)
+        self.app = VidinisJazz(self.vidinis9)
 
 class VidinisRock:
     def __init__(self, master):
@@ -815,6 +815,39 @@ class VidinisDisco:
 class VidinisJazz:
     def __init__(self, master):
         self.master = master
+        self.candyd = tk.Button(self.master, text = "Candy Dulfer", width = 15, command = self.open_candy_duler, highlightbackground = "DarkGoldenrod1")
+        self.amstrong = tk.Button(self.master, text = "Louis Amstrong", width = 15, command = self.open_amstrong, highlightbackground = "DarkGoldenrod1")
+        self.candyd.pack()
+        self.amstrong.pack()
+
+    
+    def open_candy_duler(self):
+        self.random_candy_dulfer = ['https://music.youtube.com/watch?v=SS0HmeaLBOg',
+                                    'https://music.youtube.com/watch?v=QtVbG_rPLWc',
+                                    'https://music.youtube.com/watch?v=Bn24CZEkkdk',
+                                    'https://music.youtube.com/watch?v=j6c4YwN-0Uo',
+                                    'https://music.youtube.com/watch?v=lnmE8is8fdA',
+                                    'https://music.youtube.com/watch?v=HA7uR0iSkaw',
+                                    'https://music.youtube.com/watch?v=0k8TBfvrXVk',
+                                    'https://music.youtube.com/watch?v=Zclro7ercfE',
+                                    'https://music.youtube.com/watch?v=ZwSH2Y0JN2Q',
+                                    'https://music.youtube.com/watch?v=7W6sXxkeUQw'
+                                ]
+        webbrowser.open(choice(self.random_candy_dulfer), new = 2)
+
+    def open_amstrong(self):
+        self.random_amstrong = ['https://music.youtube.com/watch?v=e1FN047_LT0',
+                                'https://music.youtube.com/watch?v=jNp7dCmbNXA',
+                                'https://music.youtube.com/watch?v=ADQFDonofRw',
+                                'https://music.youtube.com/watch?v=BMAD00G0oz8',
+                                'https://music.youtube.com/watch?v=LCLrnxUoF4o',
+                                'https://music.youtube.com/watch?v=brsPG22tE9U',
+                                'https://music.youtube.com/watch?v=LMsBKsSIoIo',
+                                'https://music.youtube.com/watch?v=UQuU999MURo',
+                                'https://music.youtube.com/watch?v=RxflhrRcyLk',
+                                'https://music.youtube.com/watch?v=YCM0APgpdZc'
+                            ]
+        webbrowser.open(choice(self.random_amstrong), new = 2)
 
     
 langas = tk.Tk()
