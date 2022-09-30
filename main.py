@@ -918,10 +918,12 @@ class VidinisBlues:
         self.myers = tk.Button(self.master, text = "Sam Myers", width = 15, command = self.open_myers, highlightbackground = "burlywood4")
         self.cummings = tk.Button(self.master, text = "Albert Cummings", width = 15, command = self.open_cummings, highlightbackground = "burlywood4")
         self.rodgers = tk.Button(self.master, text = "Mighty Mo Rodgers", width = 15, command = self.open_rodgers, highlightbackground = "burlywood4")
+        self.smokehouse = tk.Button(self.master, text = "Smokehouse", width = 15, command = self.open_smokehouse, highlightbackground = "burlywood4")
         self.mightysam.pack()
         self.myers.pack()
         self.cummings.pack()
         self.rodgers.pack()
+        self.smokehouse.pack()
 
     def open_mightysam(self):
         self.random_mightysam = ['https://music.youtube.com/watch?v=_w2LNOL4rmk',
@@ -978,6 +980,20 @@ class VidinisBlues:
                                 'https://music.youtube.com/watch?v=PQ0Y3JwLw0g'
                             ]
         webbrowser.open(choice(self.random_rodgers), new = 2)
+    
+    def open_smokehouse(self):
+        self.random_smokehouse = ['https://music.youtube.com/watch?v=p8TXKF0s3so',
+                                'https://music.youtube.com/watch?v=I_bHdWzTvlo',
+                                'https://music.youtube.com/watch?v=Yx_pDRBXDC4',
+                                'https://music.youtube.com/watch?v=l0cNCHZTFGA',
+                                'https://music.youtube.com/watch?v=tQcDpXMKBHQ',
+                                'https://music.youtube.com/watch?v=prcsHtYoxpI',
+                                'https://music.youtube.com/watch?v=6AkgMobH8Q4',
+                                'https://music.youtube.com/watch?v=0y3IIDAwJcc',
+                                'https://music.youtube.com/watch?v=N_Ua5KE2iQY',
+                                'https://music.youtube.com/watch?v=XtpB7NYfAyU'
+                            ]
+        webbrowser.open(choice(self.random_smokehouse), new = 2)
     
 langas = tk.Tk()
 langas.title("Your daily dose of music")
