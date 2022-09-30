@@ -13,6 +13,7 @@ class PagrindinisLangas:
         self.black_metal_langas = tk.Button(self.master, text = "\U0001F480 Black Metal", width = 15, command = self.new_window5)
         self.rap_langas = tk.Button(self.master, text = "\U0001F576 Rap", width = 15, command = self.new_window6)
         self.pop_langas = tk.Button(self.master, text = "\U0001F46F Pop", width = 15, command = self.new_window7)
+        self.disco_langas = tk.Button(self.master, text = "\U0001F4BF Disco", width = 15, command = self.new_window8)
         self.rock_langas.pack()
         self.reggae_langas.pack()
         self.hmetal_langas.pack()
@@ -20,6 +21,7 @@ class PagrindinisLangas:
         self.black_metal_langas.pack()
         self.rap_langas.pack()
         self.pop_langas.pack()
+        self.disco_langas.pack()
 
     def new_window(self):
         self.vidinis = tk.Toplevel(self.master)
@@ -55,6 +57,11 @@ class PagrindinisLangas:
         self.vidinis7 = tk.Toplevel(self.master)
         self.vidinis7.title("\U0001F46F Pop")
         self.app = VidinisPop(self.vidinis7)
+
+    def new_window8(self):
+        self.vidinis8 = tk.Toplevel(self.master)
+        self.vidinis8.title("\U0001F4BF Disco")
+        self.app = VidinisDisco(self.vidinis8)
 
 class VidinisRock:
     def __init__(self, master):
@@ -688,6 +695,10 @@ class VidinisPop:
 
     def uzdaryti(self):
         self.master.destroy()
+
+class VidinisDisco:
+    def __init__(self, master):
+        self.master = master
 
     
 langas = tk.Tk()
