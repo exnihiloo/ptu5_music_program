@@ -335,10 +335,12 @@ class VidinisBlackMetal:
         self.marduk = tk.Button(self.master, text = "Marduk", width = 15, command = self.open_marduk)
         self.luctus = tk.Button(self.master, text = "Luctus", width = 15, command = self.open_luctus)
         self.watain = tk.Button(self.master, text = "Watain", width = 15, command = self.open_watain)
+        self.behemoth = tk.Button(self.master, text = "Behemoth", width = 15, command = self.open_behemoth)
         self.mayhem.pack()
         self.marduk.pack()
         self.luctus.pack()
         self.watain.pack()
+        self.behemoth.pack()
 
 
     def open_mayhem(self):
@@ -396,6 +398,20 @@ class VidinisBlackMetal:
                             'https://music.youtube.com/watch?v=dbAVc1v2sMU'
                         ]
         webbrowser.open(choice(self.random_watain), new = 2)
+
+    def open_behemoth(self):
+        self.random_behemoth = ['https://music.youtube.com/watch?v=uoCIX4H0FIE',
+                                'https://music.youtube.com/watch?v=NfFSl2DUojc',
+                                'https://music.youtube.com/watch?v=Txgv6IaD4kk',
+                                'https://music.youtube.com/watch?v=l4I3HditvPk',
+                                'https://music.youtube.com/watch?v=N70k7PikaWk',
+                                'https://music.youtube.com/watch?v=7CQTBItq110',
+                                'https://music.youtube.com/watch?v=_znQvXC3uw4',
+                                'https://music.youtube.com/watch?v=6pulvL2rbmk',
+                                'https://music.youtube.com/watch?v=NERGLk8tyPs',
+                                'https://music.youtube.com/watch?v=8BAD4t_O61k'
+                            ]
+        webbrowser.open(choice(self.random_behemoth), new = 2)
 
 
 
