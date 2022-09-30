@@ -35,6 +35,8 @@ class PagrindinisLangas:
     def new_window2(self):
         self.vidinis2 = tk.Toplevel(self.master)
         self.vidinis2.title("\u262E Reggae")
+        self.vidinis2.configure(bg = "green")
+        self.vidinis2.geometry("300x200")
         self.app = VidinisReggae(self.vidinis2)
 
     def new_window3(self):
@@ -161,12 +163,12 @@ class VidinisRock:
 class VidinisReggae:
     def __init__(self, master):
         self.master = master
-        self.bobm = tk.Button(self.master, text = "Bob Marley & The Wailers", width = 15, command = self.open_bobm)
-        self.peter = tk.Button(self.master, text = "Peter Tosh", width = 15, command = self.open_peter_tosh)
-        self.mouse = tk.Button(self.master, text = "Eek-A-Mouse", width = 15, command = self.open_eekmouse)
-        self.damianm = tk.Button(self.master, text = "Damian Marley", width = 15, command = self.open_damian_marley)
-        self.albarosie = tk.Button(self.master, text = "Alborosie", width = 15, command = self.open_albarosie)
-        self.uzdarytireggae = tk.Button(self.master, text = "\u2573 Uždaryti", command = self.uzdaryti) 
+        self.bobm = tk.Button(self.master, text = "Bob Marley & The Wailers", width = 15, command = self.open_bobm, highlightbackground='green')
+        self.peter = tk.Button(self.master, text = "Peter Tosh", width = 15, command = self.open_peter_tosh, highlightbackground='green')
+        self.mouse = tk.Button(self.master, text = "Eek-A-Mouse", width = 15, command = self.open_eekmouse, highlightbackground='green')
+        self.damianm = tk.Button(self.master, text = "Damian Marley", width = 15, command = self.open_damian_marley, highlightbackground='green')
+        self.albarosie = tk.Button(self.master, text = "Alborosie", width = 15, command = self.open_albarosie, highlightbackground='green')
+        self.uzdarytireggae = tk.Button(self.master, text = "\u2573 Uždaryti", command = self.uzdaryti, highlightbackground='green') 
         self.bobm.pack()
         self.peter.pack()
         self.mouse.pack()
