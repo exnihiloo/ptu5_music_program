@@ -703,10 +703,12 @@ class VidinisDisco:
         self.beegees = tk.Button(self.master, text = "Bee Gees", width = 15, command = self.open_beegees)
         self.sandra = tk.Button(self.master, text = "Sandra", width = 15, command = self.open_sandra)
         self.boneym = tk.Button(self.master, text = "Boney M.", width = 15, command = self.open_boneym)
+        self.dsummer = tk.Button(self.master, text = "Donna Summer.", width = 15, command = self.open_dsummer)
         self.abba.pack()
         self.beegees.pack()
         self.sandra.pack()
         self.boneym.pack()
+        self.dsummer.pack()
 
     def open_abba(self):
         self.random_abba = ['https://music.youtube.com/watch?v=pa2j0Bh83ms',
@@ -763,6 +765,20 @@ class VidinisDisco:
                             'https://music.youtube.com/watch?v=dlaGYG4iOas'
                         ]
         webbrowser.open(choice(self.random_boneym), new = 2)
+
+    def open_dsummer(self):
+        self.random_dsummer = ['https://music.youtube.com/watch?v=nYMeJSehCe4',
+                                'https://music.youtube.com/watch?v=nTNcCKq6V2c',
+                                'https://music.youtube.com/watch?v=561fy1vqIo8',
+                                'https://music.youtube.com/watch?v=tuUEpbGVV2Y',
+                                'https://music.youtube.com/watch?v=wOf9yTO2vKI',
+                                'https://music.youtube.com/watch?v=zqMXVxyFmQg',
+                                'https://music.youtube.com/watch?v=mNEySGzN3Vs',
+                                'https://music.youtube.com/watch?v=xeMK3J6DIM0',
+                                'https://music.youtube.com/watch?v=mi-QzaZnGjo',
+                                'https://music.youtube.com/watch?v=Hs5FrKcMZs0'
+                            ]
+        webbrowser.open(choice(self.random_dsummer), new = 2)
 
     
 langas = tk.Tk()
