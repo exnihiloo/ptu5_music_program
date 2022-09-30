@@ -603,6 +603,22 @@ class VidinisRap:
 class VidinisPop:
     def __init__(self, master):
         self.master = master
+        self.ladygaga = tk.Button(self.master, text = "Lady Gaga", width = 15, command = self.open_ladygaga)
+        self.ladygaga.pack()
+
+    def open_ladygaga(self):
+        self.random_ladygaga = ['https://music.youtube.com/watch?v=fiRjp6y6QvI',
+                                'https://music.youtube.com/watch?v=DVEoBIZm0V8',
+                                'https://music.youtube.com/watch?v=nkzaMdWoqPU',
+                                'https://music.youtube.com/watch?v=GMAVUvb8Obs',
+                                'https://music.youtube.com/watch?v=fn8JP4rUP2I',
+                                'https://music.youtube.com/watch?v=9WfWnkVLwao',
+                                'https://music.youtube.com/watch?v=V9qrpe2z9mE',
+                                'https://music.youtube.com/watch?v=7CkGrvx9Z3g',
+                                'https://music.youtube.com/watch?v=41CjTbmI9aQ',
+                                'https://music.youtube.com/watch?v=cSRxQoeKbVM'
+                            ]
+        webbrowser.open(choice(self.random_ladygaga), new = 2)
 
 langas = tk.Tk()
 langas.title("Shuffle Music")
