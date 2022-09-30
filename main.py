@@ -505,11 +505,13 @@ class VidinisRap:
         self.pac = tk.Button(self.master, text = "2Pac", width = 15, command = self.open_2pac)
         self.nwa = tk.Button(self.master, text = "N.W.A.", width = 15, command = self.open_nwa)
         self.lamar = tk.Button(self.master, text = "Kendrick Lamar", width = 15, command = self.open_kendric)
+        self.uzdaryti_rap = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti)
         self.eminem.pack()
         self.snoop.pack()
         self.pac.pack()
         self.nwa.pack()
         self.lamar.pack()
+        self.uzdaryti_rap.pack()
 
     def open_eminem(self):
         self.random_eminem = ['https://music.youtube.com/watch?v=HIqQ0PfuPo8',
@@ -580,6 +582,9 @@ class VidinisRap:
                                 'https://music.youtube.com/watch?v=TbqmJ5K6iNI'
                             ]
         webbrowser.open(choice(self.random_kendrick), new = 2)
+
+    def uzdaryti(self):
+        self.master.destroy()
 
 langas = tk.Tk()
 langas.title("Shuffle Music")
