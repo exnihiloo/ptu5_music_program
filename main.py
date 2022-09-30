@@ -919,11 +919,13 @@ class VidinisBlues:
         self.cummings = tk.Button(self.master, text = "Albert Cummings", width = 15, command = self.open_cummings, highlightbackground = "burlywood4")
         self.rodgers = tk.Button(self.master, text = "Mighty Mo Rodgers", width = 15, command = self.open_rodgers, highlightbackground = "burlywood4")
         self.smokehouse = tk.Button(self.master, text = "Smokehouse", width = 15, command = self.open_smokehouse, highlightbackground = "burlywood4")
+        self.uzdaryti_blues = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti, highlightbackground = "burlywood4")
         self.mightysam.pack()
         self.myers.pack()
         self.cummings.pack()
         self.rodgers.pack()
         self.smokehouse.pack()
+        self.uzdaryti_blues.pack()
 
     def open_mightysam(self):
         self.random_mightysam = ['https://music.youtube.com/watch?v=_w2LNOL4rmk',
@@ -994,6 +996,9 @@ class VidinisBlues:
                                 'https://music.youtube.com/watch?v=XtpB7NYfAyU'
                             ]
         webbrowser.open(choice(self.random_smokehouse), new = 2)
+
+    def uzdaryti(self):
+        self.master.destroy()
     
 langas = tk.Tk()
 langas.title("Your daily dose of music")
