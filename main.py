@@ -915,7 +915,9 @@ class VidinisBlues:
     def __init__(self, master):
         self.master = master
         self.mightysam = tk.Button(self.master, text = "Mighty Sam McClain", width = 15, command = self.open_mightysam, highlightbackground = "burlywood4")
+        self.myers = tk.Button(self.master, text = "Sam Myers", width = 15, command = self.open_myers, highlightbackground = "burlywood4")
         self.mightysam.pack()
+        self.myers.pack()
 
     def open_mightysam(self):
         self.random_mightysam = ['https://music.youtube.com/watch?v=_w2LNOL4rmk',
@@ -930,6 +932,20 @@ class VidinisBlues:
                                 'https://music.youtube.com/watch?v=fD947SUdDN0'
                             ]
         webbrowser.open(choice(self.random_mightysam), new = 2)
+
+    def open_myers(self):
+        self.random_sam_myers = ['https://music.youtube.com/watch?v=PnXK2OP7V2A',
+                                'https://music.youtube.com/watch?v=2ZR1Mkb_Grs',
+                                'https://music.youtube.com/watch?v=y-zmQC1La00',
+                                'https://music.youtube.com/watch?v=QOqZlQ7nl1c',
+                                'https://music.youtube.com/watch?v=fbGS6gLUhw4',
+                                'https://music.youtube.com/watch?v=dwpOTHAt8_U',
+                                'https://music.youtube.com/watch?v=QOqZlQ7nl1c',
+                                'https://music.youtube.com/watch?v=GCfvKj7C7e0',
+                                'https://music.youtube.com/watch?v=hIMkaETUpcY',
+                                'https://music.youtube.com/watch?v=HGEnvRIF5KU'
+                            ]
+        webbrowser.open(choice(self.random_sam_myers), new = 2)
     
 langas = tk.Tk()
 langas.title("Your daily dose of music")
