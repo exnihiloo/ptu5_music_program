@@ -6,7 +6,7 @@ from random import choice
 class PagrindinisLangas:
     def __init__(self, master):
         self.master = master
-        self.uzrasas = Label(self.master, text = 'Išsirinkite muzikos žanrą', font = ('Menlo', 20, "bold"), fg = 'white', bg = 'black')
+        self.uzrasas = Label(self.master, text = 'Išsirinkite muzikos žanrą', font = ('Courier New', 20, "bold"), fg = 'white', bg = 'black')
         self.uzrasas.pack(pady = 50)
         self.rock_langas = tk.Button(self.master, text = "\U0001F918 Rock", width = 15, command = self.new_window, highlightbackground='black')
         self.reggae_langas = tk.Button(self.master, text = "\u262E Reggae", width = 15, command = self.new_window2, highlightbackground='black')
@@ -28,6 +28,8 @@ class PagrindinisLangas:
     def new_window(self):
         self.vidinis = tk.Toplevel(self.master)
         self.vidinis.title("\U0001F918 Rock")
+        self.vidinis.configure(bg = "red")
+        self.vidinis.geometry("300x200")
         self.app = VidinisRock(self.vidinis)
 
     def new_window2(self):
@@ -68,12 +70,12 @@ class PagrindinisLangas:
 class VidinisRock:
     def __init__(self, master):
         self.master = master
-        self.queen = tk.Button(self.master, text = "Queen", width = 15, command = self.open_qeen)
-        self.acdc = tk.Button(self.master, text = "AC/DC", width = 15, command = self.open_acdc)
-        self.doors = tk.Button(self.master, text = "The Doors", width = 15, command = self.open_doors)
-        self.ledzep = tk.Button(self.master, text = "Led Zeppelin", width = 15, command = self.open_ledzep)
-        self.deep_purple = tk.Button(self.master, text = "Deep Purple", width = 15, command = self.open_deep_purple)
-        self.uzdarytirock = tk.Button(self.master, text = "\u2573 Uždaryti", command = self.uzdaryti) 
+        self.queen = tk.Button(self.master, text = "Queen", width = 15, command = self.open_qeen, highlightbackground='red')
+        self.acdc = tk.Button(self.master, text = "AC/DC", width = 15, command = self.open_acdc, highlightbackground='red')
+        self.doors = tk.Button(self.master, text = "The Doors", width = 15, command = self.open_doors, highlightbackground='red')
+        self.ledzep = tk.Button(self.master, text = "Led Zeppelin", width = 15, command = self.open_ledzep, highlightbackground='red')
+        self.deep_purple = tk.Button(self.master, text = "Deep Purple", width = 15, command = self.open_deep_purple, highlightbackground='red')
+        self.uzdarytirock = tk.Button(self.master, text = "\u2573 Uždaryti", command = self.uzdaryti, highlightbackground='red') 
         self.queen.pack()
         self.acdc.pack()
         self.doors.pack()
