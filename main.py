@@ -787,6 +787,9 @@ class VidinisDisco:
 
     
 langas = tk.Tk()
-langas.title("Shuffle Music")
+langas.title("Your daily dose of music")
+langas.geometry("450x300")
+uzrasas = Label(langas, text = "Išsirinkite muzikos žanrą", font = ('Menlo', 20, "bold"))
+uzrasas.pack()
 programa = PagrindinisLangas(langas)
 langas.mainloop()
