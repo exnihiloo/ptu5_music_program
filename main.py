@@ -702,9 +702,11 @@ class VidinisDisco:
         self.abba = tk.Button(self.master, text = "Abba", width = 15, command = self.open_abba)
         self.beegees = tk.Button(self.master, text = "Bee Gees", width = 15, command = self.open_beegees)
         self.sandra = tk.Button(self.master, text = "Sandra", width = 15, command = self.open_sandra)
+        self.boneym = tk.Button(self.master, text = "Boney M.", width = 15, command = self.open_boneym)
         self.abba.pack()
         self.beegees.pack()
         self.sandra.pack()
+        self.boneym.pack()
 
     def open_abba(self):
         self.random_abba = ['https://music.youtube.com/watch?v=pa2j0Bh83ms',
@@ -736,18 +738,31 @@ class VidinisDisco:
 
     def open_sandra(self):
         self.random_sandra = ['https://music.youtube.com/watch?v=NP4LZZGYI5E',
-                                'https://music.youtube.com/watch?v=pKpS19CThyQ',
-                                'https://music.youtube.com/watch?v=F8ZLbdbp75A',
-                                'https://music.youtube.com/watch?v=jhvVx9-Yusk',
-                                'https://music.youtube.com/watch?v=dencYmYKkeY',
-                                'https://music.youtube.com/watch?v=HSoTCQXJsDQ',
-                                'https://music.youtube.com/watch?v=-jnpbEbSugQ',
-                                'https://music.youtube.com/watch?v=9oNAC8hFSl0',
-                                'https://music.youtube.com/watch?v=bIY4cSzlSLk',
-                                'https://music.youtube.com/watch?v=iBZedwqwpMo'
+                            'https://music.youtube.com/watch?v=pKpS19CThyQ',
+                            'https://music.youtube.com/watch?v=F8ZLbdbp75A',
+                            'https://music.youtube.com/watch?v=jhvVx9-Yusk',
+                            'https://music.youtube.com/watch?v=dencYmYKkeY',
+                            'https://music.youtube.com/watch?v=HSoTCQXJsDQ',
+                            'https://music.youtube.com/watch?v=-jnpbEbSugQ',
+                            'https://music.youtube.com/watch?v=9oNAC8hFSl0',
+                            'https://music.youtube.com/watch?v=bIY4cSzlSLk',
+                            'https://music.youtube.com/watch?v=iBZedwqwpMo'
                             ]
         webbrowser.open(choice(self.random_sandra), new = 2)
 
+    def open_boneym(self):
+        self.random_boneym = ['https://music.youtube.com/watch?v=iQEpTa3VqLU',
+                            'https://music.youtube.com/watch?v=5Z0dxsFmX7c',
+                            'https://music.youtube.com/watch?v=bQ7k2YRODT4',
+                            'https://music.youtube.com/watch?v=gr8jSYC03gQ',
+                            'https://music.youtube.com/watch?v=2GogVZiVFxM',
+                            'https://music.youtube.com/watch?v=2VKeyJEouv4',
+                            'https://music.youtube.com/watch?v=ix4VWyLJv8Y',
+                            'https://music.youtube.com/watch?v=nCyeIoajBl8',
+                            'https://music.youtube.com/watch?v=mJU3K16AiHs',
+                            'https://music.youtube.com/watch?v=dlaGYG4iOas'
+                        ]
+        webbrowser.open(choice(self.random_boneym), new = 2)
 
     
 langas = tk.Tk()
