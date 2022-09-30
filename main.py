@@ -501,7 +501,9 @@ class VidinisRap:
     def __init__(self, master):
         self.master = master
         self.eminem = tk.Button(self.master, text = "Eminem", width = 15, command = self.open_eminem)
+        self.snoop = tk.Button(self.master, text = "Snoop Dog", width = 15, command = self.open_snoop_dog)
         self.eminem.pack()
+        self.snoop.pack()
 
     def open_eminem(self):
         self.random_eminem = ['https://music.youtube.com/watch?v=HIqQ0PfuPo8',
@@ -516,6 +518,20 @@ class VidinisRap:
                             'https://music.youtube.com/watch?v=HX0qXWwVKEA'
                         ]
         webbrowser.open(choice(self.random_eminem), new = 2)
+
+    def open_snoop_dog(self):
+        self.random_snoop_dog = ['https://music.youtube.com/watch?v=ldjajgAHAu4',
+                                'https://music.youtube.com/watch?v=a1Vunyag-w0',
+                                'https://music.youtube.com/watch?v=ogEUHBUV-bo',
+                                'https://music.youtube.com/watch?v=sXx3gtLouNU',
+                                'https://music.youtube.com/watch?v=7qiZ21aL81c',
+                                'https://music.youtube.com/watch?v=Inw7B2F6_Hc',
+                                'https://music.youtube.com/watch?v=Y3lVNNBTzL8',
+                                'https://music.youtube.com/watch?v=GflVCALGSLQ',
+                                'https://music.youtube.com/watch?v=RT8LrkaaSHk',
+                                'https://music.youtube.com/watch?v=Wo9xc7G9KOg'
+                            ]
+        webbrowser.open(choice(self.random_snoop_dog), new = 2)
 
 langas = tk.Tk()
 langas.title("Shuffle Music")
