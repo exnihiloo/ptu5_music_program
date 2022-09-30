@@ -42,31 +42,43 @@ class PagrindinisLangas:
     def new_window3(self):
         self.vidinis3 = tk.Toplevel(self.master)
         self.vidinis3.title("\U0001F3B8 Heavy Metal")
+        self.vidinis3.configure(bg = "grey")
+        self.vidinis3.geometry("300x200")
         self.app = VidinisHeavyMetal(self.vidinis3)
     
     def new_window4(self):
         self.vidinis4 = tk.Toplevel(self.master)
         self.vidinis4.title("\U0001F577 Punk")
+        self.vidinis4.configure(bg = "MediumPurple4")
+        self.vidinis4.geometry("300x200")
         self.app = VidinisPunk(self.vidinis4)
 
     def new_window5(self):
         self.vidinis5 = tk.Toplevel(self.master)
         self.vidinis5.title("\U0001F480 Black Metal")
+        self.vidinis5.configure(bg = "midnight blue")
+        self.vidinis5.geometry("300x200")
         self.app = VidinisBlackMetal(self.vidinis5)
 
     def new_window6(self):
         self.vidinis6 = tk.Toplevel(self.master)
         self.vidinis6.title("\U0001F576 Rap")
+        self.vidinis6.configure(bg = "IndianRed4")
+        self.vidinis6.geometry("300x200")
         self.app = VidinisRap(self.vidinis6)
 
     def new_window7(self):
         self.vidinis7 = tk.Toplevel(self.master)
         self.vidinis7.title("\U0001F46F Pop")
+        self.vidinis7.configure(bg = "hot pink")
+        self.vidinis7.geometry("300x200")
         self.app = VidinisPop(self.vidinis7)
 
     def new_window8(self):
         self.vidinis8 = tk.Toplevel(self.master)
         self.vidinis8.title("\U0001F4BF Disco")
+        self.vidinis8.configure(bg = "cyan")
+        self.vidinis8.geometry("300x200")
         self.app = VidinisDisco(self.vidinis8)
 
 class VidinisRock:
@@ -252,12 +264,12 @@ class VidinisReggae:
 class VidinisHeavyMetal:
     def __init__(self, master):
         self.master = master
-        self.ironm = tk.Button(self.master, text = "Iron Maiden", width = 15, command = self.open_ironm)
-        self.blacksab = tk.Button(self.master, text = "Black Sabbath", width = 15, command = self.open_black_sab)
-        self.judasp = tk.Button(self.master, text = "Judas Priest", width = 15, command = self.open_judasp)
-        self.dio = tk.Button(self.master, text = "Dio", width = 15, command = self.open_dio)
-        self.saxon = tk.Button(self.master, text = "Saxon", width = 15, command = self.open_saxon)
-        self.uzdaryti_metal = tk.Button(self.master, text = "\u2573 Uždaryti", command = self.uzdaryti)
+        self.ironm = tk.Button(self.master, text = "Iron Maiden", width = 15, command = self.open_ironm, highlightbackground='grey')
+        self.blacksab = tk.Button(self.master, text = "Black Sabbath", width = 15, command = self.open_black_sab, highlightbackground='grey')
+        self.judasp = tk.Button(self.master, text = "Judas Priest", width = 15, command = self.open_judasp, highlightbackground='grey')
+        self.dio = tk.Button(self.master, text = "Dio", width = 15, command = self.open_dio, highlightbackground='grey')
+        self.saxon = tk.Button(self.master, text = "Saxon", width = 15, command = self.open_saxon, highlightbackground='grey')
+        self.uzdaryti_metal = tk.Button(self.master, text = "\u2573 Uždaryti", command = self.uzdaryti, highlightbackground='grey')
         self.ironm.pack()
         self.blacksab.pack()
         self.judasp.pack()
@@ -343,12 +355,12 @@ class VidinisHeavyMetal:
 class VidinisPunk:
     def __init__(self, master):
         self.master = master
-        self.ramones = tk.Button(self.master, text = "Ramones", width = 15, command = self.open_ramones)
-        self.sexpistols = tk.Button(self.master, text = "Sex Pistols", width = 15, command = self.open_sex_pistols)
-        self.offspring = tk.Button(self.master, text = "The Offspring", width = 15, command = self.open_offspinrg)
-        self.misfits = tk.Button(self.master, text = "Misfits", width = 15, command = self.open_misfits)
-        self.clash = tk.Button(self.master, text = "The Clash", width = 15, command = self.open_clash)
-        self.uzdaryti_punk = tk.Button(self.master, text = "\u2573 Uždaryti", command = self.uzdaryti)
+        self.ramones = tk.Button(self.master, text = "Ramones", width = 15, command = self.open_ramones, highlightbackground="MediumPurple4")
+        self.sexpistols = tk.Button(self.master, text = "Sex Pistols", width = 15, command = self.open_sex_pistols, highlightbackground="MediumPurple4")
+        self.offspring = tk.Button(self.master, text = "The Offspring", width = 15, command = self.open_offspinrg, highlightbackground="MediumPurple4")
+        self.misfits = tk.Button(self.master, text = "Misfits", width = 15, command = self.open_misfits, highlightbackground="MediumPurple4")
+        self.clash = tk.Button(self.master, text = "The Clash", width = 15, command = self.open_clash, highlightbackground="MediumPurple4")
+        self.uzdaryti_punk = tk.Button(self.master, text = "\u2573 Uždaryti", command = self.uzdaryti, highlightbackground="MediumPurple4")
         self.ramones.pack()
         self.sexpistols.pack()
         self.offspring.pack()
@@ -435,12 +447,12 @@ class VidinisPunk:
 class VidinisBlackMetal:
     def __init__(self, master):
         self.master = master
-        self.mayhem = tk.Button(self.master, text = "Mayhem", width = 15, command = self.open_mayhem)
-        self.marduk = tk.Button(self.master, text = "Marduk", width = 15, command = self.open_marduk)
-        self.luctus = tk.Button(self.master, text = "Luctus", width = 15, command = self.open_luctus)
-        self.watain = tk.Button(self.master, text = "Watain", width = 15, command = self.open_watain)
-        self.behemoth = tk.Button(self.master, text = "Behemoth", width = 15, command = self.open_behemoth)
-        self.uzdaryti_bmetal = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti)
+        self.mayhem = tk.Button(self.master, text = "Mayhem", width = 15, command = self.open_mayhem, highlightbackground='midnight blue')
+        self.marduk = tk.Button(self.master, text = "Marduk", width = 15, command = self.open_marduk, highlightbackground='midnight blue')
+        self.luctus = tk.Button(self.master, text = "Luctus", width = 15, command = self.open_luctus, highlightbackground='midnight blue')
+        self.watain = tk.Button(self.master, text = "Watain", width = 15, command = self.open_watain, highlightbackground='midnight blue')
+        self.behemoth = tk.Button(self.master, text = "Behemoth", width = 15, command = self.open_behemoth, highlightbackground='midnight blue')
+        self.uzdaryti_bmetal = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti, highlightbackground='midnight blue')
         self.mayhem.pack()
         self.marduk.pack()
         self.luctus.pack()
@@ -526,12 +538,12 @@ class VidinisBlackMetal:
 class VidinisRap:
     def __init__(self, master):
         self.master = master
-        self.eminem = tk.Button(self.master, text = "Eminem", width = 15, command = self.open_eminem)
-        self.snoop = tk.Button(self.master, text = "Snoop Dog", width = 15, command = self.open_snoop_dog)
-        self.pac = tk.Button(self.master, text = "2Pac", width = 15, command = self.open_2pac)
-        self.nwa = tk.Button(self.master, text = "N.W.A.", width = 15, command = self.open_nwa)
-        self.lamar = tk.Button(self.master, text = "Kendrick Lamar", width = 15, command = self.open_kendric)
-        self.uzdaryti_rap = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti)
+        self.eminem = tk.Button(self.master, text = "Eminem", width = 15, command = self.open_eminem, highlightbackground='IndianRed4')
+        self.snoop = tk.Button(self.master, text = "Snoop Dog", width = 15, command = self.open_snoop_dog, highlightbackground='IndianRed4')
+        self.pac = tk.Button(self.master, text = "2Pac", width = 15, command = self.open_2pac, highlightbackground='IndianRed4')
+        self.nwa = tk.Button(self.master, text = "N.W.A.", width = 15, command = self.open_nwa, highlightbackground='IndianRed4')
+        self.lamar = tk.Button(self.master, text = "Kendrick Lamar", width = 15, command = self.open_kendric, highlightbackground='IndianRed4')
+        self.uzdaryti_rap = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti, highlightbackground='IndianRed4')
         self.eminem.pack()
         self.snoop.pack()
         self.pac.pack()
@@ -616,12 +628,12 @@ class VidinisRap:
 class VidinisPop:
     def __init__(self, master):
         self.master = master
-        self.ladygaga = tk.Button(self.master, text = "Lady Gaga", width = 15, command = self.open_ladygaga)
-        self.beyonce = tk.Button(self.master, text = "Beyoncé", width = 15, command = self.open_beyonce)
-        self.britneysp = tk.Button(self.master, text = "Britney Spears", width = 15, command = self.open_britney)
-        self.chaguilera = tk.Button(self.master, text = "Christina Aguilera", width = 15, command = self.open_christina)
-        self.justint = tk.Button(self.master, text = "Justin Timberlake", width = 15, command = self.open_justint)
-        self.uzdaryti_pop = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti)
+        self.ladygaga = tk.Button(self.master, text = "Lady Gaga", width = 15, command = self.open_ladygaga, highlightbackground='hot pink')
+        self.beyonce = tk.Button(self.master, text = "Beyoncé", width = 15, command = self.open_beyonce, highlightbackground='hot pink')
+        self.britneysp = tk.Button(self.master, text = "Britney Spears", width = 15, command = self.open_britney, highlightbackground='hot pink')
+        self.chaguilera = tk.Button(self.master, text = "Christina Aguilera", width = 15, command = self.open_christina, highlightbackground='hot pink')
+        self.justint = tk.Button(self.master, text = "Justin Timberlake", width = 15, command = self.open_justint, highlightbackground='hot pink')
+        self.uzdaryti_pop = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti, highlightbackground='hot pink')
         self.ladygaga.pack()
         self.beyonce.pack()
         self.britneysp.pack()
@@ -705,12 +717,12 @@ class VidinisPop:
 class VidinisDisco:
     def __init__(self, master):
         self.master = master
-        self.abba = tk.Button(self.master, text = "Abba", width = 15, command = self.open_abba)
-        self.beegees = tk.Button(self.master, text = "Bee Gees", width = 15, command = self.open_beegees)
-        self.sandra = tk.Button(self.master, text = "Sandra", width = 15, command = self.open_sandra)
-        self.boneym = tk.Button(self.master, text = "Boney M.", width = 15, command = self.open_boneym)
-        self.dsummer = tk.Button(self.master, text = "Donna Summer.", width = 15, command = self.open_dsummer)
-        self.uzdaryti_disco = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti)
+        self.abba = tk.Button(self.master, text = "Abba", width = 15, command = self.open_abba, highlightbackground='cyan')
+        self.beegees = tk.Button(self.master, text = "Bee Gees", width = 15, command = self.open_beegees, highlightbackground='cyan')
+        self.sandra = tk.Button(self.master, text = "Sandra", width = 15, command = self.open_sandra, highlightbackground='cyan')
+        self.boneym = tk.Button(self.master, text = "Boney M.", width = 15, command = self.open_boneym, highlightbackground='cyan')
+        self.dsummer = tk.Button(self.master, text = "Donna Summer.", width = 15, command = self.open_dsummer, highlightbackground='cyan')
+        self.uzdaryti_disco = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti, highlightbackground='cyan')
         self.abba.pack()
         self.beegees.pack()
         self.sandra.pack()
