@@ -699,6 +699,22 @@ class VidinisPop:
 class VidinisDisco:
     def __init__(self, master):
         self.master = master
+        self.abba = tk.Button(self.master, text = "Abba", width = 15, command = self.open_abba )
+        self.abba.pack()
+
+    def open_abba(self):
+        self.random_abba = ['https://music.youtube.com/watch?v=pa2j0Bh83ms',
+                            'https://music.youtube.com/watch?v=YkLLcIKhJ64',
+                            'https://music.youtube.com/watch?v=KMViJKmAV4M',
+                            'https://music.youtube.com/watch?v=9y-8ZiAJiQo',
+                            'https://music.youtube.com/watch?v=CxMcD8QHVag',
+                            'https://music.youtube.com/watch?v=5mHzaIehRTE',
+                            'https://music.youtube.com/watch?v=0X2mn7Sk9lQ',
+                            'https://music.youtube.com/watch?v=1LPNuFkteI8',
+                            'https://music.youtube.com/watch?v=DkkQ8dCPiwA',
+                            'https://music.youtube.com/watch?v=b-U3-Sla8GM'
+                        ]
+        webbrowser.open(choice(self.random_abba), new = 2)
 
     
 langas = tk.Tk()
