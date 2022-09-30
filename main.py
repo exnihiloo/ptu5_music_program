@@ -132,15 +132,20 @@ class VidinisRock:
 class VidinisReggae:
     def __init__(self, master):
         self.master = master
-        self.bobm = tk.Button(self.master, text = "Bob Marley", width = 15, command = self.open_bobm)
+        self.bobm = tk.Button(self.master, text = "Bob Marley & The Wailers", width = 15, command = self.open_bobm)
         self.bobm.pack()
 
     def open_bobm(self):
-        self.random_bobm = ['https://www.youtube.com/watch?v=5M0NqIRglGA',
-                            'https://www.youtube.com/watch?v=69RdQFDuYPI',
-                            'https://www.youtube.com/watch?v=1Ogjp1hzmZU',
-                            'https://www.youtube.com/watch?v=hRd2dSdIvbU',
-                            'https://www.youtube.com/watch?v=jJzJewlOfVs'
+        self.random_bobm = ['https://music.youtube.com/watch?v=1A95dcLxAuA',
+                            'https://music.youtube.com/watch?v=MUNNRAdizz0',
+                            'https://music.youtube.com/watch?v=zBqW6yKz8WA',
+                            'https://music.youtube.com/watch?v=co2FK0WbXX0',
+                            'https://music.youtube.com/watch?v=TBq4_pk_W24',
+                            'https://music.youtube.com/watch?v=SfKJKn8srCY',
+                            'https://music.youtube.com/watch?v=dBWTZF38Hxc',
+                            'https://music.youtube.com/watch?v=nFQ--eDfwL0',
+                            'https://music.youtube.com/watch?v=tvBfolZUn9o',
+                            'https://music.youtube.com/watch?v=ACIYuW91Zms'
                         ]
         webbrowser.open(choice(self.random_bobm), new = 2)
 
