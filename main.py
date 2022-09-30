@@ -819,10 +819,12 @@ class VidinisJazz:
         self.amstrong = tk.Button(self.master, text = "Louis Amstrong", width = 15, command = self.open_amstrong, highlightbackground = "DarkGoldenrod1")
         self.fitzgerald = tk.Button(self.master, text = "Ella Fitzgerald", width = 15, command = self.open_fitzgerald, highlightbackground = "DarkGoldenrod1")
         self.countb = tk.Button(self.master, text = "Count Basie", width = 15, command = self.open_countb, highlightbackground = "DarkGoldenrod1")
+        self.ninasimone = tk.Button(self.master, text = "Nina Simone", width = 15, command = self.open_nina_simone, highlightbackground = "DarkGoldenrod1")
         self.candyd.pack()
         self.amstrong.pack()
         self.fitzgerald.pack()
         self.countb.pack()
+        self.ninasimone.pack()
 
     
     def open_candy_duler(self):
@@ -880,6 +882,20 @@ class VidinisJazz:
                             'https://music.youtube.com/watch?v=nqn4nyZz0to'
                         ]
         webbrowser.open(choice(self.random_countb), new = 2)
+
+    def open_nina_simone(self):
+        self.random_nina_simone = ['https://music.youtube.com/watch?v=BNMKGYiJpvg',
+                                    'https://music.youtube.com/watch?v=qgn-dnCkOTw',
+                                    'https://music.youtube.com/watch?v=3KyUicgOm74',
+                                    'https://music.youtube.com/watch?v=gwcz2BwEdqs',
+                                    'https://music.youtube.com/watch?v=n2rFOEGctUo',
+                                    'https://music.youtube.com/watch?v=AJjmX1zKzPs',
+                                    'https://music.youtube.com/watch?v=33dgafi_Gv8',
+                                    'https://music.youtube.com/watch?v=llNopGK8xL4',
+                                    'https://music.youtube.com/watch?v=08NnLiWOlQo',
+                                    'https://music.youtube.com/watch?v=KpDth46l_Vg'
+                                ]
+        webbrowser.open(choice(self.random_nina_simone), new = 2)
 
     
 langas = tk.Tk()
