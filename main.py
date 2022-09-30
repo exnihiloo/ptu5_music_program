@@ -914,7 +914,22 @@ class VidinisJazz:
 class VidinisBlues:
     def __init__(self, master):
         self.master = master
+        self.mightysam = tk.Button(self.master, text = "Mighty Sam McClain", width = 15, command = self.open_mightysam, highlightbackground = "burlywood4")
+        self.mightysam.pack()
 
+    def open_mightysam(self):
+        self.random_mightysam = ['https://music.youtube.com/watch?v=_w2LNOL4rmk',
+                                'https://music.youtube.com/watch?v=7fUawUJeSkg',
+                                'https://music.youtube.com/watch?v=2jXDxEBm1xA',
+                                'https://music.youtube.com/watch?v=qW8q0XxeNx4',
+                                'https://music.youtube.com/watch?v=tBS-bL6y1As',
+                                'https://music.youtube.com/watch?v=newUETHByOc',
+                                'https://music.youtube.com/watch?v=zQcravZx7EI',
+                                'https://music.youtube.com/watch?v=ATdKDp67Ylw',
+                                'https://music.youtube.com/watch?v=WsKvmLWMN_o',
+                                'https://music.youtube.com/watch?v=fD947SUdDN0'
+                            ]
+        webbrowser.open(choice(self.random_mightysam), new = 2)
     
 langas = tk.Tk()
 langas.title("Your daily dose of music")
