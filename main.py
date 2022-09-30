@@ -17,6 +17,7 @@ class PagrindinisLangas:
         self.pop_langas = tk.Button(self.master, text = "\U0001F46F Pop", width = 15, command = self.new_window7, highlightbackground='black')
         self.disco_langas = tk.Button(self.master, text = "\U0001F4BF Disco", width = 15, command = self.new_window8, highlightbackground='black')
         self.jazz_langas = tk.Button(self.master, text = "\U0001F3B7 Jazz", width = 15, command = self.new_window9, highlightbackground='black')
+        self.blues_langas = tk.Button(self.master, text = "\U0001FA95 Blues", width = 15, command = self.new_window10, highlightbackground='black')
         self.rock_langas.pack()
         self.reggae_langas.pack()
         self.hmetal_langas.pack()
@@ -26,6 +27,7 @@ class PagrindinisLangas:
         self.pop_langas.pack()
         self.disco_langas.pack()
         self.jazz_langas.pack()
+        self.blues_langas.pack()
 
     def new_window(self):
         self.vidinis = tk.Toplevel(self.master)
@@ -89,6 +91,13 @@ class PagrindinisLangas:
         self.vidinis9.configure(bg = "DarkGoldenrod1")
         self.vidinis9.geometry("300x200")
         self.app = VidinisJazz(self.vidinis9)
+
+    def new_window10(self):
+        self.vidinis10 = tk.Toplevel(self.master)
+        self.vidinis10.title("\U0001FA95 Blues")
+        self.vidinis10.configure(bg = "burlywood4")
+        self.vidinis10.geometry("300x200")
+        self.app = VidinisBlues(self.vidinis10)
 
 class VidinisRock:
     def __init__(self, master):
@@ -901,6 +910,10 @@ class VidinisJazz:
     
     def uzdaryti(self):
         self.master.destroy()
+
+class VidinisBlues:
+    def __init__(self, master):
+        self.master = master
 
     
 langas = tk.Tk()
