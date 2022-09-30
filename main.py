@@ -608,11 +608,13 @@ class VidinisPop:
         self.britneysp = tk.Button(self.master, text = "Britney Spears", width = 15, command = self.open_britney)
         self.chaguilera = tk.Button(self.master, text = "Christina Aguilera", width = 15, command = self.open_christina)
         self.justint = tk.Button(self.master, text = "Justin Timberlake", width = 15, command = self.open_justint)
+        self.uzdaryti_pop = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti)
         self.ladygaga.pack()
         self.beyonce.pack()
         self.britneysp.pack()
         self.chaguilera.pack()
         self.justint.pack()
+        self.uzdaryti_pop.pack()
 
     def open_ladygaga(self):
         self.random_ladygaga = ['https://music.youtube.com/watch?v=fiRjp6y6QvI',
@@ -684,6 +686,10 @@ class VidinisPop:
                             ]
         webbrowser.open(choice(self.random_justint), new = 2)
 
+    def uzdaryti(self):
+        self.master.destroy()
+
+    
 langas = tk.Tk()
 langas.title("Shuffle Music")
 programa = PagrindinisLangas(langas)
