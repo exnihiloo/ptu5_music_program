@@ -818,9 +818,11 @@ class VidinisJazz:
         self.candyd = tk.Button(self.master, text = "Candy Dulfer", width = 15, command = self.open_candy_duler, highlightbackground = "DarkGoldenrod1")
         self.amstrong = tk.Button(self.master, text = "Louis Amstrong", width = 15, command = self.open_amstrong, highlightbackground = "DarkGoldenrod1")
         self.fitzgerald = tk.Button(self.master, text = "Ella Fitzgerald", width = 15, command = self.open_fitzgerald, highlightbackground = "DarkGoldenrod1")
+        self.countb = tk.Button(self.master, text = "Count Basie", width = 15, command = self.open_countb, highlightbackground = "DarkGoldenrod1")
         self.candyd.pack()
         self.amstrong.pack()
         self.fitzgerald.pack()
+        self.countb.pack()
 
     
     def open_candy_duler(self):
@@ -864,6 +866,20 @@ class VidinisJazz:
                                 'https://music.youtube.com/watch?v=-c7yjsTHGF0'
                             ]
         webbrowser.open(choice(self.random_fitzgerald), new = 2)
+
+    def open_countb(self):
+        self.random_countb = ['https://music.youtube.com/watch?v=iHfwUwmX3V4',
+                            'https://music.youtube.com/watch?v=fm8uHT-BJP4',
+                            'https://music.youtube.com/watch?v=bTcmPGdDecw',
+                            'https://music.youtube.com/watch?v=hL0PVQi-syk',
+                            'https://music.youtube.com/watch?v=_Jl9IOqZb7U',
+                            'https://music.youtube.com/watch?v=MxYWsWpjCOY',
+                            'https://music.youtube.com/watch?v=03cLoi0bfo4',
+                            'https://music.youtube.com/watch?v=I2l4qBuFWgE',
+                            'https://music.youtube.com/watch?v=BSe0vKkRCrs',
+                            'https://music.youtube.com/watch?v=nqn4nyZz0to'
+                        ]
+        webbrowser.open(choice(self.random_countb), new = 2)
 
     
 langas = tk.Tk()
