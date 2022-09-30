@@ -604,7 +604,9 @@ class VidinisPop:
     def __init__(self, master):
         self.master = master
         self.ladygaga = tk.Button(self.master, text = "Lady Gaga", width = 15, command = self.open_ladygaga)
+        self.beyonce = tk.Button(self.master, text = "Beyoncé", width = 15, command = self.open_beyonce)
         self.ladygaga.pack()
+        self.beyonce.pack()
 
     def open_ladygaga(self):
         self.random_ladygaga = ['https://music.youtube.com/watch?v=fiRjp6y6QvI',
@@ -619,6 +621,20 @@ class VidinisPop:
                                 'https://music.youtube.com/watch?v=cSRxQoeKbVM'
                             ]
         webbrowser.open(choice(self.random_ladygaga), new = 2)
+
+    def open_beyonce(self):
+        self.random_beyonce = ['https://music.youtube.com/watch?v=y6dw-v4BH-Y',
+                                'https://music.youtube.com/watch?v=n0R5uUEjjCk',
+                                'https://music.youtube.com/watch?v=5BnF0_LksYI',
+                                'https://music.youtube.com/watch?v=VqQeT7wKqvs',
+                                'https://music.youtube.com/watch?v=4z-bOdAdias',
+                                'https://music.youtube.com/watch?v=hDb3jZfWpoA',
+                                'https://music.youtube.com/watch?v=XC7eRmnfZ_A',
+                                'https://music.youtube.com/watch?v=35zH9TppB4w',
+                                'https://music.youtube.com/watch?v=MKSR7T7TQRA',
+                                'https://music.youtube.com/watch?v=oKtAurJxlIg'
+                            ]
+        webbrowser.open(choice(self.random_beyonce), new = 2)
 
 langas = tk.Tk()
 langas.title("Shuffle Music")
