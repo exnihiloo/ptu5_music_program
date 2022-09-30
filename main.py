@@ -336,11 +336,13 @@ class VidinisBlackMetal:
         self.luctus = tk.Button(self.master, text = "Luctus", width = 15, command = self.open_luctus)
         self.watain = tk.Button(self.master, text = "Watain", width = 15, command = self.open_watain)
         self.behemoth = tk.Button(self.master, text = "Behemoth", width = 15, command = self.open_behemoth)
+        self.uzdaryti_bmetal = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti)
         self.mayhem.pack()
         self.marduk.pack()
         self.luctus.pack()
         self.watain.pack()
         self.behemoth.pack()
+        self.uzdaryti_bmetal.pack()
 
 
     def open_mayhem(self):
@@ -412,6 +414,9 @@ class VidinisBlackMetal:
                                 'https://music.youtube.com/watch?v=8BAD4t_O61k'
                             ]
         webbrowser.open(choice(self.random_behemoth), new = 2)
+
+    def uzdaryti(self):
+        self.master.destroy()
 
 
 
