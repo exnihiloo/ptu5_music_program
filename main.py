@@ -689,7 +689,10 @@ class VidinisHeavyMetal:
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
         self.atlikeju_boks.current(0)
         self.atlikeju_boks.pack()
-
+        self.atlikeju_boks.bind("<<ComboboxSelected>>", self.pasirinkti_daina)
+        self.dainu_boks = ttk.Combobox(self.master, value = [' '])
+        self.dainu_boks.current(0)
+        self.dainu_boks.grid(row = 25, column = 2)
 
         self.ironm.pack()
         self.blacksab.pack()
@@ -698,6 +701,9 @@ class VidinisHeavyMetal:
         self.saxon.pack()
         self.uzdaryti_metal.pack()
         
+
+    def pasirinkti_daina(self):
+        pass
 
     def open_ironm(self):
         self.random_ironm = ['https://music.youtube.com/watch?v=bePCRKGUwAY',
