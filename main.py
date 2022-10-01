@@ -490,6 +490,26 @@ class VidinisReggae:
             webbrowser.open(('https://music.youtube.com/watch?v=yzTz0sCtkCQ'), new = 2)
         if self.dainu_boks.get() == "Till Your Well Runs Dry":
             webbrowser.open(('https://music.youtube.com/watch?v=oY8CJiz9Ug4'), new = 2)
+        if self.dainu_boks.get() == "Mr. Government":
+            webbrowser.open(('https://music.youtube.com/watch?v=EL2LXSAQrqg'), new = 2)
+        if self.dainu_boks.get() == "Wa-Do-Dem":
+            webbrowser.open(('https://music.youtube.com/watch?v=pBFPgVID0Go'), new = 2)
+        if self.dainu_boks.get() == "Ganja Smuggling":
+            webbrowser.open(('https://music.youtube.com/watch?v=Svekpf56P0c'), new = 2)
+        if self.dainu_boks.get() == "Rude Boy Jamaican":
+            webbrowser.open(('https://music.youtube.com/watch?v=yUyTVI2r104'), new = 2)
+        if self.dainu_boks.get() == "Border Patrol":
+            webbrowser.open(('https://music.youtube.com/watch?v=4wf7NqrO-Fo'), new = 2)
+        if self.dainu_boks.get() == "No Wicked Can't Reign":
+            webbrowser.open(('https://music.youtube.com/watch?v=Qb4Pcod9bpk'), new = 2)
+        if self.dainu_boks.get() == "Controversial Song":
+            webbrowser.open(('https://music.youtube.com/watch?v=Yco8vyMjjfs'), new = 2)
+        if self.dainu_boks.get() == "Lonesome Journey":
+            webbrowser.open(('https://music.youtube.com/watch?v=63B6iskZmF8'), new = 2)
+        if self.dainu_boks.get() == "My Father's Land":
+            webbrowser.open(('https://music.youtube.com/watch?v=kr_cPdLVBQg'), new = 2)
+        if self.dainu_boks.get() == "Glamity":
+            webbrowser.open(('https://music.youtube.com/watch?v=yO7d0iELipc'), new = 2)
 
     def pasirinkta_daina(self, value):
         if self.atlikeju_boks.get() == "Bob Marley & The Wailers":
