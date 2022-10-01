@@ -1741,8 +1741,65 @@ class VidinisDisco:
         self.beegees = tk.Button(self.master, text = "Bee Gees", width = 15, command = self.open_beegees, highlightbackground='cyan')
         self.sandra = tk.Button(self.master, text = "Sandra", width = 15, command = self.open_sandra, highlightbackground='cyan')
         self.boneym = tk.Button(self.master, text = "Boney M.", width = 15, command = self.open_boneym, highlightbackground='cyan')
-        self.dsummer = tk.Button(self.master, text = "Donna Summer.", width = 15, command = self.open_dsummer, highlightbackground='cyan')
+        self.dsummer = tk.Button(self.master, text = "Donna Summer", width = 15, command = self.open_dsummer, highlightbackground='cyan')
         self.uzdaryti_disco = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti, highlightbackground='cyan')
+        self.atlikeju_sarasas = ["Abba", "Bee Gees", "Sandra", "Boney M.", "Donna Summer"]
+        self.abba_dainos = ["Gimme Gimme",
+                            "Dancing Queen",
+                            "Mama Mia",
+                            "Waterloo",
+                            "SOS",
+                            "Lay All Your Love On Me",
+                            "Voulez Vous",
+                            "Money Money",
+                            "Take a Chance On Me",
+                            "Fernando"
+                        ]
+        self.bee_gees_dainos = ["Stayin Alive",
+                                "How Deep is Your Love",
+                                "Words",
+                                " I started a Joke",
+                                "Too Much Heaven",
+                                "You Should Be Dancing",
+                                "Night Fever",
+                                "Secret Love",
+                                "My World",
+                                "Jive Talkin"
+                            ]
+        self.sandra_dainos = ["Maria Magdelena",
+                            "Heaven Can Wait",
+                            "Around My Heart",
+                            "Little Girl",
+                            "Such a Shame",
+                            "In the Heat of The Night",
+                            "We Will Be Together",
+                            "You and I",
+                            "You'll be Mine",
+                            "Hi Hi Hi"
+                        ]
+        self.boneym_dainos = ["Daddy Cool",
+                            "Rasputin",
+                            "Sunny",
+                            "Rivers of Babylon",
+                            "Ma Baker",
+                            "Brown Girl in the Ring",
+                            "Jimmy",
+                            "Heart of Gold",
+                            "Happy Song",
+                            "Hands Up"
+                        ]
+        self.donnas_dainos = ["Hot Stuff",
+                            "I Feel Love",
+                            "Last Dance",
+                            "She Works Hard for the Money",
+                            "Breakaway",
+                            "Dim All the Lights",
+                            "Tokyo",
+                            "Walk Away",
+                            "Rumour Has It",
+                            "Protection"
+                        ]
+
         self.abba.pack()
         self.beegees.pack()
         self.sandra.pack()
