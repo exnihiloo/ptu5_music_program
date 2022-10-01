@@ -1946,6 +1946,7 @@ class VidinisJazz:
         self.countb = tk.Button(self.master, text = "Count Basie", width = 15, command = self.open_countb, highlightbackground = "DarkGoldenrod1")
         self.ninasimone = tk.Button(self.master, text = "Nina Simone", width = 15, command = self.open_nina_simone, highlightbackground = "DarkGoldenrod1")
         self.uzdaryti_jazz = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti, highlightbackground = "DarkGoldenrod1")
+        self.atlikeju_sarasas = ["Candy Dulfer", "Louis Amstrong", "Ella Fitzgerald", "Count Basie", "Nina Simone"]
         self.candyd.pack()
         self.amstrong.pack()
         self.fitzgerald.pack()
