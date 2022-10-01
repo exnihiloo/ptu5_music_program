@@ -707,6 +707,28 @@ class VidinisHeavyMetal:
                                     "Blood Red Skies",
                                     "Metal Meltdown"
                                 ]
+        self.dio_dainos = ["Holy Diver",
+                        "Rainbow in the Dark",
+                        "The Last in Line",
+                        "Night People",
+                        "The Eyes",
+                        "Straight Through the Heart",
+                        "Stand Up and Shout",
+                        "Killing the Dragon",
+                        "Dream Evil",
+                        "Shivers"
+                    ]
+        self.saxon_dainos = ["The Crusader",
+                            "Broken Heroes",
+                            "Wheels of Steel",
+                            "Power & The Glory",
+                            "Just Let Me Rock",
+                            "Denim and Leather",
+                            "Midnight Rider",
+                            "Metalhead",
+                            "Set Me Free",
+                            "Midas Touch"
+                        ]
 
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
         self.atlikeju_boks.current(0)
