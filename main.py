@@ -2,6 +2,7 @@ from tkinter import *
 import tkinter as tk
 import webbrowser
 from random import choice
+from tkinter import ttk
 
 class PagrindinisLangas:
     def __init__(self, master):
@@ -108,6 +109,28 @@ class VidinisRock:
         self.ledzep = tk.Button(self.master, text = "Led Zeppelin", width = 15, command = self.open_ledzep, highlightbackground='red')
         self.deep_purple = tk.Button(self.master, text = "Deep Purple", width = 15, command = self.open_deep_purple, highlightbackground='red')
         self.uzdarytirock = tk.Button(self.master, text = "\u2573 Uždaryti", command = self.uzdaryti, highlightbackground='red') 
+       # kuriam atlikėjų ir jų dainų sąrašus
+        self.atlikeju_sarasas = ['Queen', "AC/DC", "The Doors", "Led Zeppelin", "Deep Purple"]
+        self.queen_dainos = ["Bohemian Rhapsody", 
+                            "The Show Must Go On", 
+                            "Dont Stop Me Now", 
+                            "I want It All",
+                            "Scandal", 
+                            "Somebody to Love", 
+                            "I Want to Break Free", 
+                            "Killer Queen",
+                            "Love of My Life",
+                            "We Will Rock You"
+                        ]
+
+
+        # kuriam atlikėjų dropdown box
+        self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
+        self.atlikeju_boks.current(0)
+        self.atlikeju_boks.pack()
+
+        
+       
         self.queen.pack()
         self.acdc.pack()
         self.doors.pack()
@@ -198,7 +221,8 @@ class VidinisReggae:
         self.mouse = tk.Button(self.master, text = "Eek-A-Mouse", width = 15, command = self.open_eekmouse, highlightbackground='green')
         self.damianm = tk.Button(self.master, text = "Damian Marley", width = 15, command = self.open_damian_marley, highlightbackground='green')
         self.albarosie = tk.Button(self.master, text = "Alborosie", width = 15, command = self.open_albarosie, highlightbackground='green')
-        self.uzdarytireggae = tk.Button(self.master, text = "\u2573 Uždaryti", command = self.uzdaryti, highlightbackground='green') 
+        self.uzdarytireggae = tk.Button(self.master, text = "\u2573 Uždaryti", command = self.uzdaryti, highlightbackground='green')
+
         self.bobm.pack()
         self.peter.pack()
         self.mouse.pack()
