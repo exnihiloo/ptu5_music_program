@@ -458,6 +458,26 @@ class VidinisReggae:
             webbrowser.open(('https://music.youtube.com/watch?v=tvBfolZUn9o'), new = 2)
         if self.dainu_boks.get() == "No Woman No Cry":
             webbrowser.open(('https://music.youtube.com/watch?v=ACIYuW91Zms'), new = 2)
+        if self.dainu_boks.get() == "Legalize It":
+            webbrowser.open(('https://music.youtube.com/watch?v=5TKIqU1AfNk'), new = 2)
+        if self.dainu_boks.get() == "I am That I Am":
+            webbrowser.open(('https://music.youtube.com/watch?v=CqgaPR8p6fA'), new = 2)
+        if self.dainu_boks.get() == "The Poor Man Feel It":
+            webbrowser.open(('https://music.youtube.com/watch?v=Xmqt6zRQKR4'), new = 2)
+        if self.dainu_boks.get() == "Not Gonna Give It Up":
+            webbrowser.open(('https://music.youtube.com/watch?v=NOgFvBZgogg'), new = 2)
+        if self.dainu_boks.get() == "Pick Myself Up":
+            webbrowser.open(('https://music.youtube.com/watch?v=4yOXLBIh8ok'), new = 2)
+        if self.dainu_boks.get() == "Glass House":
+            webbrowser.open(('https://music.youtube.com/watch?v=p2JDJ31aFMs'), new = 2)
+        if self.dainu_boks.get() == "Stepping Razor":
+            webbrowser.open(('https://music.youtube.com/watch?v=5WZY1cEecbI'), new = 2)
+        if self.dainu_boks.get() == "Wanted Dead or Alive":
+            webbrowser.open(('https://music.youtube.com/watch?v=h87cbH7Iogc'), new = 2)
+        if self.dainu_boks.get() == "Bush Doctor":
+            webbrowser.open(('https://music.youtube.com/watch?v=yzTz0sCtkCQ'), new = 2)
+        if self.dainu_boks.get() == "Till Your Well Runs Dry":
+            webbrowser.open(('https://music.youtube.com/watch?v=oY8CJiz9Ug4'), new = 2)
 
     def pasirinkta_daina(self, value):
         if self.atlikeju_boks.get() == "Bob Marley & The Wailers":
