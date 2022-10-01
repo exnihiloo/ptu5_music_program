@@ -1304,7 +1304,26 @@ class VidinisBlackMetal:
 
 
     def picker(self):
-        pass
+        if self.dainu_boks.get() == "Freezing Moon":
+            webbrowser.open(('https://music.youtube.com/watch?v=9emO9qo4FwE'), new = 2)
+        if self.dainu_boks.get() == "Deathcrush":
+            webbrowser.open(('https://music.youtube.com/watch?v=Dgzmgk9IhAA'), new = 2)
+        if self.dainu_boks.get() == "Pagan Fears":
+            webbrowser.open(('https://music.youtube.com/watch?v=f7cQNoMFv0g'), new = 2)
+        if self.dainu_boks.get() == "Funeral Fog":
+            webbrowser.open(('https://music.youtube.com/watch?v=q5TiZO6Na_M'), new = 2)
+        if self.dainu_boks.get() == "De Mysteriis Dom Sathanas":
+            webbrowser.open(('https://music.youtube.com/watch?v=zNs4zSKK9S4'), new = 2)
+        if self.dainu_boks.get() == "Necrolust":
+            webbrowser.open(('https://music.youtube.com/watch?v=z0agoBcAF1c'), new = 2)
+        if self.dainu_boks.get() == "A Grand Declaration of War":
+            webbrowser.open(('https://music.youtube.com/watch?v=fUPRdtw3myw'), new = 2)
+        if self.dainu_boks.get() == "Ancient Skin":
+            webbrowser.open(('https://music.youtube.com/watch?v=tSfBXpfwRJs'), new = 2)
+        if self.dainu_boks.get() == "Life Etarnal":
+            webbrowser.open(('https://music.youtube.com/watch?v=DJtPCuQyTSk'), new = 2)
+        if self.dainu_boks.get() == "Dark Night of the Soul":
+            webbrowser.open(('https://music.youtube.com/watch?v=_vEAZQZEIBk'), new = 2)
 
     def pasirinkti_daina(self, value):
         if self.atlikeju_boks.get() == "Mayhem":
