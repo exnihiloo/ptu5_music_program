@@ -427,7 +427,26 @@ class VidinisReggae:
 
 
     def picker(self):
-        pass
+        if self.dainu_boks.get() == "Redemption Song":
+            webbrowser.open(('https://music.youtube.com/watch?v=1A95dcLxAuA'), new = 2)
+        if self.dainu_boks.get() == "Three Little Birds":
+            webbrowser.open(('https://music.youtube.com/watch?v=MUNNRAdizz0'), new = 2)
+        if self.dainu_boks.get() == "Could You Be Loved":
+            webbrowser.open(('https://music.youtube.com/watch?v=zBqW6yKz8WA'), new = 2)
+        if self.dainu_boks.get() == "Is this Love":
+            webbrowser.open(('https://music.youtube.com/watch?v=co2FK0WbXX0'), new = 2)
+        if self.dainu_boks.get() == "Waiting in Vain":
+            webbrowser.open(('https://music.youtube.com/watch?v=TBq4_pk_W24'), new = 2)
+        if self.dainu_boks.get() == "Zion Train":
+            webbrowser.open(('https://music.youtube.com/watch?v=SfKJKn8srCY'), new = 2)
+        if self.dainu_boks.get() == "Buffalo Soldier":
+            webbrowser.open(('https://music.youtube.com/watch?v=dBWTZF38Hxc'), new = 2)
+        if self.dainu_boks.get() == "Stir It Up":
+            webbrowser.open(('https://music.youtube.com/watch?v=nFQ--eDfwL0'), new = 2)
+        if self.dainu_boks.get() == "Shot the Sheriff":
+            webbrowser.open(('https://music.youtube.com/watch?v=tvBfolZUn9o'), new = 2)
+        if self.dainu_boks.get() == "No Woman No Cry":
+            webbrowser.open(('https://music.youtube.com/watch?v=ACIYuW91Zms'), new = 2)
 
     def pasirinkta_daina(self, value):
         if self.atlikeju_boks.get() == "Bob Marley & The Wailers":
