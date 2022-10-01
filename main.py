@@ -706,7 +706,26 @@ class VidinisHeavyMetal:
         self.uzdaryti_metal.pack()
         
     def picker(self):
-        pass
+        if self.dainu_boks.get() == "Fear of the Dark":
+            webbrowser.open(('https://music.youtube.com/watch?v=bePCRKGUwAY'), new = 2)
+        if self.dainu_boks.get() == "Hallowed be thy name":
+            webbrowser.open(('https://music.youtube.com/watch?v=HAQQUDbuudY'), new = 2)
+        if self.dainu_boks.get() == "Trooper":
+            webbrowser.open(('https://music.youtube.com/watch?v=W4DfbinBgL4'), new = 2)
+        if self.dainu_boks.get() == "Run to the Hills":
+            webbrowser.open(('https://music.youtube.com/watch?v=Q_XJ-7jNqws'), new = 2)
+        if self.dainu_boks.get() == "Wasted Years":
+            webbrowser.open(('https://music.youtube.com/watch?v=ULsr-fFVjVs'), new = 2)
+        if self.dainu_boks.get() == "Powerslave":
+            webbrowser.open(('https://music.youtube.com/watch?v=Mw-o_cSdqmI'), new = 2)
+        if self.dainu_boks.get() == "2 Minutes till Midnight":
+            webbrowser.open(('https://music.youtube.com/watch?v=YCmUqAffWS8'), new = 2)
+        if self.dainu_boks.get() == "Aces High":
+            webbrowser.open(('https://music.youtube.com/watch?v=oNwOA84zAcE'), new = 2)
+        if self.dainu_boks.get() == "Brave New World":
+            webbrowser.open(('https://music.youtube.com/watch?v=X5P_muGUJR4'), new = 2)
+        if self.dainu_boks.get() == "Can I Play With Madness":
+            webbrowser.open(('https://music.youtube.com/watch?v=jThfgcOqwlY'), new = 2)
 
     def pasirinkti_daina(self, value):
         if self.atlikeju_boks.get() == "Iron Maiden":
