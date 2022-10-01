@@ -436,7 +436,7 @@ class VidinisReggae:
                             "Speak Life",
                             "Living It Up",
                             "Friends",
-                            "Move",
+                            "Move!",
                             "Set Up Shop"
                         ]
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
@@ -521,6 +521,26 @@ class VidinisReggae:
             webbrowser.open(('https://music.youtube.com/watch?v=kr_cPdLVBQg'), new = 2)
         if self.dainu_boks.get() == "Glamity":
             webbrowser.open(('https://music.youtube.com/watch?v=yO7d0iELipc'), new = 2)
+        if self.dainu_boks.get() == "Medication":
+            webbrowser.open(('https://music.youtube.com/watch?v=lF7jYuwqbik'), new = 2)
+        if self.dainu_boks.get() == "Welcome to Jamrock":
+            webbrowser.open(('https://music.youtube.com/watch?v=UmRmikGECjw'), new = 2)
+        if self.dainu_boks.get() == "Road to Zion":
+            webbrowser.open(('https://music.youtube.com/watch?v=uDsJB_zUquo'), new = 2)
+        if self.dainu_boks.get() == "Patience":
+            webbrowser.open(('https://music.youtube.com/watch?v=y4NlW43QNQQ'), new = 2)
+        if self.dainu_boks.get() == "There For You":
+            webbrowser.open(('https://music.youtube.com/watch?v=E8qgqTf9bZQ'), new = 2)
+        if self.dainu_boks.get() == "Speak Life":
+            webbrowser.open(('https://music.youtube.com/watch?v=sQRJnU1LR2A'), new = 2)
+        if self.dainu_boks.get() == "Living It Up":
+            webbrowser.open(('https://music.youtube.com/watch?v=sQpC15NICSg'), new = 2)
+        if self.dainu_boks.get() == "Friends":
+            webbrowser.open(('https://music.youtube.com/watch?v=e2d-LfagPRk'), new = 2)
+        if self.dainu_boks.get() == "Move!":
+            webbrowser.open(('https://music.youtube.com/watch?v=eiAIo0l1F9I'), new = 2)
+        if self.dainu_boks.get() == "Set Up Shop":
+            webbrowser.open(('https://music.youtube.com/watch?v=1ML2w6BZv8s'), new = 2)
 
     def pasirinkta_daina(self, value):
         if self.atlikeju_boks.get() == "Bob Marley & The Wailers":
