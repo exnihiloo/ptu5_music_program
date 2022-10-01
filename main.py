@@ -1344,6 +1344,27 @@ class VidinisBlackMetal:
             webbrowser.open(('https://music.youtube.com/watch?v=yvdhNrzWGtA'), new = 2)
         if self.dainu_boks.get() == "Steel Inferno":
             webbrowser.open(('https://music.youtube.com/watch?v=llp-X-axKQs'), new = 2)
+        if self.dainu_boks.get() == "Nežiūrėk nežibėk":
+            webbrowser.open(('https://music.youtube.com/watch?v=0-kJpZZQeSY'), new = 2)
+        if self.dainu_boks.get() == "Tikrovės Iliuzija":
+            webbrowser.open(('https://music.youtube.com/watch?v=s-qRfeOVrSk'), new = 2)
+        if self.dainu_boks.get() == "Akimirka Prieš Mirtį":
+            webbrowser.open(('https://music.youtube.com/watch?v=-ZdnW7fw_f4'), new = 2)
+        if self.dainu_boks.get() == "Bedvasiai":
+            webbrowser.open(('https://music.youtube.com/watch?v=HbVy07QInQU'), new = 2)
+        if self.dainu_boks.get() == "Kvantinis Šuolis":
+            webbrowser.open(('https://music.youtube.com/watch?v=4mGfO6Q6DBE'), new = 2)
+        if self.dainu_boks.get() == "Stotis":
+            webbrowser.open(('https://music.youtube.com/watch?v=dRhx9VgpFWE'), new = 2)
+        if self.dainu_boks.get() == "Mirusių Žvaigždžių Šviesoj":
+            webbrowser.open(('https://music.youtube.com/watch?v=T3oXuAxf2fw'), new = 2)
+        if self.dainu_boks.get() == "Eilinio Mirtis":
+            webbrowser.open(('https://music.youtube.com/watch?v=Hc1OZQmc_bc'), new = 2)
+        if self.dainu_boks.get() == "Už Lietuvą!":
+            webbrowser.open(('https://music.youtube.com/watch?v=Gjtx7kTILW8'), new = 2)
+        if self.dainu_boks.get() == "Kas Tu Esi?":
+            webbrowser.open(('https://music.youtube.com/watch?v=ADdJ4UHGdjo'), new = 2)
+        
 
     def pasirinkti_daina(self, value):
         if self.atlikeju_boks.get() == "Mayhem":
