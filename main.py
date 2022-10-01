@@ -122,6 +122,17 @@ class VidinisRock:
                             "Love of My Life",
                             "We Will Rock You"
                         ]
+        self.acdc_dainos = ["Back in Black", 
+                            "Highway to Hell", 
+                            "Hells Bells", 
+                            "T.N.T", 
+                            "Moneytalks", 
+                            "Thunderstruck",
+                            "Rock or Bust", 
+                            "Stiff Upper Lip", 
+                            "Are You Ready", 
+                            "The Jack"
+                        ]
 
 
         # kuriam atlikėjų dropdown box
