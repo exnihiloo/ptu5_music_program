@@ -448,7 +448,7 @@ class VidinisReggae:
                                 "Cry",
                                 "Hustlers Never Sleep",
                                 "Real Story",
-                                "Diversity "
+                                "Diversity"
                             ]
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
         self.atlikeju_boks.current(0)
@@ -552,6 +552,27 @@ class VidinisReggae:
             webbrowser.open(('https://music.youtube.com/watch?v=eiAIo0l1F9I'), new = 2)
         if self.dainu_boks.get() == "Set Up Shop":
             webbrowser.open(('https://music.youtube.com/watch?v=1ML2w6BZv8s'), new = 2)
+        if self.dainu_boks.get() == "Kingston Town":
+            webbrowser.open(('https://music.youtube.com/watch?v=AmbN5CSDn8U'), new = 2)
+        if self.dainu_boks.get() == "Herbalist":
+            webbrowser.open(('https://music.youtube.com/watch?v=buVpkh39Cv0'), new = 2)
+        if self.dainu_boks.get() == "No Cocaine":
+            webbrowser.open(('https://music.youtube.com/watch?v=rFwRfb_MReY'), new = 2)
+        if self.dainu_boks.get() == "Still Blazing":
+            webbrowser.open(('https://music.youtube.com/watch?v=2hNrpccMV08'), new = 2)
+        if self.dainu_boks.get() == "Rastafari Anthem":
+            webbrowser.open(('https://music.youtube.com/watch?v=5sa3XroriNY'), new = 2)
+        if self.dainu_boks.get() == "Who You Think You Are":
+            webbrowser.open(('https://music.youtube.com/watch?v=K6o1ihu1NKw'), new = 2)
+        if self.dainu_boks.get() == "Cry":
+            webbrowser.open(('https://music.youtube.com/watch?v=8tDLossnSkQ'), new = 2)
+        if self.dainu_boks.get() == "Hustlers Never Sleep":
+            webbrowser.open(('https://music.youtube.com/watch?v=lAzJN3i62aI'), new = 2)
+        if self.dainu_boks.get() == "Real Story":
+            webbrowser.open(('https://music.youtube.com/watch?v=oHthj_oULRc'), new = 2)
+        if self.dainu_boks.get() == "Diversity":
+            webbrowser.open(('https://music.youtube.com/watch?v=VlX0b_axejQ'), new = 2)
+        
 
     def pasirinkta_daina(self, value):
         if self.atlikeju_boks.get() == "Bob Marley & The Wailers":
