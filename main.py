@@ -393,7 +393,7 @@ class VidinisReggae:
         self.damianm = tk.Button(self.master, text = "Damian Marley", width = 15, command = self.open_damian_marley, highlightbackground='green')
         self.albarosie = tk.Button(self.master, text = "Alborosie", width = 15, command = self.open_albarosie, highlightbackground='green')
         self.uzdarytireggae = tk.Button(self.master, text = "\u2573 Uždaryti", command = self.uzdaryti, highlightbackground='green')
-        self.atlikteju_sarasas = ["Bob Marley & The Wailers", "Peter Tosh", "Eek-A-Mouse", "Damian Marley", "Alborosie"]
+        self.atlikeju_sarasas = ["Bob Marley & The Wailers", "Peter Tosh", "Eek-A-Mouse", "Damian Marley", "Alborosie"]
         self.bobm_dainos = ["Redemption Song",
                             "Three Little Birds",
                             "Could You Be Loved",
@@ -405,6 +405,15 @@ class VidinisReggae:
                             "Shot the Sheriff",
                             "No Woman No Cry"
                         ]
+        self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
+        self.atlikeju_boks.current(0)
+        self.atlikeju_boks.pack()
+        self.atlikeju_boks.bind("<<ComboboxSelected>>", self.pasirinkta_daina)
+
+        
+        self.dainu_boks = ttk.Combobox(self.master, value = [' '])
+        self.dainu_boks.current(0)
+        self.dainu_boks.grid(row = 25, column = 2)
 
         self.bobm.pack()
         self.peter.pack()
@@ -412,6 +421,10 @@ class VidinisReggae:
         self.damianm.pack()
         self.albarosie.pack()
         self.uzdarytireggae.pack()
+
+
+    def pasirinkta_daina(self):
+        pass
 
     def open_bobm(self):
         self.random_bobm = ['https://music.youtube.com/watch?v=1A95dcLxAuA',
