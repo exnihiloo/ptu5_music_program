@@ -175,6 +175,9 @@ class VidinisRock:
         if self.atlikeju_boks.get() == "AC/DC":
             self.dainu_boks.config(value = self.acdc_dainos)
             self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "The Doors":
+            self.dainu_boks.config(value = self.doors_dainos)
+            self.dainu_boks.current(0)
 
     def picker(self):
         if self.dainu_boks.get() == "Bohemian Rhapsody":
@@ -217,6 +220,26 @@ class VidinisRock:
             webbrowser.open(('https://music.youtube.com/watch?v=zEv7PkfGKRA'), new = 2)
         if self.dainu_boks.get() == "The Jack":
             webbrowser.open(('https://music.youtube.com/watch?v=kq_GSIw0X0w'), new = 2)
+        if self.dainu_boks.get() == "L.A. Woman":
+            webbrowser.open(('https://music.youtube.com/watch?v=vHXjcdNIN-Q'), new = 2)
+        if self.dainu_boks.get() == "Riders on the Storm":
+            webbrowser.open(('https://music.youtube.com/watch?v=lJZTgynPGT8'), new = 2)
+        if self.dainu_boks.get() == "People are Strange":
+            webbrowser.open(('https://music.youtube.com/watch?v=-NyC6mrutj0'), new = 2)
+        if self.dainu_boks.get() == "Roadhouse Blues":
+            webbrowser.open(('https://music.youtube.com/watch?v=rtU0ss9Zki4'), new = 2)
+        if self.dainu_boks.get() == "Crawling King Snake":
+            webbrowser.open(('https://music.youtube.com/watch?v=dV0buYqrRo4'), new = 2)
+        if self.dainu_boks.get() == "The End":
+            webbrowser.open(('https://music.youtube.com/watch?v=BXqPNlng6uI'), new = 2)
+        if self.dainu_boks.get() == "Waiting for the Sun":
+            webbrowser.open(('https://music.youtube.com/watch?v=VUI-ELCdjxo'), new = 2)
+        if self.dainu_boks.get() == "Light My Fire":
+            webbrowser.open(('https://music.youtube.com/watch?v=jKU74Uns9_0'), new = 2)
+        if self.dainu_boks.get() == "Alabama Song (Whiskey Bar)":
+            webbrowser.open(('https://music.youtube.com/watch?v=nbtEkZIvMAg'), new = 2)
+        if self.dainu_boks.get() == "Love Me Two Times":
+            webbrowser.open(('https://music.youtube.com/watch?v=AVez4RS7IJw'), new = 2)
 
     def open_qeen(self):
         self.random_queen = ['https://music.youtube.com/watch?v=yl3TsqL0ZPw',
