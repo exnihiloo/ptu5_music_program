@@ -696,6 +696,17 @@ class VidinisHeavyMetal:
                                 "God is Dead?",
                                 "The Wizard"
                             ]
+        self.judas_priest_dainos = ["Painkiller",
+                                    "Breaking the Law",
+                                    "Living After Midnight",
+                                    "Night Crawler",
+                                    "Turbo Lover",
+                                    "You've Got Another Thing Coming",
+                                    "Hell Bent for Leather",
+                                    "Steeler",
+                                    "Blood Red Skies",
+                                    "Metal Meltdown"
+                                ]
 
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
         self.atlikeju_boks.current(0)
