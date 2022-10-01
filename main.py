@@ -737,6 +737,26 @@ class VidinisHeavyMetal:
             webbrowser.open(('https://music.youtube.com/watch?v=X5P_muGUJR4'), new = 2)
         if self.dainu_boks.get() == "Can I Play With Madness":
             webbrowser.open(('https://music.youtube.com/watch?v=jThfgcOqwlY'), new = 2)
+        if self.dainu_boks.get() == "Paranoid":
+            webbrowser.open(('https://music.youtube.com/watch?v=m7nwbJLO9qo'), new = 2)
+        if self.dainu_boks.get() == "N.I.B.":
+            webbrowser.open(('https://music.youtube.com/watch?v=9kgQQuPZ8K0'), new = 2)
+        if self.dainu_boks.get() == "Into the Void":
+            webbrowser.open(('https://music.youtube.com/watch?v=-R5XnrZn47Q'), new = 2)
+        if self.dainu_boks.get() == "Sabbath Bloody Sabbath":
+            webbrowser.open(('https://music.youtube.com/watch?v=cYZE4vKDqzs'), new = 2)
+        if self.dainu_boks.get() == "Changes":
+            webbrowser.open(('https://music.youtube.com/watch?v=_eBCxYVma1g'), new = 2)
+        if self.dainu_boks.get() == "Iron Man":
+            webbrowser.open(('https://music.youtube.com/watch?v=b3-QqGVt-tM'), new = 2)
+        if self.dainu_boks.get() == "National Acrobat":
+            webbrowser.open(('https://music.youtube.com/watch?v=VcLRrG0W9hE'), new = 2)
+        if self.dainu_boks.get() == "War Pigs":
+            webbrowser.open(('https://music.youtube.com/watch?v=f-e8-DUqt0I'), new = 2)
+        if self.dainu_boks.get() == "God is Dead?":
+            webbrowser.open(('https://music.youtube.com/watch?v=kkcHZQ_hZWk'), new = 2)
+        if self.dainu_boks.get() == "The Wizard":
+            webbrowser.open(('https://music.youtube.com/watch?v=0BXG1zvBWKo'), new = 2)
 
     def pasirinkti_daina(self, value):
         if self.atlikeju_boks.get() == "Iron Maiden":
