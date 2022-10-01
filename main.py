@@ -1507,6 +1507,63 @@ class VidinisRap:
         self.nwa = tk.Button(self.master, text = "N.W.A.", width = 15, command = self.open_nwa, highlightbackground='IndianRed4')
         self.lamar = tk.Button(self.master, text = "Kendrick Lamar", width = 15, command = self.open_kendric, highlightbackground='IndianRed4')
         self.uzdaryti_rap = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti, highlightbackground='IndianRed4')
+        self.atlikeju_sarasas = ["Eminem", "Snoop Dog", "2Pac", "N.W.A.", "Kendrick Lamar"]
+        self.eminem_dainos = ["Stan",
+                            "Without Me",
+                            "Lose Yourself",
+                            "Not Afraid",
+                            "Mockingbird",
+                            "When I am Gone",
+                            "The Real Slim Shady",
+                            "Rap God",
+                            "Till' I Collapse",
+                            "Drips"
+                        ]
+        self.snoop_dog_dainos = ["Drop it Like it's Hot",
+                                "Sensual Seduction",
+                                "Nuthing but A-G Thing",
+                                "Who Am I?",
+                                "Gin & Juice",
+                                "Vato",
+                                "A Bitch I Knew",
+                                "Crazy",
+                                "Boom",
+                                "Smoke the Weed"
+                            ]
+        self.pac_daingos = ["California Love",
+                            "Hit'Em Up",
+                            "All Eyes On Me",
+                            "Hail Mary",
+                            "Ambitionz Az a Ridah",
+                            "Dear Mama",
+                            "Better Dayz",
+                            "Do For Love",
+                            "Hellrazor",
+                            "Ghetto Gospel"
+                        ]
+        self.nwa_dainos = ["Fuck The Police",
+                            "Straight Outta Compton",
+                            "Gangsta Gangsta",
+                            "Dope Man",
+                            "A Bitch Iz A Bitch",
+                            "Something 2 Dance 2",
+                            "Appetite for Destruction",
+                            "Real Niggaz",
+                            "8 Ball",
+                            "Express Yourself"
+                        ]
+        self.lamar_dainos = ["m.A.A.d City", 
+                            "Humble",
+                            "Bitch Don't KIll My Vibe",
+                            "Money Trees",
+                            "Swimming Pools",
+                            "Pride",
+                            "The Heart Part 5",
+                            "King Kunta",
+                            "DNA",
+                            "Poetic Justice"
+                        ]
+
         self.eminem.pack()
         self.snoop.pack()
         self.pac.pack()
