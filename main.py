@@ -685,6 +685,17 @@ class VidinisHeavyMetal:
                             "Brave New World",
                             "Can I Play With Madness"
                         ]
+        self.blacksab_dainos = ["Paranoid",
+                                "N.I.B.",
+                                "Into the Void",
+                                "Sabbath Bloody Sabbath",
+                                "Changes",
+                                "Iron Man",
+                                "National Acrobat",
+                                "War Pigs",
+                                "God is Dead?",
+                                "The Wizard"
+                            ]
 
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
         self.atlikeju_boks.current(0)
