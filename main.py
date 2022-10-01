@@ -34,7 +34,7 @@ class PagrindinisLangas:
         self.vidinis = tk.Toplevel(self.master)
         self.vidinis.title("\U0001F918 Rock")
         self.vidinis.configure(bg = "red")
-        self.vidinis.geometry("300x200")
+        self.vidinis.geometry("400x300")
         self.app = VidinisRock(self.vidinis)
 
     def new_window2(self):
@@ -128,8 +128,14 @@ class VidinisRock:
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
         self.atlikeju_boks.current(0)
         self.atlikeju_boks.pack()
+        # bindinam boksą
+        self.atlikeju_boks.bind("<<ComboboxSelected>>", self.pasirinkti_daina)
 
-        
+        # kuriam kitą boksą
+        self.dainu_boks = ttk.Combobox(self.master, value = [' '])
+        self.dainu_boks.current(0)
+        self.dainu_boks.grid(row = 25, column = 2)
+
        
         self.queen.pack()
         self.acdc.pack()
