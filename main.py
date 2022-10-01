@@ -405,6 +405,17 @@ class VidinisReggae:
                             "Shot the Sheriff",
                             "No Woman No Cry"
                         ]
+        self.peter_dainos = ["Legalize It",
+                            "I am That I Am",
+                            "The Poor Man Feel It",
+                            "Not Gonna Give It Up",
+                            "Pick Myself Up",
+                            "Glass House",
+                            "Stepping Razor",
+                            "Wanted Dead or Alive",
+                            "Bush Doctor",
+                            "Till Your Well Runs Dry"
+                        ]
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
         self.atlikeju_boks.current(0)
         self.atlikeju_boks.pack()
