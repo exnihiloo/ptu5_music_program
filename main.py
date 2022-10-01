@@ -1384,6 +1384,26 @@ class VidinisBlackMetal:
             webbrowser.open(('https://music.youtube.com/watch?v=MHk1jKZoYz4'), new = 2)
         if self.dainu_boks.get() == "Beyond":
             webbrowser.open(('https://music.youtube.com/watch?v=dbAVc1v2sMU'), new = 2)
+        if self.dainu_boks.get() == "Ov Fire and the Void":
+            webbrowser.open(('https://music.youtube.com/watch?v=uoCIX4H0FIE'), new = 2)
+        if self.dainu_boks.get() == "O Father O Stan O Sun":
+            webbrowser.open(('https://music.youtube.com/watch?v=NfFSl2DUojc'), new = 2)
+        if self.dainu_boks.get() == "Blow Your Trumpets Gabriel":
+            webbrowser.open(('https://music.youtube.com/watch?v=Txgv6IaD4kk'), new = 2)
+        if self.dainu_boks.get() == "Deathless Sun":
+            webbrowser.open(('https://music.youtube.com/watch?v=l4I3HditvPk'), new = 2)
+        if self.dainu_boks.get() == "At the Left Hand Ov God":
+            webbrowser.open(('https://music.youtube.com/watch?v=N70k7PikaWk'), new = 2)
+        if self.dainu_boks.get() == "The Satanist":
+            webbrowser.open(('https://music.youtube.com/watch?v=7CQTBItq110'), new = 2)
+        if self.dainu_boks.get() == "Demigod":
+            webbrowser.open(('https://music.youtube.com/watch?v=_znQvXC3uw4'), new = 2)
+        if self.dainu_boks.get() == "Ben Sahar":
+            webbrowser.open(('https://music.youtube.com/watch?v=6pulvL2rbmk'), new = 2)
+        if self.dainu_boks.get() == "Solve":
+            webbrowser.open(('https://music.youtube.com/watch?v=NERGLk8tyPs'), new = 2)
+        if self.dainu_boks.get() == "Decade of Therion":
+            webbrowser.open(('https://music.youtube.com/watch?v=8BAD4t_O61k'), new = 2)
         
 
     def pasirinkti_daina(self, value):
