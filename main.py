@@ -694,7 +694,7 @@ class VidinisHeavyMetal:
         self.dainu_boks.current(0)
         self.dainu_boks.pack()
 
-        self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='red', command = self.picker)
+        self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='grey', command = self.picker)
         self.pasirinkti_mygtukas.pack()
 
 
@@ -708,8 +708,10 @@ class VidinisHeavyMetal:
     def picker(self):
         pass
 
-    def pasirinkti_daina(self):
-        pass
+    def pasirinkti_daina(self, value):
+        if self.atlikeju_boks.get() == "Iron Maiden":
+            self.dainu_boks.config(value = self.ironm_dainos)
+            self.dainu_boks.current(0)
 
     def open_ironm(self):
         self.random_ironm = ['https://music.youtube.com/watch?v=bePCRKGUwAY',
