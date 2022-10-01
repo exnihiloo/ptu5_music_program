@@ -428,6 +428,17 @@ class VidinisReggae:
                                 "My Father's Land",
                                 "Glamity"
                             ]
+        self.damianm_dainos = ["Medication",
+                            "Welcome to Jamrock",
+                            "Road to Zion",
+                            "Patience",
+                            "There For You",
+                            "Speak Life",
+                            "Living It Up",
+                            "Friends",
+                            "Move",
+                            "Set Up Shop"
+                        ]
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
         self.atlikeju_boks.current(0)
         self.atlikeju_boks.pack()
