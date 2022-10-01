@@ -1045,6 +1045,26 @@ class VidinisPunk:
             webbrowser.open(('https://music.youtube.com/watch?v=whIMah7Yi_4'), new = 2)
         if self.dainu_boks.get() == "I am not Jesus":
             webbrowser.open(('https://music.youtube.com/watch?v=5AvUUPZnYNs'), new = 2)
+        if self.dainu_boks.get() == "God Save The Queen":
+            webbrowser.open(('https://music.youtube.com/watch?v=nE-AXzHFT1U'), new = 2)
+        if self.dainu_boks.get() == "Anarchy in the UK":
+            webbrowser.open(('https://music.youtube.com/watch?v=YJRnwaEUNkM'), new = 2)
+        if self.dainu_boks.get() == "Holidays in the Sun":
+            webbrowser.open(('https://music.youtube.com/watch?v=r7_KZE0y5e8'), new = 2)
+        if self.dainu_boks.get() == "Bodies":
+            webbrowser.open(('https://music.youtube.com/watch?v=3EqT5E609oU'), new = 2)
+        if self.dainu_boks.get() == "My Way":
+            webbrowser.open(('https://music.youtube.com/watch?v=qzlt-nO74qk'), new = 2)
+        if self.dainu_boks.get() == "EMI":
+            webbrowser.open(('https://music.youtube.com/watch?v=Jb1cOIk3sDw'), new = 2)
+        if self.dainu_boks.get() == "Lonely Boy":
+            webbrowser.open(('https://music.youtube.com/watch?v=QJxxiCJCbUM'), new = 2)
+        if self.dainu_boks.get() == "No Feelings":
+            webbrowser.open(('https://music.youtube.com/watch?v=GxAD3AyRSyc'), new = 2)
+        if self.dainu_boks.get() == "Something Else":
+            webbrowser.open(('https://music.youtube.com/watch?v=vjRA5Blr55Q'), new = 2)
+        if self.dainu_boks.get() == "Pretty Vacant":
+            webbrowser.open(('https://music.youtube.com/watch?v=RBFLY-SR_w4'), new = 2)
 
         
 
