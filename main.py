@@ -133,7 +133,17 @@ class VidinisRock:
                             "Are You Ready", 
                             "The Jack"
                         ]
-
+        self.doors_dainos = ["L.A. Woman",
+                            "Riders on the Storm",
+                            "People are Strange",
+                            "Roadhouse Blues",
+                            "Crawling King Snake",
+                            "The End",
+                            "Waiting for the Sun",
+                            "Light My Fire",
+                            "Alabama Song (Whiskey Bar)",
+                            "Love Me Two Times"
+                        ]
 
         # kuriam atlikėjų dropdown box
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
