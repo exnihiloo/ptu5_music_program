@@ -439,6 +439,17 @@ class VidinisReggae:
                             "Move!",
                             "Set Up Shop"
                         ]
+        self.dainos_alborosie = ["Kingston Town",
+                                "Herbalist",
+                                "No Cocaine",
+                                "Still Blazing",
+                                "Rastafari Anthem",
+                                "Who You Think You Are",
+                                "Cry",
+                                "Hustlers Never Sleep",
+                                "Real Story",
+                                "Diversity "
+                            ]
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
         self.atlikeju_boks.current(0)
         self.atlikeju_boks.pack()
