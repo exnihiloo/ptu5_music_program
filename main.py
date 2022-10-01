@@ -416,6 +416,18 @@ class VidinisReggae:
                             "Bush Doctor",
                             "Till Your Well Runs Dry"
                         ]
+
+        self.eekmouse_dainos = ["Mr. Government",
+                                "Wa-Do-Dem",
+                                "Ganja Smuggling",
+                                "Rude Boy Jamaican",
+                                "Border Patrol",
+                                "No Wicked Can't Reign",
+                                "Controversial Song",
+                                "Lonesome Journey",
+                                "My Father's Land",
+                                "Glamity"
+                            ]
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
         self.atlikeju_boks.current(0)
         self.atlikeju_boks.pack()
