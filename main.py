@@ -685,6 +685,12 @@ class VidinisHeavyMetal:
                             "Brave New World",
                             "Can I Play With Madness"
                         ]
+
+        self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
+        self.atlikeju_boks.current(0)
+        self.atlikeju_boks.pack()
+
+
         self.ironm.pack()
         self.blacksab.pack()
         self.judasp.pack()
