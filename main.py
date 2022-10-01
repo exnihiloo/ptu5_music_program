@@ -993,7 +993,7 @@ class VidinisPunk:
                                 "Helena",
                                 "Static Age",
                                 "Hollywood Babylon",
-                                " Shining",
+                                "Shining",
                                 "Donna"
                             ]
         self.clash_dainos = ["London Calling",
@@ -1065,7 +1065,6 @@ class VidinisPunk:
             webbrowser.open(('https://music.youtube.com/watch?v=vjRA5Blr55Q'), new = 2)
         if self.dainu_boks.get() == "Pretty Vacant":
             webbrowser.open(('https://music.youtube.com/watch?v=RBFLY-SR_w4'), new = 2)
-
         if self.dainu_boks.get() == "The Kids Aren't Alright":
             webbrowser.open(('https://music.youtube.com/watch?v=-uQi0vJK9lk'), new = 2)
         if self.dainu_boks.get() == "Self Esteem":
@@ -1086,6 +1085,27 @@ class VidinisPunk:
             webbrowser.open(('https://music.youtube.com/watch?v=R1xM-r4TF6Q'), new = 2)
         if self.dainu_boks.get() == "The Meaning of Life":
             webbrowser.open(('https://music.youtube.com/watch?v=3Os_bMAcZ6w'), new = 2)
+        
+        if self.dainu_boks.get() == "Dig Her Bones Up":
+            webbrowser.open(('https://music.youtube.com/watch?v=RgwZ76_-0sw'), new = 2)
+        if self.dainu_boks.get() == "Last Caress":
+            webbrowser.open(('https://music.youtube.com/watch?v=UuzA4U1njO8'), new = 2)
+        if self.dainu_boks.get() == "Saturday Night":
+            webbrowser.open(('https://music.youtube.com/watch?v=JlWPpQmjnVQ'), new = 2)
+        if self.dainu_boks.get() == "Scream":
+            webbrowser.open(('https://music.youtube.com/watch?v=GHKWwQMsDpY'), new = 2)
+        if self.dainu_boks.get() == "Die, Die My Darling":
+            webbrowser.open(('https://music.youtube.com/watch?v=AMYt_GntfnE'), new = 2)
+        if self.dainu_boks.get() == "Helena":
+            webbrowser.open(('https://music.youtube.com/watch?v=g2qCdXE21og'), new = 2)
+        if self.dainu_boks.get() == "Static Age":
+            webbrowser.open(('https://music.youtube.com/watch?v=Ckw8jB2VFUM'), new = 2)
+        if self.dainu_boks.get() == "Hollywood Babylon":
+            webbrowser.open(('https://music.youtube.com/watch?v=GSpZUCUXzQE'), new = 2)
+        if self.dainu_boks.get() == "Shining":
+            webbrowser.open(('https://music.youtube.com/watch?v=npIouDk6J2g'), new = 2)
+        if self.dainu_boks.get() == "Donna":
+            webbrowser.open(('https://music.youtube.com/watch?v=ynmK-j2Db6k'), new = 2)
 
         
 
