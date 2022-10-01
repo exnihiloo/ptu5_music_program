@@ -1025,7 +1025,28 @@ class VidinisPunk:
         self.uzdaryti_punk.pack()
 
     def picker(self):
-        pass
+        if self.dainu_boks.get() == "Blitzkrieg Bop":
+            webbrowser.open(('https://music.youtube.com/watch?v=skdE0KAFCEA'), new = 2)
+        if self.dainu_boks.get() == "Pet Sematary":
+            webbrowser.open(('https://music.youtube.com/watch?v=QP4uTN6CXo8'), new = 2)
+        if self.dainu_boks.get() == "Baby I love You":
+            webbrowser.open(('https://music.youtube.com/watch?v=qO3F5Kayz8I'), new = 2)
+        if self.dainu_boks.get() == "I Wanna Be Sedated":
+            webbrowser.open(('https://music.youtube.com/watch?v=8O9P5Us_eVo'), new = 2)
+        if self.dainu_boks.get() == "I Don't Wanna Grow Up":
+            webbrowser.open(('https://music.youtube.com/watch?v=VXTLKfUR72o'), new = 2)
+        if self.dainu_boks.get() == "Sheena is a Punk Rocker":
+            webbrowser.open(('https://music.youtube.com/watch?v=5CM5YgUBxLw'), new = 2)
+        if self.dainu_boks.get() == "The KKK Took my Baby Away":
+            webbrowser.open(('https://music.youtube.com/watch?v=pOpdKnoG8hE'), new = 2)
+        if self.dainu_boks.get() == "Surfin' Bird":
+            webbrowser.open(('https://music.youtube.com/watch?v=Y2ef-HLjElw'), new = 2)
+        if self.dainu_boks.get() == "Pinhead":
+            webbrowser.open(('https://music.youtube.com/watch?v=whIMah7Yi_4'), new = 2)
+        if self.dainu_boks.get() == "I am not Jesus":
+            webbrowser.open(('https://music.youtube.com/watch?v=5AvUUPZnYNs'), new = 2)
+
+        
 
     def pasirinkti_daina(self, value):
         if self.atlikeju_boks.get() == "Ramones":
