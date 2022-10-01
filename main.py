@@ -810,6 +810,26 @@ class VidinisHeavyMetal:
             webbrowser.open(('https://music.youtube.com/watch?v=aORXZiGeIdA'), new = 2)
         if self.dainu_boks.get() == "Metal Meltdown":
             webbrowser.open(('https://music.youtube.com/watch?v=qJS80JB-sn8'), new = 2)
+        if self.dainu_boks.get() == "Holy Diver":
+            webbrowser.open(('https://music.youtube.com/watch?v=uDtgnYZsw7A'), new = 2)
+        if self.dainu_boks.get() == "Rainbow in the Dark":
+            webbrowser.open(('https://music.youtube.com/watch?v=7XyHOdMvHg0'), new = 2)
+        if self.dainu_boks.get() == "The Last in Line":
+            webbrowser.open(('https://music.youtube.com/watch?v=OjvZvRVk8Z0'), new = 2)
+        if self.dainu_boks.get() == "Night People":
+            webbrowser.open(('https://music.youtube.com/watch?v=Im-O4wXD0pg'), new = 2)
+        if self.dainu_boks.get() == "The Eyes":
+            webbrowser.open(('https://music.youtube.com/watch?v=jRCS-wT5wE4'), new = 2)
+        if self.dainu_boks.get() == "Straight Through the Heart":
+            webbrowser.open(('https://music.youtube.com/watch?v=0wfgdSZ4TIk'), new = 2)
+        if self.dainu_boks.get() == "Stand Up and Shout":
+            webbrowser.open(('https://music.youtube.com/watch?v=XhlkabrJIy8'), new = 2)
+        if self.dainu_boks.get() == "Killing the Dragon":
+            webbrowser.open(('https://music.youtube.com/watch?v=12UCCXufGjk'), new = 2)
+        if self.dainu_boks.get() == "Dream Evil":
+            webbrowser.open(('https://music.youtube.com/watch?v=WUqDezHZ7B0'), new = 2)
+        if self.dainu_boks.get() == "Shivers":
+            webbrowser.open(('https://music.youtube.com/watch?v=FYJJwW1RETI'), new = 2)
     
 
     def pasirinkti_daina(self, value):
