@@ -48,7 +48,7 @@ class PagrindinisLangas:
         self.vidinis3 = tk.Toplevel(self.master)
         self.vidinis3.title("\U0001F3B8 Heavy Metal")
         self.vidinis3.configure(bg = "grey")
-        self.vidinis3.geometry("300x200")
+        self.vidinis3.geometry("430x400")
         self.app = VidinisHeavyMetal(self.vidinis3)
     
     def new_window4(self):
@@ -673,6 +673,7 @@ class VidinisHeavyMetal:
         self.dio = tk.Button(self.master, text = "Dio", width = 15, command = self.open_dio, highlightbackground='grey')
         self.saxon = tk.Button(self.master, text = "Saxon", width = 15, command = self.open_saxon, highlightbackground='grey')
         self.uzdaryti_metal = tk.Button(self.master, text = "\u2573 Uždaryti", command = self.uzdaryti, highlightbackground='grey')
+        self.atlikeju_sarasas = ["Iron Maiden", "Black Sabbath", "Judas Priest", "Dio", "Saxon"]
         self.ironm.pack()
         self.blacksab.pack()
         self.judasp.pack()
