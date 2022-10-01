@@ -1364,6 +1364,26 @@ class VidinisBlackMetal:
             webbrowser.open(('https://music.youtube.com/watch?v=Gjtx7kTILW8'), new = 2)
         if self.dainu_boks.get() == "Kas Tu Esi?":
             webbrowser.open(('https://music.youtube.com/watch?v=ADdJ4UHGdjo'), new = 2)
+        if self.dainu_boks.get() == "Malfeitor":
+            webbrowser.open(('https://music.youtube.com/watch?v=QZJolwCj1Tc'), new = 2)
+        if self.dainu_boks.get() == "They Rode On":
+            webbrowser.open(('https://music.youtube.com/watch?v=y1shqeyKVPI'), new = 2)
+        if self.dainu_boks.get() == "Legions of the Black Light":
+            webbrowser.open(('https://music.youtube.com/watch?v=gMjzuY_OpvE'), new = 2)
+        if self.dainu_boks.get() == "The Wild Hunt":
+            webbrowser.open(('https://music.youtube.com/watch?v=utukmmZpGHM'), new = 2)
+        if self.dainu_boks.get() == "Serimosa":
+            webbrowser.open(('https://music.youtube.com/watch?v=NQlG091nQLA'), new = 2)
+        if self.dainu_boks.get() == "Nuclear Alchemy":
+            webbrowser.open(('https://music.youtube.com/watch?v=9dRdUsZ7JBA'), new = 2)
+        if self.dainu_boks.get() == "Devil's Blood":
+            webbrowser.open(('https://music.youtube.com/watch?v=LBsPaP3VwW0'), new = 2)
+        if self.dainu_boks.get() == "Satan's Hunger":
+            webbrowser.open(('https://music.youtube.com/watch?v=Z_itZMagBsg'), new = 2)
+        if self.dainu_boks.get() == "Wolves Curse":
+            webbrowser.open(('https://music.youtube.com/watch?v=MHk1jKZoYz4'), new = 2)
+        if self.dainu_boks.get() == "Beyond":
+            webbrowser.open(('https://music.youtube.com/watch?v=dbAVc1v2sMU'), new = 2)
         
 
     def pasirinkti_daina(self, value):
