@@ -1007,7 +1007,16 @@ class VidinisPunk:
                             "This is Radio Clash",
                             "This is England"
                         ]
+        self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
+        self.atlikeju_boks.current(0)
+        self.atlikeju_boks.pack()
+        self.atlikeju_boks.bind("<<ComboboxSelected>>", self.pasirinkti_daina)
+        self.dainu_boks = ttk.Combobox(self.master, value = [' '])
+        self.dainu_boks.current(0)
+        self.dainu_boks.pack()
 
+        self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='grey', command = self.picker)
+        self.pasirinkti_mygtukas.pack()
         self.ramones.pack()
         self.sexpistols.pack()
         self.offspring.pack()
@@ -1015,6 +1024,11 @@ class VidinisPunk:
         self.clash.pack()
         self.uzdaryti_punk.pack()
 
+    def picker(self):
+        pass
+
+    def pasirinkti_daina(self):
+        pass
     
     def open_ramones(self):
         self.random_ramones = ['https://music.youtube.com/watch?v=skdE0KAFCEA',
