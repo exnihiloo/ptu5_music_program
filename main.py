@@ -155,6 +155,17 @@ class VidinisRock:
                             "The Rain Song",
                             "Communication Breakdown"
                         ]
+        self.deep_purple_dainos = ["Smoke on the Water",
+                                "Perfect Strangers",
+                                "Child in Time",
+                                "Highway Star",
+                                "Black Night",
+                                "Call of the Wild",
+                                "Space Truckin'",
+                                "Speed King",
+                                "Burn",
+                                "Hush"
+                            ]
 
         # kuriam atlikėjų dropdown box
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
