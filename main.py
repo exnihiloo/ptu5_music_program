@@ -1654,6 +1654,63 @@ class VidinisPop:
         self.chaguilera = tk.Button(self.master, text = "Christina Aguilera", width = 15, command = self.open_christina, highlightbackground='hot pink')
         self.justint = tk.Button(self.master, text = "Justin Timberlake", width = 15, command = self.open_justint, highlightbackground='hot pink')
         self.uzdaryti_pop = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti, highlightbackground='hot pink')
+        self.atlikeju_sarasas = ["Lady Gaga", "Beyoncé", "Britney Spears", "Christina Aguilera", "Justin Timberlake"]
+        self.lady_gaga_dainos = ["Bad Romance",
+                                "Alejandro",
+                                "Hold My Hand",
+                                "Poker Face",
+                                "Born This Way",
+                                "Judas",
+                                "Paparazzi",
+                                "John Wayne",
+                                "Alice",
+                                "Love Game"
+                            ]
+        self.beyonce_dainos = ["Break My Soul", 
+                                "Love on Top",
+                                "Crazy Love",
+                                "Halo",
+                                "Single Ladies",
+                                "I was Here",
+                                "Run the World",
+                                "All up in Your Mind",
+                                "My Myself and I",
+                                "Sorry"
+                            ]
+        self.britney_dainos = ["Toxic",
+                                "Baby One More Time",
+                                "Criminal",
+                                "Work Bitch",
+                                "Opps I did it Again",
+                                "Bombastic Love",
+                                "Gimme More",
+                                "Early Mornin",
+                                "Sometimes",
+                                "Piece of Me"
+                            ]
+        self.aguilera_dainos = ["Dirty",
+                                "Genie in a Bottle",
+                                "Hurt",
+                                "I turn to You",
+                                "Fighter",
+                                "Candyman",
+                                "Your Body",
+                                "Haunted Heart",
+                                "Ven Conmingo",
+                                "Welcome"
+                            ]
+        self.timberlake_dainos = ["Mirrors",
+                                "Cry Me a River",
+                                "Rock Your Body",
+                                "Summer Love",
+                                "Losing My Way",
+                                "Supplies",
+                                "Take it From Here",
+                                "Say Something",
+                                "Tunnel Vision",
+                                "Blue Ocean Floor"
+                            ]
+
         self.ladygaga.pack()
         self.beyonce.pack()
         self.britneysp.pack()
