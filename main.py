@@ -203,6 +203,9 @@ class VidinisRock:
         if self.atlikeju_boks.get() == "Led Zeppelin":
             self.dainu_boks.config(value = self.led_zep_dainos)
             self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Deep Purple":
+            self.dainu_boks.config(value = self.deep_purple_dainos)
+            self.dainu_boks.current(0)
 
     def picker(self):
         if self.dainu_boks.get() == "Bohemian Rhapsody":
@@ -285,6 +288,26 @@ class VidinisRock:
             webbrowser.open(('https://music.youtube.com/watch?v=TRt4hQs3nH0'), new = 2)
         if self.dainu_boks.get() == "Communication Breakdown":
             webbrowser.open(('https://music.youtube.com/watch?v=3EH7QMVnSRI'), new = 2)
+        if self.dainu_boks.get() == "Smoke on the Water":
+            webbrowser.open(('https://music.youtube.com/watch?v=1L3XxUxEb6U'), new = 2)
+        if self.dainu_boks.get() == "Perfect Strangers":
+            webbrowser.open(('https://music.youtube.com/watch?v=z6Y4_jigI-4'), new = 2)
+        if self.dainu_boks.get() == "Child in Time":
+            webbrowser.open(('https://music.youtube.com/watch?v=ybQnFhTr2I8'), new = 2)
+        if self.dainu_boks.get() == "Highway Star":
+            webbrowser.open(('https://music.youtube.com/watch?v=_hJEyDOn6Ho'), new = 2)
+        if self.dainu_boks.get() == "Black Night":
+            webbrowser.open(('https://music.youtube.com/watch?v=pLLuifWR4Mg'), new = 2)
+        if self.dainu_boks.get() == "Call of the Wild":
+            webbrowser.open(('https://music.youtube.com/watch?v=0pxllXxQ8kw'), new = 2)
+        if self.dainu_boks.get() == "Space Truckin'":
+            webbrowser.open(('https://music.youtube.com/watch?v=Xt9W_tf32dQ'), new = 2)
+        if self.dainu_boks.get() == "Speed King":
+            webbrowser.open(('https://music.youtube.com/watch?v=W_jfHvcAXRY'), new = 2)
+        if self.dainu_boks.get() == "Burn":
+            webbrowser.open(('https://music.youtube.com/watch?v=jgbf03MJyS4'), new = 2)
+        if self.dainu_boks.get() == "Hush":
+            webbrowser.open(('https://music.youtube.com/watch?v=Y4eH033TGOo'), new = 2)
 
     def open_qeen(self):
         self.random_queen = ['https://music.youtube.com/watch?v=yl3TsqL0ZPw',
