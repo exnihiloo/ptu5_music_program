@@ -1228,6 +1228,62 @@ class VidinisBlackMetal:
         self.watain = tk.Button(self.master, text = "Watain", width = 15, command = self.open_watain, highlightbackground='midnight blue')
         self.behemoth = tk.Button(self.master, text = "Behemoth", width = 15, command = self.open_behemoth, highlightbackground='midnight blue')
         self.uzdaryti_bmetal = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti, highlightbackground='midnight blue')
+        self.atlikeju_sarasas = ["Mayhem", "Marduk", "Luctus", "Watain", "Behemoth"]
+        self.mayhem_dainos = ["Freezing Moon",
+                            "Deathcrush",
+                            "Pagan Fears",
+                            "Funeral Fog",
+                            "De Mysteriis Dom Sathanas",
+                            "Necrolust",
+                            "A Grand Declaration of War",
+                            "Ancient Skin",
+                            "Life Etarnal",
+                            "Dark Night of the Soul"
+                        ]
+        self.marduk_dainos = ["Souls for Belial",
+                            "Panzer Division Marduk",
+                            "Frontschwein",
+                            "World of Blades",
+                            "Samhain",
+                            "Seven Angels, Seven Trumpets",
+                            "Azreal",
+                            "World Funeral",
+                            "Africa",
+                            "Steel Inferno"
+                        ]
+        self.luctus_dainos = ["Nežiūrėk nežibėk",
+                            "Tikrovės Iliuzija",
+                            "Akimirka Prieš Mirtį",
+                            "Bedvasiai",
+                            "Kvantinis Šuolis",
+                            "Stotis",
+                            "Mirusių Žvaigždžių Šviesoj",
+                            "Eilinio Mirtis",
+                            "Už Lietuvą!",
+                            "Kas Tu Esi?"
+                        ]
+        self.watain_dainos = ["Malfeitor",
+                            "They Rode On",
+                            "Legions of the Black Light",
+                            "The Wild Hunt",
+                            "Serimosa",
+                            "Nuclear Alchemy",
+                            "Devil's Blood",
+                            "Satan's Hunger",
+                            "Wolves Curse",
+                            "Beyond"
+                        ]
+        self.behemoth_dainos = ["Ov Fire and the Void",
+                                "O Father O Stan O Sun",
+                                "Blow Your Trumpets Gabriel",
+                                "Deathless Sun",
+                                "At the Left Hand Ov God",
+                                "The Satanist",
+                                "Demigod",
+                                "Ben Sahar",
+                                "Solve",
+                                "Decade of Therion"
+                            ]
         self.mayhem.pack()
         self.marduk.pack()
         self.luctus.pack()
