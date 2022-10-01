@@ -1306,8 +1306,22 @@ class VidinisBlackMetal:
     def picker(self):
         pass
 
-    def pasirinkti_daina(self):
-        pass
+    def pasirinkti_daina(self, value):
+        if self.atlikeju_boks.get() == "Mayhem":
+            self.dainu_boks.config(value = self.mayhem_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Marduk":
+            self.dainu_boks.config(value = self.marduk_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Luctus":
+            self.dainu_boks.config(value = self.luctus_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Watain":
+            self.dainu_boks.config(value = self.watain_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Behemoth":
+            self.dainu_boks.config(value = self.behemoth_dainos)
+            self.dainu_boks.current(0)
 
 
     def open_mayhem(self):
