@@ -830,7 +830,26 @@ class VidinisHeavyMetal:
             webbrowser.open(('https://music.youtube.com/watch?v=WUqDezHZ7B0'), new = 2)
         if self.dainu_boks.get() == "Shivers":
             webbrowser.open(('https://music.youtube.com/watch?v=FYJJwW1RETI'), new = 2)
-    
+        if self.dainu_boks.get() == "The Crusader":
+            webbrowser.open(('https://music.youtube.com/watch?v=4AdP6WtYZ9Y'), new = 2)
+        if self.dainu_boks.get() == "Broken Heroes":
+            webbrowser.open(('https://music.youtube.com/watch?v=p1-tYaTboig'), new = 2)
+        if self.dainu_boks.get() == "Wheels of Steel":
+            webbrowser.open(('https://music.youtube.com/watch?v=mKlF9o2R3cI'), new = 2)
+        if self.dainu_boks.get() == "Power & The Glory":
+            webbrowser.open(('https://music.youtube.com/watch?v=xWt88OQJRyQ'), new = 2)
+        if self.dainu_boks.get() == "Just Let Me Rock":
+            webbrowser.open(('https://music.youtube.com/watch?v=wrJsq_YKQvU'), new = 2)
+        if self.dainu_boks.get() == "Denim and Leather":
+            webbrowser.open(('https://music.youtube.com/watch?v=hFly5TwDKOg'), new = 2)
+        if self.dainu_boks.get() == "Midnight Rider":
+            webbrowser.open(('https://music.youtube.com/watch?v=ipdGIk4N6dA'), new = 2)
+        if self.dainu_boks.get() == "Metalhead":
+            webbrowser.open(('https://music.youtube.com/watch?v=3dvxZju0CPo'), new = 2)
+        if self.dainu_boks.get() == "Set Me Free":
+            webbrowser.open(('https://music.youtube.com/watch?v=5F-cPa_YBdE'), new = 2)
+        if self.dainu_boks.get() == "Midas Touch":
+            webbrowser.open(('https://music.youtube.com/watch?v=Byr9Td7P8eQ'), new = 2)
 
     def pasirinkti_daina(self, value):
         if self.atlikeju_boks.get() == "Iron Maiden":
