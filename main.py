@@ -1085,7 +1085,6 @@ class VidinisPunk:
             webbrowser.open(('https://music.youtube.com/watch?v=R1xM-r4TF6Q'), new = 2)
         if self.dainu_boks.get() == "The Meaning of Life":
             webbrowser.open(('https://music.youtube.com/watch?v=3Os_bMAcZ6w'), new = 2)
-        
         if self.dainu_boks.get() == "Dig Her Bones Up":
             webbrowser.open(('https://music.youtube.com/watch?v=RgwZ76_-0sw'), new = 2)
         if self.dainu_boks.get() == "Last Caress":
@@ -1106,7 +1105,26 @@ class VidinisPunk:
             webbrowser.open(('https://music.youtube.com/watch?v=npIouDk6J2g'), new = 2)
         if self.dainu_boks.get() == "Donna":
             webbrowser.open(('https://music.youtube.com/watch?v=ynmK-j2Db6k'), new = 2)
-
+        if self.dainu_boks.get() == "London Calling":
+            webbrowser.open(('https://music.youtube.com/watch?v=XN7iEFVLf5c'), new = 2)
+        if self.dainu_boks.get() == "Should I Stay or Should I Go":
+            webbrowser.open(('https://music.youtube.com/watch?v=wjZMcWaniA4'), new = 2)
+        if self.dainu_boks.get() == "I Fought the Law":
+            webbrowser.open(('https://music.youtube.com/watch?v=yhcreVY_qLI'), new = 2)
+        if self.dainu_boks.get() == "Rock the Casbah":
+            webbrowser.open(('https://music.youtube.com/watch?v=0pCFVX6lzHU'), new = 2)
+        if self.dainu_boks.get() == "Spanish Bombs":
+            webbrowser.open(('https://music.youtube.com/watch?v=KuKtSzqx9i8'), new = 2)
+        if self.dainu_boks.get() == "Clash City Rockers":
+            webbrowser.open(('https://music.youtube.com/watch?v=lvmoVYGUQKQ'), new = 2)
+        if self.dainu_boks.get() == "The Magnificent Seven":
+            webbrowser.open(('https://music.youtube.com/watch?v=-Aj92HNB8Tc'), new = 2)
+        if self.dainu_boks.get() == "Rudie Can't Fail":
+            webbrowser.open(('https://music.youtube.com/watch?v=_MgIEKfG0LE'), new = 2)
+        if self.dainu_boks.get() == "This is Radio Clash":
+            webbrowser.open(('https://music.youtube.com/watch?v=pc4rzuAhwsI'), new = 2)
+        if self.dainu_boks.get() == "This is England":
+            webbrowser.open(('https://music.youtube.com/watch?v=qkj0wUcbUeE'), new = 2)
         
 
     def pasirinkti_daina(self, value):
