@@ -2037,6 +2037,7 @@ class VidinisBlues:
         self.rodgers = tk.Button(self.master, text = "Mighty Mo Rodgers", width = 15, command = self.open_rodgers, highlightbackground = "burlywood4")
         self.smokehouse = tk.Button(self.master, text = "Smokehouse", width = 15, command = self.open_smokehouse, highlightbackground = "burlywood4")
         self.uzdaryti_blues = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti, highlightbackground = "burlywood4")
+        self.atlikeju_sarasas = ["Mighty Sam McClain", "Sam Myers", "Albert Cummings", "Mighty Mo Rodgers", "Smokehouse"]
         self.mightysam.pack()
         self.myers.pack()
         self.cummings.pack()
