@@ -34,7 +34,7 @@ class PagrindinisLangas:
         self.vidinis = tk.Toplevel(self.master)
         self.vidinis.title("\U0001F918 Rock")
         self.vidinis.configure(bg = "red")
-        self.vidinis.geometry("400x300")
+        self.vidinis.geometry("430x400")
         self.app = VidinisRock(self.vidinis)
 
     def new_window2(self):
@@ -134,7 +134,7 @@ class VidinisRock:
         # kuriam kitą boksą
         self.dainu_boks = ttk.Combobox(self.master, value = [' '])
         self.dainu_boks.current(0)
-        self.dainu_boks.grid(row = 25, column = 2)
+        self.dainu_boks.pack()
 
        
         self.queen.pack()
@@ -143,6 +143,11 @@ class VidinisRock:
         self.ledzep.pack()
         self.deep_purple.pack()
         self.uzdarytirock.pack()
+
+    def pasirinkti_daina(self, value):
+        if self.atlikeju_boks.get() == "Queen":
+            self.dainu_boks.config(value = self.queen_dainos)
+            self.dainu_boks.current(0)
 
     def open_qeen(self):
         self.random_queen = ['https://music.youtube.com/watch?v=yl3TsqL0ZPw',
