@@ -41,7 +41,7 @@ class PagrindinisLangas:
         self.vidinis2 = tk.Toplevel(self.master)
         self.vidinis2.title("\u262E Reggae")
         self.vidinis2.configure(bg = "green")
-        self.vidinis2.geometry("300x200")
+        self.vidinis2.geometry("430x400")
         self.app = VidinisReggae(self.vidinis2)
 
     def new_window3(self):
@@ -410,10 +410,13 @@ class VidinisReggae:
         self.atlikeju_boks.pack()
         self.atlikeju_boks.bind("<<ComboboxSelected>>", self.pasirinkta_daina)
 
-        
         self.dainu_boks = ttk.Combobox(self.master, value = [' '])
         self.dainu_boks.current(0)
         self.dainu_boks.grid(row = 25, column = 2)
+
+        self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='red', command = self.picker)
+        self.pasirinkti_mygtukas.pack()
+
 
         self.bobm.pack()
         self.peter.pack()
@@ -422,6 +425,9 @@ class VidinisReggae:
         self.albarosie.pack()
         self.uzdarytireggae.pack()
 
+
+    def picker(self):
+        pass
 
     def pasirinkta_daina(self):
         pass
