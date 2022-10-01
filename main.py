@@ -674,6 +674,17 @@ class VidinisHeavyMetal:
         self.saxon = tk.Button(self.master, text = "Saxon", width = 15, command = self.open_saxon, highlightbackground='grey')
         self.uzdaryti_metal = tk.Button(self.master, text = "\u2573 Uždaryti", command = self.uzdaryti, highlightbackground='grey')
         self.atlikeju_sarasas = ["Iron Maiden", "Black Sabbath", "Judas Priest", "Dio", "Saxon"]
+        self.ironm_dainos = ["Fear of the Dark",
+                            "Hallowed be thy name",
+                            "Trooper",
+                            "Run to the Hills",
+                            "Wasted Years",
+                            "Powerslave",
+                            "2 Minutes till Midnight",
+                            "Aces High",
+                            "Brave New World",
+                            "Can I Play With Madness"
+                        ]
         self.ironm.pack()
         self.blacksab.pack()
         self.judasp.pack()
