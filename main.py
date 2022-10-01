@@ -162,6 +162,9 @@ class VidinisRock:
         if self.atlikeju_boks.get() == "Queen":
             self.dainu_boks.config(value = self.queen_dainos)
             self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "AC/DC":
+            self.dainu_boks.config(value = self.acdc_dainos)
+            self.dainu_boks.current(0)
 
     def picker(self):
         if self.dainu_boks.get() == "Bohemian Rhapsody":
@@ -184,6 +187,26 @@ class VidinisRock:
             webbrowser.open(('https://music.youtube.com/watch?v=91BmiDSbUwU'), new = 2)
         if self.dainu_boks.get() == "We Will Rock You":
             webbrowser.open(('https://music.youtube.com/watch?v=-tJYN-eG1zk'), new = 2)
+        if self.dainu_boks.get() == "Back in Black":
+            webbrowser.open(('https://music.youtube.com/watch?v=9vWNauaZAgg'), new = 2)
+        if self.dainu_boks.get() == "Highway to Hell":
+            webbrowser.open(('https://music.youtube.com/watch?v=ikFFVfObwss'), new = 2)
+        if self.dainu_boks.get() == "Hells Bells":
+            webbrowser.open(('https://music.youtube.com/watch?v=GL56LY6fE0E'), new = 2)
+        if self.dainu_boks.get() == "T.N.T":
+            webbrowser.open(('https://music.youtube.com/watch?v=NhsK5WExrnE'), new = 2)
+        if self.dainu_boks.get() == "Moneytalks":
+            webbrowser.open(('https://music.youtube.com/watch?v=iaaRYZPu9dc'), new = 2)
+        if self.dainu_boks.get() == "Thunderstruck":
+            webbrowser.open(('https://music.youtube.com/watch?v=lhg9bYNLvOg'), new = 2)
+        if self.dainu_boks.get() == "Rock or Bust":
+            webbrowser.open(('https://music.youtube.com/watch?v=waF-lPzvFUc'), new = 2)
+        if self.dainu_boks.get() == "Stiff Upper Lip":
+            webbrowser.open(('https://music.youtube.com/watch?v=wAfPLyLzCkQ'), new = 2)
+        if self.dainu_boks.get() == "Are You Ready":
+            webbrowser.open(('https://music.youtube.com/watch?v=zEv7PkfGKRA'), new = 2)
+        if self.dainu_boks.get() == "The Jack":
+            webbrowser.open(('https://music.youtube.com/watch?v=kq_GSIw0X0w'), new = 2)
 
     def open_qeen(self):
         self.random_queen = ['https://music.youtube.com/watch?v=yl3TsqL0ZPw',
