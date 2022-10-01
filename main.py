@@ -1066,6 +1066,27 @@ class VidinisPunk:
         if self.dainu_boks.get() == "Pretty Vacant":
             webbrowser.open(('https://music.youtube.com/watch?v=RBFLY-SR_w4'), new = 2)
 
+        if self.dainu_boks.get() == "The Kids Aren't Alright":
+            webbrowser.open(('https://music.youtube.com/watch?v=-uQi0vJK9lk'), new = 2)
+        if self.dainu_boks.get() == "Self Esteem":
+            webbrowser.open(('https://music.youtube.com/watch?v=7ifeDVAE_Zg'), new = 2)
+        if self.dainu_boks.get() == "Why Don't You Get A Job":
+            webbrowser.open(('https://music.youtube.com/watch?v=mQYJYY4VkWA'), new = 2)
+        if self.dainu_boks.get() == "Want You Bad":
+            webbrowser.open(('https://music.youtube.com/watch?v=hnno3h-ZW_8'), new = 2)
+        if self.dainu_boks.get() == "Pretty Fly":
+            webbrowser.open(('https://music.youtube.com/watch?v=BepGmpLT9HA'), new = 2)
+        if self.dainu_boks.get() == "All I Want":
+            webbrowser.open(('https://music.youtube.com/watch?v=ldGdFnvSCSQ'), new = 2)
+        if self.dainu_boks.get() == "Come Out and Play":
+            webbrowser.open(('https://music.youtube.com/watch?v=V92CRYaOQCI'), new = 2)
+        if self.dainu_boks.get() == "Americana":
+            webbrowser.open(('https://music.youtube.com/watch?v=GtzKW_ONjJ0'), new = 2)
+        if self.dainu_boks.get() == "Staring At the Sun":
+            webbrowser.open(('https://music.youtube.com/watch?v=R1xM-r4TF6Q'), new = 2)
+        if self.dainu_boks.get() == "The Meaning of Life":
+            webbrowser.open(('https://music.youtube.com/watch?v=3Os_bMAcZ6w'), new = 2)
+
         
 
     def pasirinkti_daina(self, value):
