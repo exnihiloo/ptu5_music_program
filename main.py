@@ -62,42 +62,42 @@ class PagrindinisLangas:
         self.vidinis5 = tk.Toplevel(self.master)
         self.vidinis5.title("\U0001F480 Black Metal")
         self.vidinis5.configure(bg = "midnight blue")
-        self.vidinis5.geometry("300x200")
+        self.vidinis5.geometry("430x400")
         self.app = VidinisBlackMetal(self.vidinis5)
 
     def new_window6(self):
         self.vidinis6 = tk.Toplevel(self.master)
         self.vidinis6.title("\U0001F576 Rap")
         self.vidinis6.configure(bg = "IndianRed4")
-        self.vidinis6.geometry("300x200")
+        self.vidinis6.geometry("430x400")
         self.app = VidinisRap(self.vidinis6)
 
     def new_window7(self):
         self.vidinis7 = tk.Toplevel(self.master)
         self.vidinis7.title("\U0001F46F Pop")
         self.vidinis7.configure(bg = "hot pink")
-        self.vidinis7.geometry("300x200")
+        self.vidinis7.geometry("430x400")
         self.app = VidinisPop(self.vidinis7)
 
     def new_window8(self):
         self.vidinis8 = tk.Toplevel(self.master)
         self.vidinis8.title("\U0001F4BF Disco")
         self.vidinis8.configure(bg = "cyan")
-        self.vidinis8.geometry("300x200")
+        self.vidinis8.geometry("430x400")
         self.app = VidinisDisco(self.vidinis8)
 
     def new_window9(self):
         self.vidinis9 = tk.Toplevel(self.master)
         self.vidinis9.title("\U0001F3B7 Jazz")
         self.vidinis9.configure(bg = "DarkGoldenrod1")
-        self.vidinis9.geometry("300x200")
+        self.vidinis9.geometry("430x400")
         self.app = VidinisJazz(self.vidinis9)
 
     def new_window10(self):
         self.vidinis10 = tk.Toplevel(self.master)
         self.vidinis10.title("\U0001FA95 Blues")
         self.vidinis10.configure(bg = "burlywood4")
-        self.vidinis10.geometry("300x200")
+        self.vidinis10.geometry("430x400")
         self.app = VidinisBlues(self.vidinis10)
 
 class VidinisRock:
