@@ -776,6 +776,9 @@ class VidinisHeavyMetal:
         if self.atlikeju_boks.get() == "Black Sabbath":
             self.dainu_boks.config(value = self.blacksab_dainos)
             self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Judas Priest":
+            self.dainu_boks.config(value = self.judas_priest_dainos)
+            self.dainu_boks.current(0)
 
     def open_ironm(self):
         self.random_ironm = ['https://music.youtube.com/watch?v=bePCRKGUwAY',
