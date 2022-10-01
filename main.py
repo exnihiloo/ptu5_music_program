@@ -412,9 +412,9 @@ class VidinisReggae:
 
         self.dainu_boks = ttk.Combobox(self.master, value = [' '])
         self.dainu_boks.current(0)
-        self.dainu_boks.grid(row = 25, column = 2)
+        self.dainu_boks.pack()
 
-        self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='red', command = self.picker)
+        self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='green', command = self.picker)
         self.pasirinkti_mygtukas.pack()
 
 
@@ -429,8 +429,10 @@ class VidinisReggae:
     def picker(self):
         pass
 
-    def pasirinkta_daina(self):
-        pass
+    def pasirinkta_daina(self, value):
+        if self.atlikeju_boks.get() == "Bob Marley & The Wailers":
+            self.dainu_boks.config(value = self.bobm_dainos)
+            self.dainu_boks.current(0)
 
     def open_bobm(self):
         self.random_bobm = ['https://music.youtube.com/watch?v=1A95dcLxAuA',
