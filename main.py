@@ -144,6 +144,17 @@ class VidinisRock:
                             "Alabama Song (Whiskey Bar)",
                             "Love Me Two Times"
                         ]
+        self.led_zep_dainos = ["Stairway to Heaven",
+                            "Whole Lotta Love",
+                            "Kashmir",
+                            "Dazed and Confused",
+                            "Immigrant Song",
+                            "Black Dog",
+                            "Baby I'm Gonna Leave You",
+                            "Rock and Roll",
+                            "The Rain Song",
+                            "Communication Breakdown"
+                        ]
 
         # kuriam atlikėjų dropdown box
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
