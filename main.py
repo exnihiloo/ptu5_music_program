@@ -768,6 +768,27 @@ class VidinisHeavyMetal:
             webbrowser.open(('https://music.youtube.com/watch?v=kkcHZQ_hZWk'), new = 2)
         if self.dainu_boks.get() == "The Wizard":
             webbrowser.open(('https://music.youtube.com/watch?v=0BXG1zvBWKo'), new = 2)
+        if self.dainu_boks.get() == "Painkiller":
+            webbrowser.open(('https://music.youtube.com/watch?v=4s1gBIVOTtk'), new = 2)
+        if self.dainu_boks.get() == "Breaking the Law":
+            webbrowser.open(('https://music.youtube.com/watch?v=BXtPycm5dGc'), new = 2)
+        if self.dainu_boks.get() == "Living After Midnight":
+            webbrowser.open(('https://music.youtube.com/watch?v=PjTLOaD6fr4'), new = 2)
+        if self.dainu_boks.get() == "Night Crawler":
+            webbrowser.open(('https://music.youtube.com/watch?v=XUiTEob4Kzg'), new = 2)
+        if self.dainu_boks.get() == "Turbo Lover":
+            webbrowser.open(('https://music.youtube.com/watch?v=dp-KXWfisHA'), new = 2)
+        if self.dainu_boks.get() == "You've Got Another Thing Coming":
+            webbrowser.open(('https://music.youtube.com/watch?v=LNyIhirtXUI'), new = 2)
+        if self.dainu_boks.get() == "Hell Bent for Leather":
+            webbrowser.open(('https://music.youtube.com/watch?v=OwUpV1_tteY'), new = 2)
+        if self.dainu_boks.get() == "Steeler":
+            webbrowser.open(('https://music.youtube.com/watch?v=EnGWEvDXrAE'), new = 2)
+        if self.dainu_boks.get() == "Blood Red Skies":
+            webbrowser.open(('https://music.youtube.com/watch?v=aORXZiGeIdA'), new = 2)
+        if self.dainu_boks.get() == "Metal Meltdown":
+            webbrowser.open(('https://music.youtube.com/watch?v=qJS80JB-sn8'), new = 2)
+    
 
     def pasirinkti_daina(self, value):
         if self.atlikeju_boks.get() == "Iron Maiden":
