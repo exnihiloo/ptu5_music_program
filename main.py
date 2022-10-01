@@ -498,6 +498,9 @@ class VidinisReggae:
         if self.atlikeju_boks.get() == "Peter Tosh":
             self.dainu_boks.config(value = self.peter_dainos)
             self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Eek-A-Mouse":
+            self.dainu_boks.config(value = self.eekmouse_dainos)
+            self.dainu_boks.current(0)
 
     def open_bobm(self):
         self.random_bobm = ['https://music.youtube.com/watch?v=1A95dcLxAuA',
