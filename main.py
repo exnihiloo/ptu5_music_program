@@ -189,6 +189,9 @@ class VidinisRock:
         if self.atlikeju_boks.get() == "The Doors":
             self.dainu_boks.config(value = self.doors_dainos)
             self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Led Zeppelin":
+            self.dainu_boks.config(value = self.led_zep_dainos)
+            self.dainu_boks.current(0)
 
     def picker(self):
         if self.dainu_boks.get() == "Bohemian Rhapsody":
@@ -251,6 +254,26 @@ class VidinisRock:
             webbrowser.open(('https://music.youtube.com/watch?v=nbtEkZIvMAg'), new = 2)
         if self.dainu_boks.get() == "Love Me Two Times":
             webbrowser.open(('https://music.youtube.com/watch?v=AVez4RS7IJw'), new = 2)
+        if self.dainu_boks.get() == "Stairway to Heaven":
+            webbrowser.open(('https://music.youtube.com/watch?v=X791IzOwt3Q'), new = 2)
+        if self.dainu_boks.get() == "Whole Lotta Love":
+            webbrowser.open(('https://music.youtube.com/watch?v=0bcIjILqORM'), new = 2)
+        if self.dainu_boks.get() == "Kashmir":
+            webbrowser.open(('https://music.youtube.com/watch?v=tzVJPgCn-Z8'), new = 2)
+        if self.dainu_boks.get() == "Dazed and Confused":
+            webbrowser.open(('https://music.youtube.com/watch?v=yO2n7QoyieM'), new = 2)
+        if self.dainu_boks.get() == "Immigrant Song":
+            webbrowser.open(('https://music.youtube.com/watch?v=5eHkjPCGXKQ'), new = 2)
+        if self.dainu_boks.get() == "Black Dog":
+            webbrowser.open(('https://music.youtube.com/watch?v=yBuub4Xe1mw'), new = 2)
+        if self.dainu_boks.get() == "Baby I'm Gonna Leave You":
+            webbrowser.open(('https://music.youtube.com/watch?v=UyOg0mt2R2k'), new = 2)
+        if self.dainu_boks.get() == "Rock and Roll":
+            webbrowser.open(('https://music.youtube.com/watch?v=RCN6eRVav5k'), new = 2)
+        if self.dainu_boks.get() == "The Rain Song":
+            webbrowser.open(('https://music.youtube.com/watch?v=TRt4hQs3nH0'), new = 2)
+        if self.dainu_boks.get() == "Communication Breakdown":
+            webbrowser.open(('https://music.youtube.com/watch?v=3EH7QMVnSRI'), new = 2)
 
     def open_qeen(self):
         self.random_queen = ['https://music.youtube.com/watch?v=yl3TsqL0ZPw',
