@@ -1324,6 +1324,26 @@ class VidinisBlackMetal:
             webbrowser.open(('https://music.youtube.com/watch?v=DJtPCuQyTSk'), new = 2)
         if self.dainu_boks.get() == "Dark Night of the Soul":
             webbrowser.open(('https://music.youtube.com/watch?v=_vEAZQZEIBk'), new = 2)
+        if self.dainu_boks.get() == "Souls for Belial":
+            webbrowser.open(('https://music.youtube.com/watch?v=uWk7QDaNKQw'), new = 2)
+        if self.dainu_boks.get() == "Panzer Division Marduk":
+            webbrowser.open(('https://music.youtube.com/watch?v=sDNdtU_wc74'), new = 2)
+        if self.dainu_boks.get() == "Frontschwein":
+            webbrowser.open(('https://music.youtube.com/watch?v=0jZ7JsLuw6I'), new = 2)
+        if self.dainu_boks.get() == "World of Blades":
+            webbrowser.open(('https://music.youtube.com/watch?v=eUh4YwJhydk'), new = 2)
+        if self.dainu_boks.get() == "Samhain":
+            webbrowser.open(('https://music.youtube.com/watch?v=9j5UmXXZqwk'), new = 2)
+        if self.dainu_boks.get() == "Seven Angels, Seven Trumpets":
+            webbrowser.open(('https://music.youtube.com/watch?v=2AR-GcoJUdk'), new = 2)
+        if self.dainu_boks.get() == "Azreal":
+            webbrowser.open(('https://music.youtube.com/watch?v=0AyqNRDyxR4'), new = 2)
+        if self.dainu_boks.get() == "World Funeral":
+            webbrowser.open(('https://music.youtube.com/watch?v=FCoQyLWahI8'), new = 2)
+        if self.dainu_boks.get() == "Africa":
+            webbrowser.open(('https://music.youtube.com/watch?v=yvdhNrzWGtA'), new = 2)
+        if self.dainu_boks.get() == "Steel Inferno":
+            webbrowser.open(('https://music.youtube.com/watch?v=llp-X-axKQs'), new = 2)
 
     def pasirinkti_daina(self, value):
         if self.atlikeju_boks.get() == "Mayhem":
