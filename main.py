@@ -951,6 +951,63 @@ class VidinisPunk:
         self.misfits = tk.Button(self.master, text = "Misfits", width = 15, command = self.open_misfits, highlightbackground="MediumPurple4")
         self.clash = tk.Button(self.master, text = "The Clash", width = 15, command = self.open_clash, highlightbackground="MediumPurple4")
         self.uzdaryti_punk = tk.Button(self.master, text = "\u2573 Uždaryti", command = self.uzdaryti, highlightbackground="MediumPurple4")
+        self.atlikeju_sarasas = ["Ramones", "Sex Pistols", "The Offspring", "Misfits", "The Clash"]
+        self.ramondes_dainos = ["Blitzkrieg Bop",
+                                "Pet Sematary",
+                                "Baby I love You",
+                                "I Wanna Be Sedated",
+                                "I Don't Wanna Grow Up",
+                                "Sheena is a Punk Rocker",
+                                "The KKK Took my Baby Away",
+                                "Surfin' Bird",
+                                "Pinhead",
+                                "I am not Jesus"
+                            ]
+        self.sexpistols_dainos = ["God Save The Queen",
+                                "Anarchy in the UK",
+                                "Holidays in the Sun",
+                                "Bodies",
+                                "My Way",
+                                "EMI",
+                                "Lonely Boy",
+                                "No Feelings",
+                                "Something Else",
+                                "Pretty Vacant"
+                            ]
+        self.offspring_dainos = ["The Kids Aren't Alright",
+                                "Self Esteem",
+                                "Why Don't You Get A Job",
+                                "Want You Bad",
+                                "Pretty Fly",
+                                "All I Want",
+                                "Come Out and Play",
+                                "Americana",
+                                "Staring At the Sun",
+                                "The Meaning of Life"
+                            ]
+        self.misfits_dainos = ["Dig Her Bones Up",
+                                "Last Caress",
+                                "Saturday Night",
+                                "Scream",
+                                "Die, Die My Darling",
+                                "Helena",
+                                "Static Age",
+                                "Hollywood Babylon",
+                                " Shining",
+                                "Donna"
+                            ]
+        self.clash_dainos = ["London Calling",
+                            "Should I Stay or Should I Go",
+                            "I Fought the Law",
+                            "Rock the Casbah",
+                            "Spanish Bombs",
+                            "Clash City Rockers",
+                            "The Magnificent Seven",
+                            "Rudie Can't Fail",
+                            "This is Radio Clash",
+                            "This is England"
+                        ]
+
         self.ramones.pack()
         self.sexpistols.pack()
         self.offspring.pack()
