@@ -394,7 +394,17 @@ class VidinisReggae:
         self.albarosie = tk.Button(self.master, text = "Alborosie", width = 15, command = self.open_albarosie, highlightbackground='green')
         self.uzdarytireggae = tk.Button(self.master, text = "\u2573 Uždaryti", command = self.uzdaryti, highlightbackground='green')
         self.atlikteju_sarasas = ["Bob Marley & The Wailers", "Peter Tosh", "Eek-A-Mouse", "Damian Marley", "Alborosie"]
-    
+        self.bobm_dainos = ["Redemption Song",
+                            "Three Little Birds",
+                            "Could You Be Loved",
+                            "Is this Love",
+                            "Waiting in Vain",
+                            "Zion Train",
+                            "Buffalo Soldier",
+                            "Stir It Up",
+                            "Shot the Sheriff",
+                            "No Woman No Cry"
+                        ]
 
         self.bobm.pack()
         self.peter.pack()
