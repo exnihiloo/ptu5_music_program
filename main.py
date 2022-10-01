@@ -55,7 +55,7 @@ class PagrindinisLangas:
         self.vidinis4 = tk.Toplevel(self.master)
         self.vidinis4.title("\U0001F577 Punk")
         self.vidinis4.configure(bg = "MediumPurple4")
-        self.vidinis4.geometry("300x200")
+        self.vidinis4.geometry("430x400")
         self.app = VidinisPunk(self.vidinis4)
 
     def new_window5(self):
@@ -1015,7 +1015,7 @@ class VidinisPunk:
         self.dainu_boks.current(0)
         self.dainu_boks.pack()
 
-        self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='grey', command = self.picker)
+        self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='MediumPurple4', command = self.picker)
         self.pasirinkti_mygtukas.pack()
         self.ramones.pack()
         self.sexpistols.pack()
@@ -1027,8 +1027,22 @@ class VidinisPunk:
     def picker(self):
         pass
 
-    def pasirinkti_daina(self):
-        pass
+    def pasirinkti_daina(self, value):
+        if self.atlikeju_boks.get() == "Ramones":
+            self.dainu_boks.config(value = self.ramondes_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Sex Pistols":
+            self.dainu_boks.config(value = self.sexpistols_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "The Offspring":
+            self.dainu_boks.config(value = self.offspring_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Misfits":
+            self.dainu_boks.config(value = self.misfits_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "The Clash":
+            self.dainu_boks.config(value = self.clash_dainos)
+            self.dainu_boks.current(0)
     
     def open_ramones(self):
         self.random_ramones = ['https://music.youtube.com/watch?v=skdE0KAFCEA',
