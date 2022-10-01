@@ -692,7 +692,11 @@ class VidinisHeavyMetal:
         self.atlikeju_boks.bind("<<ComboboxSelected>>", self.pasirinkti_daina)
         self.dainu_boks = ttk.Combobox(self.master, value = [' '])
         self.dainu_boks.current(0)
-        self.dainu_boks.grid(row = 25, column = 2)
+        self.dainu_boks.pack()
+
+        self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='red', command = self.picker)
+        self.pasirinkti_mygtukas.pack()
+
 
         self.ironm.pack()
         self.blacksab.pack()
@@ -701,6 +705,8 @@ class VidinisHeavyMetal:
         self.saxon.pack()
         self.uzdaryti_metal.pack()
         
+    def picker(self):
+        pass
 
     def pasirinkti_daina(self):
         pass
