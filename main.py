@@ -1841,7 +1841,16 @@ class VidinisPop:
                                 "Tunnel Vision",
                                 "Blue Ocean Floor"
                             ]
+        self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
+        self.atlikeju_boks.current(0)
+        self.atlikeju_boks.pack()
+        self.atlikeju_boks.bind("<<ComboboxSelected>>", self.pasirinkti_daina)
+        self.dainu_boks = ttk.Combobox(self.master, value = [' '])
+        self.dainu_boks.current(0)
+        self.dainu_boks.pack()
 
+        self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='hot pink', command = self.picker)
+        self.pasirinkti_mygtukas.pack()
         self.ladygaga.pack()
         self.beyonce.pack()
         self.britneysp.pack()
@@ -1849,6 +1858,13 @@ class VidinisPop:
         self.justint.pack()
         self.uzdaryti_pop.pack()
 
+    def picker(self):
+        pass
+
+    def pasirinkti_daina(self):
+        pass
+
+    
     def open_ladygaga(self):
         self.random_ladygaga = ['https://music.youtube.com/watch?v=fiRjp6y6QvI',
                                 'https://music.youtube.com/watch?v=DVEoBIZm0V8',
