@@ -2690,7 +2690,27 @@ class VidinisBlues:
         self.uzdaryti_blues.pack()
 
     def picker(self):
-        pass
+        if self.dainu_boks.get() == "When The Hurt is Over":
+            webbrowser.open(('https://music.youtube.com/watch?v=_w2LNOL4rmk'), new = 2)
+        if self.dainu_boks.get() == "Don't Worry About Me":
+            webbrowser.open(('https://music.youtube.com/watch?v=7fUawUJeSkg'), new = 2)
+        if self.dainu_boks.get() == "I am so Lonely":
+            webbrowser.open(('https://music.youtube.com/watch?v=2jXDxEBm1xA'), new = 2)
+        if self.dainu_boks.get() == "I am Tired of These Blues":
+            webbrowser.open(('https://music.youtube.com/watch?v=qW8q0XxeNx4'), new = 2)
+        if self.dainu_boks.get() == "Where You Been So Long":
+            webbrowser.open(('https://music.youtube.com/watch?v=tBS-bL6y1As'), new = 2)
+        if self.dainu_boks.get() == "If You Could See":
+            webbrowser.open(('https://music.youtube.com/watch?v=newUETHByOc'), new = 2)
+        if self.dainu_boks.get() == "Where Is the Love":
+            webbrowser.open(('https://music.youtube.com/watch?v=zQcravZx7EI'), new = 2)
+        if self.dainu_boks.get() == "A Soul That Has Been Abused":
+            webbrowser.open(('https://music.youtube.com/watch?v=ATdKDp67Ylw'), new = 2)
+        if self.dainu_boks.get() == "Other Side of the Tracks":
+            webbrowser.open(('https://music.youtube.com/watch?v=WsKvmLWMN_o'), new = 2)
+        if self.dainu_boks.get() == "If It Wasn't for Blues":
+            webbrowser.open(('https://music.youtube.com/watch?v=fD947SUdDN0'), new = 2)
+
     
     def pasirinkti_daina(self, value):
         if self.atlikeju_boks.get() == "Mighty Sam McClain":
