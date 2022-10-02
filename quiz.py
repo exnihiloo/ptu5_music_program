@@ -24,7 +24,12 @@ class Quiz:
         self.teisingi = 0
 
     def mygtukai(self):
-        pass
+        next_button = Button(langas, text="Kitas", command=self.kitas_mygtukas,
+        width=15,fg="black",font=("Menlo", 16, "bold"))
+        next_button.place(x=100,y=220)
+        quit_button = Button(langas, text="Išeiti", command=langas.destroy,
+        width=5, fg="black",font=("Menlo", 16, " bold"))
+        quit_button.place(x=460,y=0)
 
     def rodyti_klausima(self):
         pass
