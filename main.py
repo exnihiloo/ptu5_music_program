@@ -2692,8 +2692,22 @@ class VidinisBlues:
     def picker(self):
         pass
     
-    def pasirinkti_daina(self):
-        pass
+    def pasirinkti_daina(self, value):
+        if self.atlikeju_boks.get() == "Mighty Sam McClain":
+            self.dainu_boks.config(value = self.mcclain_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Sam Myers":
+            self.dainu_boks.config(value = self.myers_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Albert Cummings":
+            self.dainu_boks.config(value = self.cummings_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Mighty Mo Rodgers":
+            self.dainu_boks.config(value = self.rodgers_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Smokehouse":
+            self.dainu_boks.config(value = self.smokehouse_dainos)
+            self.dainu_boks.current(0)
 
     def open_mightysam(self):
         self.random_mightysam = ['https://music.youtube.com/watch?v=_w2LNOL4rmk',
