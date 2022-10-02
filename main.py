@@ -2651,7 +2651,9 @@ class VidinisBlues:
         self.cummings = tk.Button(self.master, text = "Albert Cummings", width = 15, command = self.open_cummings, highlightbackground = "burlywood4")
         self.rodgers = tk.Button(self.master, text = "Mighty Mo Rodgers", width = 15, command = self.open_rodgers, highlightbackground = "burlywood4")
         self.smokehouse = tk.Button(self.master, text = "Smokehouse", width = 15, command = self.open_smokehouse, highlightbackground = "burlywood4")
-        self.uzdaryti_blues = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti, highlightbackground = "burlywood4")
+        self.uzdaryti_blues = tk.Button(self.master, text = "\u2573 Uždaryti", width = 25, command = self.uzdaryti, highlightbackground = "burlywood4")
+        self.uzrasas1 = Label(self.master, text = "Išsirinkite atlikėją ir\njo dainą parinksime atsitiktinai.", font = ('Courier New', 15, "bold"), fg = 'white', bg = "burlywood4")
+        self.uzrasas2 = Label(self.master, text = "Arba išsirinkite atlikėją\n ir dainą, kurią norite klausyti.", font = ('Courier New', 15, "bold"), fg = 'white', bg = "burlywood4")
         self.atlikeju_sarasas = ["Mighty Sam McClain", "Sam Myers", "Albert Cummings", "Mighty Mo Rodgers", "Smokehouse"]
         self.mcclain_dainos = ["When The Hurt is Over",
                                 "Don't Worry About Me",
@@ -2710,21 +2712,22 @@ class VidinisBlues:
                             ]
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
         self.atlikeju_boks.current(0)
-        self.atlikeju_boks.pack()
+        self.atlikeju_boks.grid(row = 7, column=0)
         self.atlikeju_boks.bind("<<ComboboxSelected>>", self.pasirinkti_daina)
         self.dainu_boks = ttk.Combobox(self.master, value = [' '])
         self.dainu_boks.current(0)
-        self.dainu_boks.pack()
+        self.dainu_boks.grid(row = 7, column = 1)
 
         self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='burlywood4', command = self.picker)
-        self.pasirinkti_mygtukas.pack()
-
-        self.mightysam.pack()
-        self.myers.pack()
-        self.cummings.pack()
-        self.rodgers.pack()
-        self.smokehouse.pack()
-        self.uzdaryti_blues.pack()
+        self.pasirinkti_mygtukas.grid(row = 8, columnspan=2)
+        self.uzrasas1.grid(row = 0, columnspan=2)
+        self.mightysam.grid(row = 1, columnspan=2)
+        self.myers.grid(row = 2, columnspan=2)
+        self.cummings.grid(row = 3, columnspan=2)
+        self.rodgers.grid(row = 4, columnspan=2)
+        self.smokehouse.grid(row = 5, columnspan=2)
+        self.uzrasas2.grid(row = 6, columnspan=2)
+        self.uzdaryti_blues.grid(row = 9, columnspan=2)
 
     def picker(self):
         if self.dainu_boks.get() == "When The Hurt is Over":
