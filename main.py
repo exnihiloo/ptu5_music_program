@@ -1246,7 +1246,9 @@ class VidinisBlackMetal:
         self.luctus = tk.Button(self.master, text = "Luctus", width = 15, command = self.open_luctus, highlightbackground='midnight blue')
         self.watain = tk.Button(self.master, text = "Watain", width = 15, command = self.open_watain, highlightbackground='midnight blue')
         self.behemoth = tk.Button(self.master, text = "Behemoth", width = 15, command = self.open_behemoth, highlightbackground='midnight blue')
-        self.uzdaryti_bmetal = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti, highlightbackground='midnight blue')
+        self.uzdaryti_bmetal = tk.Button(self.master, text = "\u2573 Uždaryti", width = 25, command = self.uzdaryti, highlightbackground='midnight blue')
+        self.uzrasas1 = Label(self.master, text = "Išsirinkite atlikėją ir\njo dainą parinksime atsitiktinai.", font = ('Courier New', 15, "bold"), fg = 'white', bg = "midnight blue")
+        self.uzrasas2 = Label(self.master, text = "Arba išsirinkite atlikėją\n ir dainą, kurią norite klausyti.", font = ('Courier New', 15, "bold"), fg = 'white', bg = "midnight blue")
         self.atlikeju_sarasas = ["Mayhem", "Marduk", "Luctus", "Watain", "Behemoth"]
         self.mayhem_dainos = ["Freezing Moon",
                             "Deathcrush",
@@ -1305,21 +1307,22 @@ class VidinisBlackMetal:
                             ]
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
         self.atlikeju_boks.current(0)
-        self.atlikeju_boks.pack()
+        self.atlikeju_boks.grid(row = 7, column = 0)
         self.atlikeju_boks.bind("<<ComboboxSelected>>", self.pasirinkti_daina)
         self.dainu_boks = ttk.Combobox(self.master, value = [' '])
         self.dainu_boks.current(0)
-        self.dainu_boks.pack()
+        self.dainu_boks.grid(row = 7, column = 1)
 
         self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='midnight blue', command = self.picker)
-        self.pasirinkti_mygtukas.pack()
-        
-        self.mayhem.pack()
-        self.marduk.pack()
-        self.luctus.pack()
-        self.watain.pack()
-        self.behemoth.pack()
-        self.uzdaryti_bmetal.pack()
+        self.pasirinkti_mygtukas.grid(row = 8, columnspan=2)
+        self.uzrasas1.grid(row = 0, columnspan=2)
+        self.mayhem.grid(row = 1, columnspan=2)
+        self.marduk.grid(row = 2, columnspan=2)
+        self.luctus.grid(row = 3, columnspan=2)
+        self.watain.grid(row = 4, columnspan=2)
+        self.behemoth.grid(row = 5, columnspan=2)
+        self.uzrasas2.grid(row = 6, columnspan=2)
+        self.uzdaryti_bmetal.grid(row = 9, columnspan=2)
 
 
     def picker(self):
