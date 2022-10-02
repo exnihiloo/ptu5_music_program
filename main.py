@@ -2638,7 +2638,7 @@ class VidinisBlues:
                             "Sleeping in the Ground",
                             "Ninety Nine"
                         ]
-        self.cummings_dainos = ["Workin Man Blues",
+        self.cummings_dainos = ["Workin' Man Blues",
                                 "Meet the Man",
                                 "Need Somebody",
                                 "Lonely Bed",
@@ -2730,6 +2730,27 @@ class VidinisBlues:
             webbrowser.open(('https://music.youtube.com/watch?v=hIMkaETUpcY'), new = 2)
         if self.dainu_boks.get() == "Ninety Nine":
             webbrowser.open(('https://music.youtube.com/watch?v=HGEnvRIF5KU'), new = 2)
+        if self.dainu_boks.get() == "Workin' Man Blues":
+            webbrowser.open(('https://music.youtube.com/watch?v=zt5SZFio4yI'), new = 2)
+        if self.dainu_boks.get() == "Meet the Man":
+            webbrowser.open(('https://music.youtube.com/watch?v=TGvkm8zY6T8'), new = 2)
+        if self.dainu_boks.get() == "Need Somebody":
+            webbrowser.open(('https://music.youtube.com/watch?v=MHtnzRmomOY'), new = 2)
+        if self.dainu_boks.get() == "Lonely Bed":
+            webbrowser.open(('https://music.youtube.com/watch?v=Sm8q1q9Oqn0'), new = 2)
+        if self.dainu_boks.get() == "Little Bird":
+            webbrowser.open(('https://music.youtube.com/watch?v=tcciSHKo5VM'), new = 2)
+        if self.dainu_boks.get() == "Rumors":
+            webbrowser.open(('https://music.youtube.com/watch?v=Fgw9-6ECAFI'), new = 2)
+        if self.dainu_boks.get() == "Too Old To Grow Up":
+            webbrowser.open(('https://music.youtube.com/watch?v=jMMF6z2HEaE'), new = 2)
+        if self.dainu_boks.get() == "So Strong":
+            webbrowser.open(('https://music.youtube.com/watch?v=TAJFYHTb4F8'), new = 2)
+        if self.dainu_boks.get() == "Last Call":
+            webbrowser.open(('https://music.youtube.com/watch?v=DMJgdb0LGDQ'), new = 2)
+        if self.dainu_boks.get() == "Get Out of Here":
+            webbrowser.open(('https://music.youtube.com/watch?v=5EHpHkqI394'), new = 2)
+
 
     
     def pasirinkti_daina(self, value):
