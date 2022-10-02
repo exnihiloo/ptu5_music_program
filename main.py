@@ -2431,6 +2431,26 @@ class VidinisJazz:
             webbrowser.open(('https://music.youtube.com/watch?v=llNopGK8xL4'), new = 2)
         if self.dainu_boks.get() == "Cherish":
             webbrowser.open(('https://music.youtube.com/watch?v=08NnLiWOlQo'), new = 2)
+        if self.dainu_boks.get() == "Lily Was Here":
+            webbrowser.open(('https://music.youtube.com/watch?v=SS0HmeaLBOg'), new = 2)
+        if self.dainu_boks.get() == "Smooth":
+            webbrowser.open(('https://music.youtube.com/watch?v=QtVbG_rPLWc'), new = 2)
+        if self.dainu_boks.get() == "If I ruled the World":
+            webbrowser.open(('https://music.youtube.com/watch?v=Bn24CZEkkdk'), new = 2)
+        if self.dainu_boks.get() == "For the Love of You":
+            webbrowser.open(('https://music.youtube.com/watch?v=j6c4YwN-0Uo'), new = 2)
+        if self.dainu_boks.get() == "Promises":
+            webbrowser.open(('https://music.youtube.com/watch?v=lnmE8is8fdA'), new = 2)
+        if self.dainu_boks.get() == "Music=Love":
+            webbrowser.open(('https://music.youtube.com/watch?v=HA7uR0iSkaw'), new = 2)
+        if self.dainu_boks.get() == "Candy":
+            webbrowser.open(('https://music.youtube.com/watch?v=0k8TBfvrXVk'), new = 2)
+        if self.dainu_boks.get() == "Right in My Soul":
+            webbrowser.open(('https://music.youtube.com/watch?v=Zclro7ercfE'), new = 2)
+        if self.dainu_boks.get() == "D.I.S.C.O":
+            webbrowser.open(('https://music.youtube.com/watch?v=ZwSH2Y0JN2Q'), new = 2)
+        if self.dainu_boks.get() == "Wish You Were Here":
+            webbrowser.open(('https://music.youtube.com/watch?v=7W6sXxkeUQw'), new = 2)
         
 
 
