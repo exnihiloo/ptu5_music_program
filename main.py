@@ -2137,8 +2137,22 @@ class VidinisDisco:
     def picker(self):
         pass
 
-    def pasirinkti_daina(self):
-        pass
+    def pasirinkti_daina(self, value):
+        if self.atlikeju_boks.get() == "Abba":
+            self.dainu_boks.config(value = self.abba_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Bee Gees":
+            self.dainu_boks.config(value = self.bee_gees_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Sandra":
+            self.dainu_boks.config(value = self.sandra_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Boney M.":
+            self.dainu_boks.config(value = self.boneym_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Donna Summer":
+            self.dainu_boks.config(value = self.donnas_dainos)
+            self.dainu_boks.current(0)
 
     def open_abba(self):
         self.random_abba = ['https://music.youtube.com/watch?v=pa2j0Bh83ms',
