@@ -2413,8 +2413,22 @@ class VidinisJazz:
     def picker(self):
         pass
 
-    def pasirinkti_daina(self):
-        pass
+    def pasirinkti_daina(self, value):
+        if self.atlikeju_boks.get() == "Candy Dulfer":
+            self.dainu_boks.config(value = self.candy_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Louis Amstrong":
+            self.dainu_boks.config(value = self.louis_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Ella Fitzgerald":
+            self.dainu_boks.config(value = self.ella_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Count Basie":
+            self.dainu_boks.config(value = self.basie_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Nina Simone":
+            self.dainu_boks.config(value = self.ninas_dainos)
+            self.dainu_boks.current(0)
 
     
     def open_candy_duler(self):
