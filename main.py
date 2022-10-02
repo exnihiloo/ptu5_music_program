@@ -1554,7 +1554,7 @@ class VidinisRap:
                         ]
         self.lamar_dainos = ["m.A.A.d City", 
                             "Humble",
-                            "Bitch Don't KIll My Vibe",
+                            "Bitch, Don't KIll My Vibe",
                             "Money Trees",
                             "Swimming Pools",
                             "Pride",
@@ -1662,6 +1662,26 @@ class VidinisRap:
             webbrowser.open(('https://music.youtube.com/watch?v=TvGYSPv496U'), new = 2)
         if self.dainu_boks.get() == "Express Yourself":
             webbrowser.open(('https://music.youtube.com/watch?v=gHzSpx_9Eww'), new = 2)
+        if self.dainu_boks.get() == "m.A.A.d City":
+            webbrowser.open(('https://music.youtube.com/watch?v=KKCSwOVudMo'), new = 2)
+        if self.dainu_boks.get() == "Humble":
+            webbrowser.open(('https://music.youtube.com/watch?v=H4RELGc9su8'), new = 2)
+        if self.dainu_boks.get() == "Bitch, Don't KIll My Vibe":
+            webbrowser.open(('https://music.youtube.com/watch?v=hDgPW4kIdUI'), new = 2)
+        if self.dainu_boks.get() == "Money Trees":
+            webbrowser.open(('https://music.youtube.com/watch?v=Iy-dJwHVX84'), new = 2)
+        if self.dainu_boks.get() == "Swimming Pools":
+            webbrowser.open(('https://music.youtube.com/watch?v=U96f24ueBAo'), new = 2)
+        if self.dainu_boks.get() == "Pride":
+            webbrowser.open(('https://music.youtube.com/watch?v=pRGmFiEyr0A'), new = 2)
+        if self.dainu_boks.get() == "The Heart Part 5":
+            webbrowser.open(('https://music.youtube.com/watch?v=kAbhILeXwGE'), new = 2)
+        if self.dainu_boks.get() == "King Kunta":
+            webbrowser.open(('https://music.youtube.com/watch?v=g0NVaX8DRN4'), new = 2)
+        if self.dainu_boks.get() == "DNA":
+            webbrowser.open(('https://music.youtube.com/watch?v=Fb3j_yuFh1s'), new = 2)
+        if self.dainu_boks.get() == "Poetic Justice":
+            webbrowser.open(('https://music.youtube.com/watch?v=TbqmJ5K6iNI'), new = 2)
 
 
 
