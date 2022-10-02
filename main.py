@@ -19,6 +19,7 @@ class PagrindinisLangas:
         self.disco_langas = tk.Button(self.master, text = "\U0001F4BF Disco", width = 15, command = self.new_window8, highlightbackground='black')
         self.jazz_langas = tk.Button(self.master, text = "\U0001F3B7 Jazz", width = 15, command = self.new_window9, highlightbackground='black')
         self.blues_langas = tk.Button(self.master, text = "\U0001FA95 Blues", width = 15, command = self.new_window10, highlightbackground='black')
+        self.uzdaryti_main = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti, highlightbackground='black')
         self.rock_langas.pack()
         self.reggae_langas.pack()
         self.hmetal_langas.pack()
@@ -29,6 +30,10 @@ class PagrindinisLangas:
         self.disco_langas.pack()
         self.jazz_langas.pack()
         self.blues_langas.pack()
+        self.uzdaryti_main.pack()
+
+    def uzdaryti(self):
+        self.master.quit()
 
     def new_window(self):
         self.vidinis = tk.Toplevel(self.master)
