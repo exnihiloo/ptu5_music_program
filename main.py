@@ -113,7 +113,9 @@ class VidinisRock:
         self.doors = tk.Button(self.master, text = "The Doors", width = 15, command = self.open_doors, highlightbackground='red')
         self.ledzep = tk.Button(self.master, text = "Led Zeppelin", width = 15, command = self.open_ledzep, highlightbackground='red')
         self.deep_purple = tk.Button(self.master, text = "Deep Purple", width = 15, command = self.open_deep_purple, highlightbackground='red')
-        self.uzdarytirock = tk.Button(self.master, text = "\u2573 Uždaryti", command = self.uzdaryti, highlightbackground='red') 
+        self.uzdarytirock = tk.Button(self.master, text = "\u2573 Uždaryti", width = 25, command = self.uzdaryti, highlightbackground='red')
+        self.uzrasas1 = Label(self.master, text = "Išsirinkite atlikėją ir\njo dainą parinksime atsitiktinai.", fg = 'white', bg = "red")
+        self.uzrasas2 = Label(self.master, text = "Arba išsirinkite atlikėją\n ir dainą, kurią norite klausyti.", fg = 'white', bg = "red")
        # kuriam atlikėjų ir jų dainų sąrašus
         self.atlikeju_sarasas = ['Queen', "AC/DC", "The Doors", "Led Zeppelin", "Deep Purple"]
         self.queen_dainos = ["Bohemian Rhapsody", 
@@ -175,25 +177,27 @@ class VidinisRock:
         # kuriam atlikėjų dropdown box
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
         self.atlikeju_boks.current(0)
-        self.atlikeju_boks.pack()
+        self.atlikeju_boks.grid(row = 9, column=0)
         # bindinam boksą
         self.atlikeju_boks.bind("<<ComboboxSelected>>", self.pasirinkti_daina)
 
         # kuriam kitą boksą
         self.dainu_boks = ttk.Combobox(self.master, value = [' '])
         self.dainu_boks.current(0)
-        self.dainu_boks.pack()
+        self.dainu_boks.grid(row = 9, column = 1)
 
         # pasirinkimo mygtukas
         self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='red', command = self.picker)
-        self.pasirinkti_mygtukas.pack()
+        self.pasirinkti_mygtukas.grid(row = 10, columnspan=2)
        
-        self.queen.pack()
-        self.acdc.pack()
-        self.doors.pack()
-        self.ledzep.pack()
-        self.deep_purple.pack()
-        self.uzdarytirock.pack()
+        self.uzrasas1.grid(row = 0, columnspan=2)
+        self.queen.grid(row = 1, columnspan=2)
+        self.acdc.grid(row = 2, columnspan=2)
+        self.doors.grid(row = 3, columnspan=2)
+        self.ledzep.grid(row = 4, columnspan=2)
+        self.deep_purple.grid(row = 5, columnspan=2)
+        self.uzdarytirock.grid(row = 15, columnspan=2)
+        self.uzrasas2.grid(row = 8, columnspan=2)
 
     def pasirinkti_daina(self, value):
         if self.atlikeju_boks.get() == "Queen":
