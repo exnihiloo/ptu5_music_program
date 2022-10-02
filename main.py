@@ -2491,6 +2491,27 @@ class VidinisJazz:
             webbrowser.open(('https://music.youtube.com/watch?v=BSe0vKkRCrs'), new = 2)
         if self.dainu_boks.get() == "Lil' Darlin":
             webbrowser.open(('https://music.youtube.com/watch?v=nqn4nyZz0to'), new = 2)
+        if self.dainu_boks.get() == "Cry Me a River":
+            webbrowser.open(('https://music.youtube.com/watch?v=wSw8KaZIzYg'), new = 2)
+        if self.dainu_boks.get() == "All of Me":
+            webbrowser.open(('https://music.youtube.com/watch?v=Sr_EX9Ppfjw'), new = 2)
+        if self.dainu_boks.get() == "Summertime":
+            webbrowser.open(('https://music.youtube.com/watch?v=VZRgiuAXRAs'), new = 2)
+        if self.dainu_boks.get() == "Misty":
+            webbrowser.open(('https://music.youtube.com/watch?v=jy5x7bDYd4o'), new = 2)
+        if self.dainu_boks.get() == "Dream a Little Dream of Me":
+            webbrowser.open(('https://music.youtube.com/watch?v=vAd1lt5ANoA'), new = 2)
+        if self.dainu_boks.get() == "Cheek to Cheek":
+            webbrowser.open(('https://music.youtube.com/watch?v=lFiGn5lpahc'), new = 2)
+        if self.dainu_boks.get() == "I can't Get Started":
+            webbrowser.open(('https://music.youtube.com/watch?v=DFwWoXTMKrw'), new = 2)
+        if self.dainu_boks.get() == "Angel Eyes":
+            webbrowser.open(('https://music.youtube.com/watch?v=VBz1rXoSP9o'), new = 2)
+        if self.dainu_boks.get() == "Like Someone in Love":
+            webbrowser.open(('https://music.youtube.com/watch?v=ICOWB8X3H3M'), new = 2)
+        if self.dainu_boks.get() == "Always":
+            webbrowser.open(('https://music.youtube.com/watch?v=-c7yjsTHGF0'), new = 2)
+        
         
 
 
