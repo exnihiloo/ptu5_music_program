@@ -2411,7 +2411,28 @@ class VidinisJazz:
         self.uzdaryti_jazz.pack()
 
     def picker(self):
-        pass
+        if self.dainu_boks.get() == "Blackbird":
+            webbrowser.open(('https://music.youtube.com/watch?v=sXJTMKv3ZmA'), new = 2)
+        if self.dainu_boks.get() == "Feeling Good":
+            webbrowser.open(('https://music.youtube.com/watch?v=BNMKGYiJpvg'), new = 2)
+        if self.dainu_boks.get() == "I Put a Spell on You":
+            webbrowser.open(('https://music.youtube.com/watch?v=qgn-dnCkOTw'), new = 2)
+        if self.dainu_boks.get() == "Sinnerman":
+            webbrowser.open(('https://music.youtube.com/watch?v=3KyUicgOm74'), new = 2)
+        if self.dainu_boks.get() == "My Way":
+            webbrowser.open(('https://music.youtube.com/watch?v=gwcz2BwEdqs'), new = 2)
+        if self.dainu_boks.get() == "Blues for Mama":
+            webbrowser.open(('https://music.youtube.com/watch?v=n2rFOEGctUo'), new = 2)
+        if self.dainu_boks.get() == "Take Me to the Water":
+            webbrowser.open(('https://music.youtube.com/watch?v=AJjmX1zKzPs'), new = 2)
+        if self.dainu_boks.get() == "Strange Fruit":
+            webbrowser.open(('https://music.youtube.com/watch?v=33dgafi_Gv8'), new = 2)
+        if self.dainu_boks.get() == "I am Blessed":
+            webbrowser.open(('https://music.youtube.com/watch?v=llNopGK8xL4'), new = 2)
+        if self.dainu_boks.get() == "Cherish":
+            webbrowser.open(('https://music.youtube.com/watch?v=08NnLiWOlQo'), new = 2)
+        
+
 
     def pasirinkti_daina(self, value):
         if self.atlikeju_boks.get() == "Candy Dulfer":
@@ -2497,7 +2518,7 @@ class VidinisJazz:
                                     'https://music.youtube.com/watch?v=33dgafi_Gv8',
                                     'https://music.youtube.com/watch?v=llNopGK8xL4',
                                     'https://music.youtube.com/watch?v=08NnLiWOlQo',
-                                    'https://music.youtube.com/watch?v=KpDth46l_Vg'
+                                    'https://music.youtube.com/watch?v=sXJTMKv3ZmA'
                                 ]
         webbrowser.open(choice(self.random_nina_simone), new = 2)
     
