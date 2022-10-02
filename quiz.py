@@ -23,6 +23,14 @@ class Quiz:
         # skaičiuosime teisingus atsakymus.
         self.teisingi = 0
 
+
+
+    # patikrina atsakymus, po to kai paspaudžiame mygtuką "Kitas"
+    def tikrina_ats(self, klausimai):
+        # patikrina ar pasirinktas variantas yra teisingas
+        if self.pasirinktas_ats.get() == answer[klausimai]:
+            return True
+
     def mygtukai(self):
         next_button = Button(langas, text="Kitas", command=self.kitas_mygtukas,
         width=15,fg="black",font=("Menlo", 16, "bold"))
