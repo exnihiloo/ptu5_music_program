@@ -2093,7 +2093,7 @@ class VidinisDisco:
                             "We Will Be Together",
                             "You and I",
                             "You'll be Mine",
-                            "Hi Hi Hi"
+                            "Hi! Hi! Hi!"
                         ]
         self.boneym_dainos = ["Daddy Cool",
                             "Rasputin",
@@ -2175,6 +2175,27 @@ class VidinisDisco:
             webbrowser.open(('https://music.youtube.com/watch?v=-t7PTruoz6s'), new = 2)
         if self.dainu_boks.get() == "Jive Talkin'":
             webbrowser.open(('https://music.youtube.com/watch?v=SYVT-FMeFts'), new = 2)
+        if self.dainu_boks.get() == "Maria Magdelena":
+            webbrowser.open(('https://music.youtube.com/watch?v=NP4LZZGYI5E'), new = 2)
+        if self.dainu_boks.get() == "Heaven Can Wait":
+            webbrowser.open(('https://music.youtube.com/watch?v=pKpS19CThyQ'), new = 2)
+        if self.dainu_boks.get() == "Around My Heart":
+            webbrowser.open(('https://music.youtube.com/watch?v=F8ZLbdbp75A'), new = 2)
+        if self.dainu_boks.get() == "Little Girl":
+            webbrowser.open(('https://music.youtube.com/watch?v=jhvVx9-Yusk'), new = 2)
+        if self.dainu_boks.get() == "Such a Shame":
+            webbrowser.open(('https://music.youtube.com/watch?v=dencYmYKkeY'), new = 2)
+        if self.dainu_boks.get() == "In the Heat of The Night":
+            webbrowser.open(('https://music.youtube.com/watch?v=HSoTCQXJsDQ'), new = 2)
+        if self.dainu_boks.get() == "We Will Be Together":
+            webbrowser.open(('https://music.youtube.com/watch?v=-jnpbEbSugQ'), new = 2)
+        if self.dainu_boks.get() == "You and I":
+            webbrowser.open(('https://music.youtube.com/watch?v=9oNAC8hFSl0'), new = 2)
+        if self.dainu_boks.get() == "You'll be Mine":
+            webbrowser.open(('https://music.youtube.com/watch?v=bIY4cSzlSLk'), new = 2)
+        if self.dainu_boks.get() == "Hi! Hi! Hi!":
+            webbrowser.open(('https://music.youtube.com/watch?v=iBZedwqwpMo'), new = 2)
+        
 
     def pasirinkti_daina(self, value):
         if self.atlikeju_boks.get() == "Abba":
