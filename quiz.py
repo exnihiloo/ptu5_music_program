@@ -32,7 +32,9 @@ class Quiz:
         quit_button.place(x=460,y=0)
 
     def rodyti_klausima(self):
-        pass
+        klausimai = Label(langas, text = question[self.klausimai], width=60,
+        font = ('ariel', 14, 'bold' ), anchor= 'w' )
+        klausimai.place(x=40, y=50)
 
     def rodyti_pasirinkimus(self):
         pass
