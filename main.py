@@ -965,7 +965,9 @@ class VidinisPunk:
         self.offspring = tk.Button(self.master, text = "The Offspring", width = 15, command = self.open_offspinrg, highlightbackground="MediumPurple4")
         self.misfits = tk.Button(self.master, text = "Misfits", width = 15, command = self.open_misfits, highlightbackground="MediumPurple4")
         self.clash = tk.Button(self.master, text = "The Clash", width = 15, command = self.open_clash, highlightbackground="MediumPurple4")
-        self.uzdaryti_punk = tk.Button(self.master, text = "\u2573 Uždaryti", command = self.uzdaryti, highlightbackground="MediumPurple4")
+        self.uzdaryti_punk = tk.Button(self.master, text = "\u2573 Uždaryti", width = 25, command = self.uzdaryti, highlightbackground="MediumPurple4")
+        self.uzrasas1 = Label(self.master, text = "Išsirinkite atlikėją ir\njo dainą parinksime atsitiktinai.", font = ('Courier New', 15, "bold"), fg = 'white', bg = "MediumPurple4")
+        self.uzrasas2 = Label(self.master, text = "Arba išsirinkite atlikėją\n ir dainą, kurią norite klausyti.", font = ('Courier New', 15, "bold"), fg = 'white', bg = "MediumPurple4")
         self.atlikeju_sarasas = ["Ramones", "Sex Pistols", "The Offspring", "Misfits", "The Clash"]
         self.ramondes_dainos = ["Blitzkrieg Bop",
                                 "Pet Sematary",
@@ -1024,20 +1026,22 @@ class VidinisPunk:
                         ]
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
         self.atlikeju_boks.current(0)
-        self.atlikeju_boks.pack()
+        self.atlikeju_boks.grid(row = 7, column = 0)
         self.atlikeju_boks.bind("<<ComboboxSelected>>", self.pasirinkti_daina)
         self.dainu_boks = ttk.Combobox(self.master, value = [' '])
         self.dainu_boks.current(0)
-        self.dainu_boks.pack()
+        self.dainu_boks.grid(row = 7, column = 1)
 
         self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='MediumPurple4', command = self.picker)
-        self.pasirinkti_mygtukas.pack()
-        self.ramones.pack()
-        self.sexpistols.pack()
-        self.offspring.pack()
-        self.misfits.pack()
-        self.clash.pack()
-        self.uzdaryti_punk.pack()
+        self.pasirinkti_mygtukas.grid(row = 8, columnspan = 2)
+        self.uzrasas1.grid(row = 0, columnspan=2)
+        self.ramones.grid(row = 1, columnspan=2)
+        self.sexpistols.grid(row = 2, columnspan=2)
+        self.offspring.grid(row = 3, columnspan=2)
+        self.misfits.grid(row = 4, columnspan=2)
+        self.clash.grid(row = 5, columnspan=2)
+        self.uzrasas2.grid(row = 6, columnspan=2)
+        self.uzdaryti_punk.grid(row = 9, columnspan=2)
 
     def picker(self):
         if self.dainu_boks.get() == "Blitzkrieg Bop":
