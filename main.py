@@ -1819,7 +1819,7 @@ class VidinisPop:
                                 "Sometimes",
                                 "Piece of Me"
                             ]
-        self.aguilera_dainos = ["Dirty",
+        self.aguilera_dainos = ["Dirrty",
                                 "Genie in a Bottle",
                                 "Hurt",
                                 "I turn to You",
@@ -1919,6 +1919,26 @@ class VidinisPop:
             webbrowser.open(('https://music.youtube.com/watch?v=CbuLnJqUFLQ'), new = 2)
         if self.dainu_boks.get() == "Piece of Me":
             webbrowser.open(('https://music.youtube.com/watch?v=IyFizEee7vY'), new = 2)
+        if self.dainu_boks.get() == "Dirrty":
+            webbrowser.open(('https://music.youtube.com/watch?v=CdP2lLODk-A'), new = 2)
+        if self.dainu_boks.get() == "Genie in a Bottle":
+            webbrowser.open(('https://music.youtube.com/watch?v=yz4me7Vwr1w'), new = 2)
+        if self.dainu_boks.get() == "Hurt":
+            webbrowser.open(('https://music.youtube.com/watch?v=i6yMdwNeZ64'), new = 2)
+        if self.dainu_boks.get() == "I turn to You":
+            webbrowser.open(('https://music.youtube.com/watch?v=_jButDF_Rtw'), new = 2)
+        if self.dainu_boks.get() == "Fighter":
+            webbrowser.open(('https://music.youtube.com/watch?v=nsRls_7T8kE'), new = 2)
+        if self.dainu_boks.get() == "Candyman":
+            webbrowser.open(('https://music.youtube.com/watch?v=8vfY1Y369OE'), new = 2)
+        if self.dainu_boks.get() == "Your Body":
+            webbrowser.open(('https://music.youtube.com/watch?v=XaSWjJq99XM'), new = 2)
+        if self.dainu_boks.get() == "Haunted Heart":
+            webbrowser.open(('https://music.youtube.com/watch?v=MHW5oZREOmQ'), new = 2)
+        if self.dainu_boks.get() == "Ven Conmingo":
+            webbrowser.open(('https://music.youtube.com/watch?v=LeZf3btt_yY'), new = 2)
+        if self.dainu_boks.get() == "Welcome":
+            webbrowser.open(('https://music.youtube.com/watch?v=i-XQYvMn6AE'), new = 2)
 
     def pasirinkti_daina(self, value):
         if self.atlikeju_boks.get() == "Lady Gaga":
