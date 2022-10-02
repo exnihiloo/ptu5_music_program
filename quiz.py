@@ -23,8 +23,17 @@ class Quiz:
         # skaičiuosime teisingus atsakymus.
         self.teisingi = 0
 
+    # Metodas parodyti rezultatui, skaičiuoja teisngus ir neteisingus atsakymus
+    # tuomet parodo juos message box'e, kurį nusistatėme kaip mb
     def display_result(self):
-        pass
+        neteisingi = self.viso_klausimu - self.teisingi
+        atsakyti = f"Teisingi: {self.teisingi}"
+        neatsakyti = f"Neteisingi: {neteisingi}"
+        # procentaliai apskaičiuojame teisingus atsakymus
+        taskai = int(self.teisingi / self.viso_klausimu * 100)
+        rezultatas = f"Rezultatas: {taskai}%"
+        # iššaukiame message box'ą, kad parodyti rezultatą
+        mb.showinfo("Result", f"{rezultatas}\n{atsakyti}\n{neatsakyti}")
 
     # patikrina atsakymus, po to kai paspaudžiame mygtuką "Kitas"
     def tikrina_ats(self, klausimai):
