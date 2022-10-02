@@ -2671,6 +2671,16 @@ class VidinisBlues:
                                 "Martin Luther \"The King\"",
                                 "American Dream"
                             ]
+        self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
+        self.atlikeju_boks.current(0)
+        self.atlikeju_boks.pack()
+        self.atlikeju_boks.bind("<<ComboboxSelected>>", self.pasirinkti_daina)
+        self.dainu_boks = ttk.Combobox(self.master, value = [' '])
+        self.dainu_boks.current(0)
+        self.dainu_boks.pack()
+
+        self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='burlywood4', command = self.picker)
+        self.pasirinkti_mygtukas.pack()
 
         self.mightysam.pack()
         self.myers.pack()
@@ -2678,6 +2688,12 @@ class VidinisBlues:
         self.rodgers.pack()
         self.smokehouse.pack()
         self.uzdaryti_blues.pack()
+
+    def picker(self):
+        pass
+    
+    def pasirinkti_daina(self):
+        pass
 
     def open_mightysam(self):
         self.random_mightysam = ['https://music.youtube.com/watch?v=_w2LNOL4rmk',
