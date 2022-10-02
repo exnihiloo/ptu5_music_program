@@ -2356,7 +2356,7 @@ class VidinisJazz:
                             "I Ain't Got Nobody",
                             "Hello Brother",
                             "Jeepers Creepers",
-                            "Gonne Fishing",
+                            "Gonne Fishin'",
                             "Bibbidi-Bobbidi-Boo",
                             "Hello Dolly"
                         ]
@@ -2451,7 +2451,26 @@ class VidinisJazz:
             webbrowser.open(('https://music.youtube.com/watch?v=ZwSH2Y0JN2Q'), new = 2)
         if self.dainu_boks.get() == "Wish You Were Here":
             webbrowser.open(('https://music.youtube.com/watch?v=7W6sXxkeUQw'), new = 2)
-        
+        if self.dainu_boks.get() == "What a Wonderful World":
+            webbrowser.open(('https://music.youtube.com/watch?v=e1FN047_LT0'), new = 2)
+        if self.dainu_boks.get() == "When You Were Smiling":
+            webbrowser.open(('https://music.youtube.com/watch?v=jNp7dCmbNXA'), new = 2)
+        if self.dainu_boks.get() == "Mack the Knife":
+            webbrowser.open(('https://music.youtube.com/watch?v=ADQFDonofRw'), new = 2)
+        if self.dainu_boks.get() == "St. James Infirmary":
+            webbrowser.open(('https://music.youtube.com/watch?v=BMAD00G0oz8'), new = 2)
+        if self.dainu_boks.get() == "I Ain't Got Nobody":
+            webbrowser.open(('https://music.youtube.com/watch?v=LCLrnxUoF4o'), new = 2)
+        if self.dainu_boks.get() == "Hello Brother":
+            webbrowser.open(('https://music.youtube.com/watch?v=brsPG22tE9U'), new = 2)
+        if self.dainu_boks.get() == "Jeepers Creepers":
+            webbrowser.open(('https://music.youtube.com/watch?v=LMsBKsSIoIo'), new = 2)
+        if self.dainu_boks.get() == "Gonne Fishin'":
+            webbrowser.open(('https://music.youtube.com/watch?v=UQuU999MURo'), new = 2)
+        if self.dainu_boks.get() == "Bibbidi-Bobbidi-Boo":
+            webbrowser.open(('https://music.youtube.com/watch?v=RxflhrRcyLk'), new = 2)
+        if self.dainu_boks.get() == "Hello Dolly":
+            webbrowser.open(('https://music.youtube.com/watch?v=YCM0APgpdZc'), new = 2)
 
 
     def pasirinkti_daina(self, value):
