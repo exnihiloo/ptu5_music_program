@@ -1939,6 +1939,27 @@ class VidinisPop:
             webbrowser.open(('https://music.youtube.com/watch?v=LeZf3btt_yY'), new = 2)
         if self.dainu_boks.get() == "Welcome":
             webbrowser.open(('https://music.youtube.com/watch?v=i-XQYvMn6AE'), new = 2)
+        if self.dainu_boks.get() == "Mirrors":
+            webbrowser.open(('https://music.youtube.com/watch?v=59nAgJZ5IoE'), new = 2)
+        if self.dainu_boks.get() == "Cry Me a River":
+            webbrowser.open(('https://music.youtube.com/watch?v=CIk45fEWBok'), new = 2)
+        if self.dainu_boks.get() == "Rock Your Body":
+            webbrowser.open(('https://music.youtube.com/watch?v=7EJbFg_LxjY'), new = 2)
+        if self.dainu_boks.get() == "Summer Love":
+            webbrowser.open(('https://music.youtube.com/watch?v=SpmCfl2UrPc'), new = 2)
+        if self.dainu_boks.get() == "Losing My Way":
+            webbrowser.open(('https://music.youtube.com/watch?v=D--EcySiMLQ'), new = 2)
+        if self.dainu_boks.get() == "Supplies":
+            webbrowser.open(('https://music.youtube.com/watch?v=cMIWOx66l4w'), new = 2)
+        if self.dainu_boks.get() == "Take it From Here":
+            webbrowser.open(('https://music.youtube.com/watch?v=RS7AjOdBDLk'), new = 2)
+        if self.dainu_boks.get() == "Say Something":
+            webbrowser.open(('https://music.youtube.com/watch?v=0ZXWM-8Oqwg'), new = 2)
+        if self.dainu_boks.get() == "Tunnel Vision":
+            webbrowser.open(('https://music.youtube.com/watch?v=Y9M0jZsNRMk'), new = 2)
+        if self.dainu_boks.get() == "Blue Ocean Floor":
+            webbrowser.open(('https://music.youtube.com/watch?v=mbP99oQSG_Q'), new = 2)
+        
 
     def pasirinkti_daina(self, value):
         if self.atlikeju_boks.get() == "Lady Gaga":
