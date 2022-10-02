@@ -2215,6 +2215,27 @@ class VidinisDisco:
             webbrowser.open(('https://music.youtube.com/watch?v=mJU3K16AiHs'), new = 2)
         if self.dainu_boks.get() == "Hands Up":
             webbrowser.open(('https://music.youtube.com/watch?v=dlaGYG4iOas'), new = 2)
+        if self.dainu_boks.get() == "Hot Stuff":
+            webbrowser.open(('https://music.youtube.com/watch?v=nYMeJSehCe4'), new = 2)
+        if self.dainu_boks.get() == "I Feel Love":
+            webbrowser.open(('https://music.youtube.com/watch?v=nTNcCKq6V2c'), new = 2)
+        if self.dainu_boks.get() == "Last Dance":
+            webbrowser.open(('https://music.youtube.com/watch?v=561fy1vqIo8'), new = 2)
+        if self.dainu_boks.get() == "She Works Hard for the Money":
+            webbrowser.open(('https://music.youtube.com/watch?v=tuUEpbGVV2Y'), new = 2)
+        if self.dainu_boks.get() == "Breakaway":
+            webbrowser.open(('https://music.youtube.com/watch?v=wOf9yTO2vKI'), new = 2)
+        if self.dainu_boks.get() == "Dim All the Lights":
+            webbrowser.open(('https://music.youtube.com/watch?v=zqMXVxyFmQg'), new = 2)
+        if self.dainu_boks.get() == "Tokyo":
+            webbrowser.open(('https://music.youtube.com/watch?v=mNEySGzN3Vs'), new = 2)
+        if self.dainu_boks.get() == "Walk Away":
+            webbrowser.open(('https://music.youtube.com/watch?v=xeMK3J6DIM0'), new = 2)
+        if self.dainu_boks.get() == "Rumour Has It":
+            webbrowser.open(('https://music.youtube.com/watch?v=mi-QzaZnGjo'), new = 2)
+        if self.dainu_boks.get() == "Protection":
+            webbrowser.open(('https://music.youtube.com/watch?v=Hs5FrKcMZs0'), new = 2)
+
         
 
     def pasirinkti_daina(self, value):
