@@ -2710,6 +2710,26 @@ class VidinisBlues:
             webbrowser.open(('https://music.youtube.com/watch?v=WsKvmLWMN_o'), new = 2)
         if self.dainu_boks.get() == "If It Wasn't for Blues":
             webbrowser.open(('https://music.youtube.com/watch?v=fD947SUdDN0'), new = 2)
+        if self.dainu_boks.get() == "I Got the Blues":
+            webbrowser.open(('https://music.youtube.com/watch?v=PnXK2OP7V2A'), new = 2)
+        if self.dainu_boks.get() == "Let You Slowly Bring Me Down":
+            webbrowser.open(('https://music.youtube.com/watch?v=2ZR1Mkb_Grs'), new = 2)
+        if self.dainu_boks.get() == "I am Tired of Your Jive":
+            webbrowser.open(('https://music.youtube.com/watch?v=y-zmQC1La00'), new = 2)
+        if self.dainu_boks.get() == "Burning Fire":
+            webbrowser.open(('https://music.youtube.com/watch?v=QOqZlQ7nl1c'), new = 2)
+        if self.dainu_boks.get() == "My Daily Wish":
+            webbrowser.open(('https://music.youtube.com/watch?v=fbGS6gLUhw4'), new = 2)
+        if self.dainu_boks.get() == "Coming from the Old School":
+            webbrowser.open(('https://music.youtube.com/watch?v=dwpOTHAt8_U'), new = 2)
+        if self.dainu_boks.get() == "Burning Fire":
+            webbrowser.open(('https://music.youtube.com/watch?v=QOqZlQ7nl1c'), new = 2)
+        if self.dainu_boks.get() == "Sad and Lonesome":
+            webbrowser.open(('https://music.youtube.com/watch?v=GCfvKj7C7e0'), new = 2)
+        if self.dainu_boks.get() == "Sleeping in the Ground":
+            webbrowser.open(('https://music.youtube.com/watch?v=hIMkaETUpcY'), new = 2)
+        if self.dainu_boks.get() == "Ninety Nine":
+            webbrowser.open(('https://music.youtube.com/watch?v=HGEnvRIF5KU'), new = 2)
 
     
     def pasirinkti_daina(self, value):
