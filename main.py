@@ -1563,6 +1563,16 @@ class VidinisRap:
                             "DNA",
                             "Poetic Justice"
                         ]
+        self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
+        self.atlikeju_boks.current(0)
+        self.atlikeju_boks.pack()
+        self.atlikeju_boks.bind("<<ComboboxSelected>>", self.pasirinkti_daina)
+        self.dainu_boks = ttk.Combobox(self.master, value = [' '])
+        self.dainu_boks.current(0)
+        self.dainu_boks.pack()
+
+        self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='IndianRed4', command = self.picker)
+        self.pasirinkti_mygtukas.pack()
 
         self.eminem.pack()
         self.snoop.pack()
@@ -1570,6 +1580,12 @@ class VidinisRap:
         self.nwa.pack()
         self.lamar.pack()
         self.uzdaryti_rap.pack()
+
+    def picker(self):
+        pass
+
+    def pasirinkti_daina(self):
+        pass
 
     def open_eminem(self):
         self.random_eminem = ['https://music.youtube.com/watch?v=HIqQ0PfuPo8',
@@ -1703,7 +1719,7 @@ class VidinisPop:
                                 "Cry Me a River",
                                 "Rock Your Body",
                                 "Summer Love",
-                                "Losing My Way",
+                                "Losing My Way",
                                 "Supplies",
                                 "Take it From Here",
                                 "Say Something",
