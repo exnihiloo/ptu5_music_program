@@ -1861,10 +1861,24 @@ class VidinisPop:
     def picker(self):
         pass
 
-    def pasirinkti_daina(self):
-        pass
+    def pasirinkti_daina(self, value):
+        if self.atlikeju_boks.get() == "Lady Gaga":
+            self.dainu_boks.config(value = self.lady_gaga_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Beyoncé":
+            self.dainu_boks.config(value = self.beyonce_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Britney Spears":
+            self.dainu_boks.config(value = self.britney_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Christina Aguilera":
+            self.dainu_boks.config(value = self.aguilera_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Justin Timberlake":
+            self.dainu_boks.config(value = self.timberlake_dainos)
+            self.dainu_boks.current(0)
 
-    
+
     def open_ladygaga(self):
         self.random_ladygaga = ['https://music.youtube.com/watch?v=fiRjp6y6QvI',
                                 'https://music.youtube.com/watch?v=DVEoBIZm0V8',
