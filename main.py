@@ -2089,7 +2089,9 @@ class VidinisDisco:
         self.sandra = tk.Button(self.master, text = "Sandra", width = 15, command = self.open_sandra, highlightbackground='cyan')
         self.boneym = tk.Button(self.master, text = "Boney M.", width = 15, command = self.open_boneym, highlightbackground='cyan')
         self.dsummer = tk.Button(self.master, text = "Donna Summer", width = 15, command = self.open_dsummer, highlightbackground='cyan')
-        self.uzdaryti_disco = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti, highlightbackground='cyan')
+        self.uzdaryti_disco = tk.Button(self.master, text = "\u2573 Uždaryti", width = 25, command = self.uzdaryti, highlightbackground='cyan')
+        self.uzrasas1 = Label(self.master, text = "Išsirinkite atlikėją ir\njo dainą parinksime atsitiktinai.", font = ('Courier New', 15, "bold"), fg = 'white', bg = 'cyan')
+        self.uzrasas2 = Label(self.master, text = "Arba išsirinkite atlikėją\n ir dainą, kurią norite klausyti.", font = ('Courier New', 15, "bold"), fg = 'white', bg = 'cyan')
         self.atlikeju_sarasas = ["Abba", "Bee Gees", "Sandra", "Boney M.", "Donna Summer"]
         self.abba_dainos = ["Gimme Gimme",
                             "Dancing Queen",
@@ -2148,20 +2150,22 @@ class VidinisDisco:
                         ]
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
         self.atlikeju_boks.current(0)
-        self.atlikeju_boks.pack()
+        self.atlikeju_boks.grid(row = 7, column=0)
         self.atlikeju_boks.bind("<<ComboboxSelected>>", self.pasirinkti_daina)
         self.dainu_boks = ttk.Combobox(self.master, value = [' '])
         self.dainu_boks.current(0)
-        self.dainu_boks.pack()
+        self.dainu_boks.grid(row = 7, column=1)
 
         self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='cyan', command = self.picker)
-        self.pasirinkti_mygtukas.pack()
-        self.abba.pack()
-        self.beegees.pack()
-        self.sandra.pack()
-        self.boneym.pack()
-        self.dsummer.pack()
-        self.uzdaryti_disco.pack()
+        self.pasirinkti_mygtukas.grid(row = 8, columnspan=2)
+        self.uzrasas1.grid(row = 0, columnspan=2)
+        self.abba.grid(row = 1, columnspan=2)
+        self.beegees.grid(row = 2, columnspan=2)
+        self.sandra.grid(row = 3, columnspan=2)
+        self.boneym.grid(row = 4, columnspan=2)
+        self.dsummer.grid(row = 5, columnspan=2)
+        self.uzrasas2.grid(row = 6, columnspan=2)
+        self.uzdaryti_disco.grid(row = 9, columnspan=2)
     
     def picker(self):
         if self.dainu_boks.get() == "Gimme Gimme":
