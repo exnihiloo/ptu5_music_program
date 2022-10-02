@@ -1521,7 +1521,7 @@ class VidinisRap:
                         ]
         self.snoop_dog_dainos = ["Drop it Like it's Hot",
                                 "Sensual Seduction",
-                                "Nuthing but A-G Thing",
+                                "Nuthin' but A-G Thing",
                                 "Who Am I?",
                                 "Gin & Juice",
                                 "Vato",
@@ -1602,6 +1602,27 @@ class VidinisRap:
             webbrowser.open(('https://music.youtube.com/watch?v=Obim8BYGnOE'), new = 2)
         if self.dainu_boks.get() == "Drips":
             webbrowser.open(('https://music.youtube.com/watch?v=HX0qXWwVKEA'), new = 2)
+        if self.dainu_boks.get() == "Drop it Like it's Hot":
+            webbrowser.open(('https://music.youtube.com/watch?v=ldjajgAHAu4'), new = 2)
+        if self.dainu_boks.get() == "Sensual Seduction":
+            webbrowser.open(('https://music.youtube.com/watch?v=a1Vunyag-w0'), new = 2)
+        if self.dainu_boks.get() == "Nuthin' but A-G Thing":
+            webbrowser.open(('https://music.youtube.com/watch?v=ogEUHBUV-bo'), new = 2)
+        if self.dainu_boks.get() == "Who Am I?":
+            webbrowser.open(('https://music.youtube.com/watch?v=sXx3gtLouNU'), new = 2)
+        if self.dainu_boks.get() == "Gin & Juice":
+            webbrowser.open(('https://music.youtube.com/watch?v=7qiZ21aL81c'), new = 2)
+        if self.dainu_boks.get() == "Vato":
+            webbrowser.open(('https://music.youtube.com/watch?v=Inw7B2F6_Hc'), new = 2)
+        if self.dainu_boks.get() == "A Bitch I Knew":
+            webbrowser.open(('https://music.youtube.com/watch?v=Y3lVNNBTzL8'), new = 2)
+        if self.dainu_boks.get() == "Crazy":
+            webbrowser.open(('https://music.youtube.com/watch?v=GflVCALGSLQ'), new = 2)
+        if self.dainu_boks.get() == "Boom":
+            webbrowser.open(('https://music.youtube.com/watch?v=RT8LrkaaSHk'), new = 2)
+        if self.dainu_boks.get() == "Smoke the Weed":
+            webbrowser.open(('https://music.youtube.com/watch?v=Wo9xc7G9KOg'), new = 2)
+
 
     def pasirinkti_daina(self, value):
         if self.atlikeju_boks.get() == "Eminem":
