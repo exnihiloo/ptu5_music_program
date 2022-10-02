@@ -2135,7 +2135,26 @@ class VidinisDisco:
         self.uzdaryti_disco.pack()
     
     def picker(self):
-        pass
+        if self.dainu_boks.get() == "Gimme Gimme":
+            webbrowser.open(('https://music.youtube.com/watch?v=pa2j0Bh83ms'), new = 2)
+        if self.dainu_boks.get() == "Dancing Queen":
+            webbrowser.open(('https://music.youtube.com/watch?v=YkLLcIKhJ64'), new = 2)
+        if self.dainu_boks.get() == "Mama Mia":
+            webbrowser.open(('https://music.youtube.com/watch?v=KMViJKmAV4M'), new = 2)
+        if self.dainu_boks.get() == "Waterloo":
+            webbrowser.open(('https://music.youtube.com/watch?v=9y-8ZiAJiQo'), new = 2)
+        if self.dainu_boks.get() == "SOS":
+            webbrowser.open(('https://music.youtube.com/watch?v=CxMcD8QHVag'), new = 2)
+        if self.dainu_boks.get() == "Lay All Your Love On Me":
+            webbrowser.open(('https://music.youtube.com/watch?v=5mHzaIehRTE'), new = 2)
+        if self.dainu_boks.get() == "Voulez Vous":
+            webbrowser.open(('https://music.youtube.com/watch?v=0X2mn7Sk9lQ'), new = 2)
+        if self.dainu_boks.get() == "Money Money":
+            webbrowser.open(('https://music.youtube.com/watch?v=1LPNuFkteI8'), new = 2)
+        if self.dainu_boks.get() == "Take a Chance On Me":
+            webbrowser.open(('https://music.youtube.com/watch?v=DkkQ8dCPiwA'), new = 2)
+        if self.dainu_boks.get() == "Fernando":
+            webbrowser.open(('https://music.youtube.com/watch?v=b-U3-Sla8GM'), new = 2)
 
     def pasirinkti_daina(self, value):
         if self.atlikeju_boks.get() == "Abba":
