@@ -2338,6 +2338,62 @@ class VidinisJazz:
         self.ninasimone = tk.Button(self.master, text = "Nina Simone", width = 15, command = self.open_nina_simone, highlightbackground = "DarkGoldenrod1")
         self.uzdaryti_jazz = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti, highlightbackground = "DarkGoldenrod1")
         self.atlikeju_sarasas = ["Candy Dulfer", "Louis Amstrong", "Ella Fitzgerald", "Count Basie", "Nina Simone"]
+        self.candy_dainos = ["Lily Was Here",
+                            "Smooth",
+                            "If I ruled the World",
+                            "For the Love of You",
+                            "Promises",
+                            "Music=Love",
+                            "Candy",
+                            "Right in My Soul",
+                            "D.I.S.C.O",
+                            "Wish You Were Here"
+                        ]
+        self.louis_dainos = ["What a Wonderful World",
+                            "When You Were Smiling",
+                            "Mack the Knife",
+                            "St. James Infirmary",
+                            "I Ain't Got Nobody",
+                            "Hello Brother",
+                            "Jeepers Creepers",
+                            "Gonne Fishing",
+                            "Bibbidi-Bobbidi-Boo",
+                            "Hello Dolly"
+                        ]
+        self.ella_dainos = ["Cry Me a River",
+                            "All of Me",
+                            "Summertime",
+                            "Misty",
+                            "Dream a Little Dream of Me",
+                            "Cheek to Cheek",
+                            "I can't Get Started",
+                            "Angel Eyes",
+                            "Like Someone in Love",
+                            "Always"
+                        ]
+        self.basie_dainos = ["Lady Be Good",
+                            "Straight Ahead",
+                            "Corner Pocket",
+                            "Teddy the Toad",
+                            "Hay Burner",
+                            "Moten Swing",
+                            "Strike Up the Band",
+                            "Lonely Street",
+                            "Switch in Time",
+                            "Lil' Darlin"
+                        ]
+        self.ninas_dainos = ["Feeling Good",
+                            "I Put a Spell on You",
+                            "Sinnerman",
+                            "My Way",
+                            "Blues for Mama",
+                            "Take Me to the Water",
+                            "Strange Fruit",
+                            "I am Blessed",
+                            "Cherish",
+                            "Blackbird"
+                        ]
+
         self.candyd.pack()
         self.amstrong.pack()
         self.fitzgerald.pack()
