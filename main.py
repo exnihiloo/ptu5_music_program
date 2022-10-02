@@ -2117,13 +2117,28 @@ class VidinisDisco:
                             "Rumour Has It",
                             "Protection"
                         ]
+        self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
+        self.atlikeju_boks.current(0)
+        self.atlikeju_boks.pack()
+        self.atlikeju_boks.bind("<<ComboboxSelected>>", self.pasirinkti_daina)
+        self.dainu_boks = ttk.Combobox(self.master, value = [' '])
+        self.dainu_boks.current(0)
+        self.dainu_boks.pack()
 
+        self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='cyan', command = self.picker)
+        self.pasirinkti_mygtukas.pack()
         self.abba.pack()
         self.beegees.pack()
         self.sandra.pack()
         self.boneym.pack()
         self.dsummer.pack()
         self.uzdaryti_disco.pack()
+    
+    def picker(self):
+        pass
+
+    def pasirinkti_daina(self):
+        pass
 
     def open_abba(self):
         self.random_abba = ['https://music.youtube.com/watch?v=pa2j0Bh83ms',
