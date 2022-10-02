@@ -40,18 +40,23 @@ class Quiz:
         pass
 
     def radio_buttons(self):
-        pass
-
-
-
-
-
-
-
-
-
-
-
+        # sukuriam sąrašą su tuščiu pasirinkimų sąrašu
+        q_list = []
+        # pirmo pasirinkimo pozicija lange
+        y_pos = 90
+        # pridedame pasirinkimus į sąrašą
+        while len(q_list) < 4:
+            # nustatome radio buttons ypatybes
+            radio_btn = Radiobutton(langas, text=" ", variable = self.pasirinktas_ats,
+            value = len(q_list) + 1, font = ("ariel", 14))
+            # pridedame radio mygtuką į sąrašą
+            q_list.append(radio_btn)
+            # nustatome radio mygtukų vietą lange
+            radio_btn.place(x = 70, y = y_pos)
+            # padidinam 30 y-axis poziciją
+            y_pos += 30
+        # grąžinam radio mygtukus
+        return q_list
 
 
 
