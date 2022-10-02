@@ -2393,13 +2393,28 @@ class VidinisJazz:
                             "Cherish",
                             "Blackbird"
                         ]
+        self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
+        self.atlikeju_boks.current(0)
+        self.atlikeju_boks.pack()
+        self.atlikeju_boks.bind("<<ComboboxSelected>>", self.pasirinkti_daina)
+        self.dainu_boks = ttk.Combobox(self.master, value = [' '])
+        self.dainu_boks.current(0)
+        self.dainu_boks.pack()
 
+        self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='DarkGoldenrod1', command = self.picker)
+        self.pasirinkti_mygtukas.pack()
         self.candyd.pack()
         self.amstrong.pack()
         self.fitzgerald.pack()
         self.countb.pack()
         self.ninasimone.pack()
         self.uzdaryti_jazz.pack()
+
+    def picker(self):
+        pass
+
+    def pasirinkti_daina(self):
+        pass
 
     
     def open_candy_duler(self):
