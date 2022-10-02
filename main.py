@@ -1859,7 +1859,26 @@ class VidinisPop:
         self.uzdaryti_pop.pack()
 
     def picker(self):
-        pass
+        if self.dainu_boks.get() == "Bad Romance":
+            webbrowser.open(('https://music.youtube.com/watch?v=fiRjp6y6QvI'), new = 2)
+        if self.dainu_boks.get() == "Alejandro":
+            webbrowser.open(('https://music.youtube.com/watch?v=DVEoBIZm0V8'), new = 2)
+        if self.dainu_boks.get() == "Hold My Hand":
+            webbrowser.open(('https://music.youtube.com/watch?v=nkzaMdWoqPU'), new = 2)
+        if self.dainu_boks.get() == "Poker Face":
+            webbrowser.open(('https://music.youtube.com/watch?v=GMAVUvb8Obs'), new = 2)
+        if self.dainu_boks.get() == "Born This Way":
+            webbrowser.open(('https://music.youtube.com/watch?v=fn8JP4rUP2I'), new = 2)
+        if self.dainu_boks.get() == "Judas":
+            webbrowser.open(('https://music.youtube.com/watch?v=9WfWnkVLwao'), new = 2)
+        if self.dainu_boks.get() == "Paparazzi":
+            webbrowser.open(('https://music.youtube.com/watch?v=V9qrpe2z9mE'), new = 2)
+        if self.dainu_boks.get() == "John Wayne":
+            webbrowser.open(('https://music.youtube.com/watch?v=7CkGrvx9Z3g'), new = 2)
+        if self.dainu_boks.get() == "Alice":
+            webbrowser.open(('https://music.youtube.com/watch?v=41CjTbmI9aQ'), new = 2)
+        if self.dainu_boks.get() == "Love Game":
+            webbrowser.open(('https://music.youtube.com/watch?v=cSRxQoeKbVM'), new = 2)
 
     def pasirinkti_daina(self, value):
         if self.atlikeju_boks.get() == "Lady Gaga":
