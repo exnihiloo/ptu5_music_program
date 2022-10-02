@@ -46,7 +46,7 @@ class PagrindinisLangas:
         self.vidinis2 = tk.Toplevel(self.master)
         self.vidinis2.title("\u262E Reggae")
         self.vidinis2.configure(bg = "green")
-        self.vidinis2.geometry("430x400")
+        self.vidinis2.geometry("410x350")
         self.app = VidinisReggae(self.vidinis2)
 
     def new_window3(self):
@@ -114,8 +114,8 @@ class VidinisRock:
         self.ledzep = tk.Button(self.master, text = "Led Zeppelin", width = 15, command = self.open_ledzep, highlightbackground='red')
         self.deep_purple = tk.Button(self.master, text = "Deep Purple", width = 15, command = self.open_deep_purple, highlightbackground='red')
         self.uzdarytirock = tk.Button(self.master, text = "\u2573 Uždaryti", width = 25, command = self.uzdaryti, highlightbackground='red')
-        self.uzrasas1 = Label(self.master, text = "Išsirinkite atlikėją ir\njo dainą parinksime atsitiktinai.", fg = 'white', bg = "red")
-        self.uzrasas2 = Label(self.master, text = "Arba išsirinkite atlikėją\n ir dainą, kurią norite klausyti.", fg = 'white', bg = "red")
+        self.uzrasas1 = Label(self.master, text = "Išsirinkite atlikėją ir\njo dainą parinksime atsitiktinai.", font = ('Courier New', 15, "bold"), fg = 'white', bg = "red")
+        self.uzrasas2 = Label(self.master, text = "Arba išsirinkite atlikėją\n ir dainą, kurią norite klausyti.", font = ('Courier New', 15, "bold"), fg = 'white', bg = "red")
        # kuriam atlikėjų ir jų dainų sąrašus
         self.atlikeju_sarasas = ['Queen', "AC/DC", "The Doors", "Led Zeppelin", "Deep Purple"]
         self.queen_dainos = ["Bohemian Rhapsody", 
@@ -401,7 +401,9 @@ class VidinisReggae:
         self.mouse = tk.Button(self.master, text = "Eek-A-Mouse", width = 15, command = self.open_eekmouse, highlightbackground='green')
         self.damianm = tk.Button(self.master, text = "Damian Marley", width = 15, command = self.open_damian_marley, highlightbackground='green')
         self.albarosie = tk.Button(self.master, text = "Alborosie", width = 15, command = self.open_albarosie, highlightbackground='green')
-        self.uzdarytireggae = tk.Button(self.master, text = "\u2573 Uždaryti", command = self.uzdaryti, highlightbackground='green')
+        self.uzdarytireggae = tk.Button(self.master, text = "\u2573 Uždaryti", width = 25, command = self.uzdaryti, highlightbackground='green')
+        self.uzrasas1 = Label(self.master, text = "Išsirinkite atlikėją ir\njo dainą parinksime atsitiktinai.", font = ('Courier New', 15, "bold"), fg = 'white', bg = "green")
+        self.uzrasas2 = Label(self.master, text = "Arba išsirinkite atlikėją\n ir dainą, kurią norite klausyti.", font = ('Courier New', 15, "bold"), fg = 'white', bg = "green")
         self.atlikeju_sarasas = ["Bob Marley & The Wailers", "Peter Tosh", "Eek-A-Mouse", "Damian Marley", "Alborosie"]
         self.bobm_dainos = ["Redemption Song",
                             "Three Little Birds",
@@ -461,23 +463,24 @@ class VidinisReggae:
                             ]
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
         self.atlikeju_boks.current(0)
-        self.atlikeju_boks.pack()
+        self.atlikeju_boks.grid(row = 7, column = 0)
         self.atlikeju_boks.bind("<<ComboboxSelected>>", self.pasirinkta_daina)
 
         self.dainu_boks = ttk.Combobox(self.master, value = [' '])
         self.dainu_boks.current(0)
-        self.dainu_boks.pack()
+        self.dainu_boks.grid(row = 7, column = 1)
 
         self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='green', command = self.picker)
-        self.pasirinkti_mygtukas.pack()
+        self.pasirinkti_mygtukas.grid(row = 8, columnspan=2)
 
-
-        self.bobm.pack()
-        self.peter.pack()
-        self.mouse.pack()
-        self.damianm.pack()
-        self.albarosie.pack()
-        self.uzdarytireggae.pack()
+        self.uzrasas1.grid(row = 0, columnspan=2)
+        self.bobm.grid(row = 1, columnspan=2)
+        self.peter.grid(row = 2, columnspan=2)
+        self.mouse.grid(row = 3, columnspan=2)
+        self.damianm.grid(row = 4, columnspan=2)
+        self.albarosie.grid(row = 5, columnspan=2)
+        self.uzrasas2.grid(row = 6, columnspan=2)
+        self.uzdarytireggae.grid(row = 12, columnspan=2)
 
 
     def picker(self):
