@@ -2750,6 +2750,26 @@ class VidinisBlues:
             webbrowser.open(('https://music.youtube.com/watch?v=DMJgdb0LGDQ'), new = 2)
         if self.dainu_boks.get() == "Get Out of Here":
             webbrowser.open(('https://music.youtube.com/watch?v=5EHpHkqI394'), new = 2)
+        if self.dainu_boks.get() == "Picasso Blues":
+            webbrowser.open(('https://music.youtube.com/watch?v=oUJbLSQZ3vA'), new = 2)
+        if self.dainu_boks.get() == "Black Paris Blues":
+            webbrowser.open(('https://music.youtube.com/watch?v=RFBgE_61BPc'), new = 2)
+        if self.dainu_boks.get() == "Blues is a Woman Woe is a Man":
+            webbrowser.open(('https://music.youtube.com/watch?v=FFYSw9uNK2c'), new = 2)
+        if self.dainu_boks.get() == "My Blues, My Woman and My Car":
+            webbrowser.open(('https://music.youtube.com/watch?v=k4dh9bm3DH8'), new = 2)
+        if self.dainu_boks.get() == "Black Coffee and Cigarettes":
+            webbrowser.open(('https://music.youtube.com/watch?v=GRnQT6gmg10'), new = 2)
+        if self.dainu_boks.get() == "The Boy Who Stole the Blues":
+            webbrowser.open(('https://music.youtube.com/watch?v=g0wu5vLX4Ug'), new = 2)
+        if self.dainu_boks.get() == "Shame":
+            webbrowser.open(('https://music.youtube.com/watch?v=UZ1vGjG7lu0'), new = 2)
+        if self.dainu_boks.get() == "No Regrets":
+            webbrowser.open(('https://music.youtube.com/watch?v=Y3x5RzSkovM'), new = 2)
+        if self.dainu_boks.get() == "Tomorrow Isn't Promised":
+            webbrowser.open(('https://music.youtube.com/watch?v=4x6o8kZe50w'), new = 2)
+        if self.dainu_boks.get() == "Cadillac Ranch":
+            webbrowser.open(('https://music.youtube.com/watch?v=PQ0Y3JwLw0g'), new = 2)
 
 
     
