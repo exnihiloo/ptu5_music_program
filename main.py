@@ -2471,6 +2471,27 @@ class VidinisJazz:
             webbrowser.open(('https://music.youtube.com/watch?v=RxflhrRcyLk'), new = 2)
         if self.dainu_boks.get() == "Hello Dolly":
             webbrowser.open(('https://music.youtube.com/watch?v=YCM0APgpdZc'), new = 2)
+        if self.dainu_boks.get() == "Lady Be Good":
+            webbrowser.open(('https://music.youtube.com/watch?v=iHfwUwmX3V4'), new = 2)
+        if self.dainu_boks.get() == "Straight Ahead":
+            webbrowser.open(('https://music.youtube.com/watch?v=fm8uHT-BJP4'), new = 2)
+        if self.dainu_boks.get() == "Corner Pocket":
+            webbrowser.open(('https://music.youtube.com/watch?v=bTcmPGdDecw'), new = 2)
+        if self.dainu_boks.get() == "Teddy the Toad":
+            webbrowser.open(('https://music.youtube.com/watch?v=hL0PVQi-syk'), new = 2)
+        if self.dainu_boks.get() == "Hay Burner":
+            webbrowser.open(('https://music.youtube.com/watch?v=_Jl9IOqZb7U'), new = 2)
+        if self.dainu_boks.get() == "Moten Swing":
+            webbrowser.open(('https://music.youtube.com/watch?v=MxYWsWpjCOY'), new = 2)
+        if self.dainu_boks.get() == "Strike Up the Band":
+            webbrowser.open(('https://music.youtube.com/watch?v=03cLoi0bfo4'), new = 2)
+        if self.dainu_boks.get() == "Lonely Street":
+            webbrowser.open(('https://music.youtube.com/watch?v=I2l4qBuFWgE'), new = 2)
+        if self.dainu_boks.get() == "Switch in Time":
+            webbrowser.open(('https://music.youtube.com/watch?v=BSe0vKkRCrs'), new = 2)
+        if self.dainu_boks.get() == "Lil' Darlin":
+            webbrowser.open(('https://music.youtube.com/watch?v=nqn4nyZz0to'), new = 2)
+        
 
 
     def pasirinkti_daina(self, value):
