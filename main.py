@@ -1541,7 +1541,7 @@ class VidinisRap:
                             "Hellrazor",
                             "Ghetto Gospel"
                         ]
-        self.nwa_dainos = ["Fuck The Police",
+        self.nwa_dainos = ["Fuck Tha Police",
                             "Straight Outta Compton",
                             "Gangsta Gangsta",
                             "Dope Man",
@@ -1642,6 +1642,27 @@ class VidinisRap:
             webbrowser.open(('https://music.youtube.com/watch?v=T92u3_z7dS8'), new = 2)
         if self.dainu_boks.get() == "Ghetto Gospel":
             webbrowser.open(('https://music.youtube.com/watch?v=EyBwEbdI0H0'), new = 2)
+        if self.dainu_boks.get() == "Fuck Tha Police":
+            webbrowser.open(('https://music.youtube.com/watch?v=ADdpLv3RDhA'), new = 2)
+        if self.dainu_boks.get() == "Straight Outta Compton":
+            webbrowser.open(('https://music.youtube.com/watch?v=9OJStAZz1bc'), new = 2)
+        if self.dainu_boks.get() == "Gangsta Gangsta":
+            webbrowser.open(('https://music.youtube.com/watch?v=aCAkHFavEdw'), new = 2)
+        if self.dainu_boks.get() == "Dope Man":
+            webbrowser.open(('https://music.youtube.com/watch?v=yG9aTpyyCaY'), new = 2)
+        if self.dainu_boks.get() == "A Bitch Iz A Bitch":
+            webbrowser.open(('https://music.youtube.com/watch?v=JRx7R7bcPZs'), new = 2)
+        if self.dainu_boks.get() == "Something 2 Dance 2":
+            webbrowser.open(('https://music.youtube.com/watch?v=xDRKKMVjgaU'), new = 2)
+        if self.dainu_boks.get() == "Appetite for Destruction":
+            webbrowser.open(('https://music.youtube.com/watch?v=R1dXVy3Mf7Y'), new = 2)
+        if self.dainu_boks.get() == "Real Niggaz":
+            webbrowser.open(('https://music.youtube.com/watch?v=6-ihjmlTTeA'), new = 2)
+        if self.dainu_boks.get() == "8 Ball":
+            webbrowser.open(('https://music.youtube.com/watch?v=TvGYSPv496U'), new = 2)
+        if self.dainu_boks.get() == "Express Yourself":
+            webbrowser.open(('https://music.youtube.com/watch?v=gHzSpx_9Eww'), new = 2)
+
 
 
     def pasirinkti_daina(self, value):
