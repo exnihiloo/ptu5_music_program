@@ -37,7 +37,13 @@ class Quiz:
         klausimai.place(x=40, y=50)
 
     def rodyti_pasirinkimus(self):
-        pass
+        val = 0
+        # nuimam taškelius nuo pasirinkimų, kai išmetamas kitas klausimas
+        self.pasirinktas_ats.set(0)
+        # loopinam per pasirinkimus iš json failo, kurie rodomi, kaip tekstas prie radio button
+        for option in options[self.klausimai]:
+            self.opcija[val]['text'] = option
+            val += 1
 
     def radio_buttons(self):
         # sukuriam sąrašą su tuščiu pasirinkimų sąrašu
