@@ -53,56 +53,56 @@ class PagrindinisLangas:
         self.vidinis3 = tk.Toplevel(self.master)
         self.vidinis3.title("\U0001F3B8 Heavy Metal")
         self.vidinis3.configure(bg = "grey")
-        self.vidinis3.geometry("430x400")
+        self.vidinis3.geometry("410x350")
         self.app = VidinisHeavyMetal(self.vidinis3)
     
     def new_window4(self):
         self.vidinis4 = tk.Toplevel(self.master)
         self.vidinis4.title("\U0001F577 Punk")
         self.vidinis4.configure(bg = "MediumPurple4")
-        self.vidinis4.geometry("430x400")
+        self.vidinis4.geometry("410x350")
         self.app = VidinisPunk(self.vidinis4)
 
     def new_window5(self):
         self.vidinis5 = tk.Toplevel(self.master)
         self.vidinis5.title("\U0001F480 Black Metal")
         self.vidinis5.configure(bg = "midnight blue")
-        self.vidinis5.geometry("430x400")
+        self.vidinis5.geometry("410x350")
         self.app = VidinisBlackMetal(self.vidinis5)
 
     def new_window6(self):
         self.vidinis6 = tk.Toplevel(self.master)
         self.vidinis6.title("\U0001F576 Rap")
         self.vidinis6.configure(bg = "IndianRed4")
-        self.vidinis6.geometry("430x400")
+        self.vidinis6.geometry("410x350")
         self.app = VidinisRap(self.vidinis6)
 
     def new_window7(self):
         self.vidinis7 = tk.Toplevel(self.master)
         self.vidinis7.title("\U0001F46F Pop")
         self.vidinis7.configure(bg = "hot pink")
-        self.vidinis7.geometry("430x400")
+        self.vidinis7.geometry("410x350")
         self.app = VidinisPop(self.vidinis7)
 
     def new_window8(self):
         self.vidinis8 = tk.Toplevel(self.master)
         self.vidinis8.title("\U0001F4BF Disco")
         self.vidinis8.configure(bg = "cyan")
-        self.vidinis8.geometry("430x400")
+        self.vidinis8.geometry("410x350")
         self.app = VidinisDisco(self.vidinis8)
 
     def new_window9(self):
         self.vidinis9 = tk.Toplevel(self.master)
         self.vidinis9.title("\U0001F3B7 Jazz")
         self.vidinis9.configure(bg = "DarkGoldenrod1")
-        self.vidinis9.geometry("430x400")
+        self.vidinis9.geometry("410x350")
         self.app = VidinisJazz(self.vidinis9)
 
     def new_window10(self):
         self.vidinis10 = tk.Toplevel(self.master)
         self.vidinis10.title("\U0001FA95 Blues")
         self.vidinis10.configure(bg = "burlywood4")
-        self.vidinis10.geometry("430x400")
+        self.vidinis10.geometry("410x350")
         self.app = VidinisBlues(self.vidinis10)
 
 class VidinisRock:
@@ -684,7 +684,9 @@ class VidinisHeavyMetal:
         self.judasp = tk.Button(self.master, text = "Judas Priest", width = 15, command = self.open_judasp, highlightbackground='grey')
         self.dio = tk.Button(self.master, text = "Dio", width = 15, command = self.open_dio, highlightbackground='grey')
         self.saxon = tk.Button(self.master, text = "Saxon", width = 15, command = self.open_saxon, highlightbackground='grey')
-        self.uzdaryti_metal = tk.Button(self.master, text = "\u2573 Uždaryti", command = self.uzdaryti, highlightbackground='grey')
+        self.uzdaryti_metal = tk.Button(self.master, text = "\u2573 Uždaryti", width = 25, command = self.uzdaryti, highlightbackground='grey')
+        self.uzrasas1 = Label(self.master, text = "Išsirinkite atlikėją ir\njo dainą parinksime atsitiktinai.", font = ('Courier New', 15, "bold"), fg = 'white', bg = "grey")
+        self.uzrasas2 = Label(self.master, text = "Arba išsirinkite atlikėją\n ir dainą, kurią norite klausyti.", font = ('Courier New', 15, "bold"), fg = 'white', bg = "grey")
         self.atlikeju_sarasas = ["Iron Maiden", "Black Sabbath", "Judas Priest", "Dio", "Saxon"]
         self.ironm_dainos = ["Fear of the Dark",
                             "Hallowed be thy name",
@@ -744,22 +746,23 @@ class VidinisHeavyMetal:
 
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
         self.atlikeju_boks.current(0)
-        self.atlikeju_boks.pack()
+        self.atlikeju_boks.grid(row = 7, column = 0)
         self.atlikeju_boks.bind("<<ComboboxSelected>>", self.pasirinkti_daina)
         self.dainu_boks = ttk.Combobox(self.master, value = [' '])
         self.dainu_boks.current(0)
-        self.dainu_boks.pack()
+        self.dainu_boks.grid(row = 7, column = 1)
 
         self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='grey', command = self.picker)
-        self.pasirinkti_mygtukas.pack()
+        self.pasirinkti_mygtukas.grid(row = 8, columnspan = 2)
 
-
-        self.ironm.pack()
-        self.blacksab.pack()
-        self.judasp.pack()
-        self.dio.pack()
-        self.saxon.pack()
-        self.uzdaryti_metal.pack()
+        self.uzrasas1.grid(row = 0, columnspan=2)
+        self.ironm.grid(row = 1, columnspan=2)
+        self.blacksab.grid(row = 2, columnspan=2)
+        self.judasp.grid(row = 3, columnspan=2)
+        self.dio.grid(row = 4, columnspan=2)
+        self.saxon.grid(row = 5, columnspan=2)
+        self.uzdaryti_metal.grid(row = 9, columnspan=2)
+        self.uzrasas2.grid(row = 6, columnspan=2)
         
     def picker(self):
         if self.dainu_boks.get() == "Fear of the Dark":
