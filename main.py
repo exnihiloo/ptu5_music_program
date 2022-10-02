@@ -2195,6 +2195,26 @@ class VidinisDisco:
             webbrowser.open(('https://music.youtube.com/watch?v=bIY4cSzlSLk'), new = 2)
         if self.dainu_boks.get() == "Hi! Hi! Hi!":
             webbrowser.open(('https://music.youtube.com/watch?v=iBZedwqwpMo'), new = 2)
+        if self.dainu_boks.get() == "Daddy Cool":
+            webbrowser.open(('https://music.youtube.com/watch?v=iQEpTa3VqLU'), new = 2)
+        if self.dainu_boks.get() == "Rasputin":
+            webbrowser.open(('https://music.youtube.com/watch?v=5Z0dxsFmX7c'), new = 2)
+        if self.dainu_boks.get() == "Sunny":
+            webbrowser.open(('https://music.youtube.com/watch?v=bQ7k2YRODT4'), new = 2)
+        if self.dainu_boks.get() == "Rivers of Babylon":
+            webbrowser.open(('https://music.youtube.com/watch?v=gr8jSYC03gQ'), new = 2)
+        if self.dainu_boks.get() == "Ma Baker":
+            webbrowser.open(('https://music.youtube.com/watch?v=2GogVZiVFxM'), new = 2)
+        if self.dainu_boks.get() == "Brown Girl in the Ring":
+            webbrowser.open(('https://music.youtube.com/watch?v=2VKeyJEouv4'), new = 2)
+        if self.dainu_boks.get() == "Jimmy":
+            webbrowser.open(('https://music.youtube.com/watch?v=ix4VWyLJv8Y'), new = 2)
+        if self.dainu_boks.get() == "Heart of Gold":
+            webbrowser.open(('https://music.youtube.com/watch?v=nCyeIoajBl8'), new = 2)
+        if self.dainu_boks.get() == "Happy Song":
+            webbrowser.open(('https://music.youtube.com/watch?v=mJU3K16AiHs'), new = 2)
+        if self.dainu_boks.get() == "Hands Up":
+            webbrowser.open(('https://music.youtube.com/watch?v=dlaGYG4iOas'), new = 2)
         
 
     def pasirinkti_daina(self, value):
