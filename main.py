@@ -2369,7 +2369,9 @@ class VidinisJazz:
         self.fitzgerald = tk.Button(self.master, text = "Ella Fitzgerald", width = 15, command = self.open_fitzgerald, highlightbackground = "DarkGoldenrod1")
         self.countb = tk.Button(self.master, text = "Count Basie", width = 15, command = self.open_countb, highlightbackground = "DarkGoldenrod1")
         self.ninasimone = tk.Button(self.master, text = "Nina Simone", width = 15, command = self.open_nina_simone, highlightbackground = "DarkGoldenrod1")
-        self.uzdaryti_jazz = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti, highlightbackground = "DarkGoldenrod1")
+        self.uzdaryti_jazz = tk.Button(self.master, text = "\u2573 Uždaryti", width = 25, command = self.uzdaryti, highlightbackground = "DarkGoldenrod1")
+        self.uzrasas1 = Label(self.master, text = "Išsirinkite atlikėją ir\njo dainą parinksime atsitiktinai.", font = ('Courier New', 15, "bold"), fg = 'white', bg = "DarkGoldenrod1")
+        self.uzrasas2 = Label(self.master, text = "Arba išsirinkite atlikėją\n ir dainą, kurią norite klausyti.", font = ('Courier New', 15, "bold"), fg = 'white', bg = "DarkGoldenrod1")
         self.atlikeju_sarasas = ["Candy Dulfer", "Louis Amstrong", "Ella Fitzgerald", "Count Basie", "Nina Simone"]
         self.candy_dainos = ["Lily Was Here",
                             "Smooth",
@@ -2428,20 +2430,22 @@ class VidinisJazz:
                         ]
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
         self.atlikeju_boks.current(0)
-        self.atlikeju_boks.pack()
+        self.atlikeju_boks.grid(row = 8, column=0)
         self.atlikeju_boks.bind("<<ComboboxSelected>>", self.pasirinkti_daina)
         self.dainu_boks = ttk.Combobox(self.master, value = [' '])
         self.dainu_boks.current(0)
-        self.dainu_boks.pack()
+        self.dainu_boks.grid(row = 8, column=1)
 
         self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='DarkGoldenrod1', command = self.picker)
-        self.pasirinkti_mygtukas.pack()
-        self.candyd.pack()
-        self.amstrong.pack()
-        self.fitzgerald.pack()
-        self.countb.pack()
-        self.ninasimone.pack()
-        self.uzdaryti_jazz.pack()
+        self.pasirinkti_mygtukas.grid(row = 9, columnspan=2)
+        self.uzrasas1.grid(row = 1, columnspan=2)
+        self.candyd.grid(row = 2, columnspan=2)
+        self.amstrong.grid(row = 3, columnspan=2)
+        self.fitzgerald.grid(row = 4, columnspan=2)
+        self.countb.grid(row = 5, columnspan=2)
+        self.ninasimone.grid(row = 6, columnspan=2)
+        self.uzrasas2.grid(row = 7, columnspan=2)
+        self.uzdaryti_jazz.grid(row = 10, columnspan=2)
 
     def picker(self):
         if self.dainu_boks.get() == "Blackbird":
