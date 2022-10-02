@@ -49,7 +49,7 @@ class Quiz:
         # einame prie kito klausimo taip pridedame 1 prie paklaustų klausimų 
         self.klausimai += 1
         # tikrinam ar klausimai lygūs skaičiui visų klausimų
-        if self.klausimai==self.viso_klausimu:
+        if self.klausimai == self.viso_klausimu:
             # jei taip parodomas rezultatas
             self.display_result()
             langas.destroy()
@@ -94,7 +94,7 @@ class Quiz:
             q_list.append(radio_btn)
             # nustatome radio mygtukų vietą lange
             radio_btn.place(x = 70, y = y_pos)
-            # padidinam 30 y-axis poziciją
+            # padidinam 30 y-axis poziciją, tarpai tarp radio button
             y_pos += 30
         # grąžinam radio mygtukus
         return q_list
