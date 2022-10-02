@@ -1528,7 +1528,9 @@ class VidinisRap:
         self.pac = tk.Button(self.master, text = "2Pac", width = 15, command = self.open_2pac, highlightbackground='IndianRed4')
         self.nwa = tk.Button(self.master, text = "N.W.A.", width = 15, command = self.open_nwa, highlightbackground='IndianRed4')
         self.lamar = tk.Button(self.master, text = "Kendrick Lamar", width = 15, command = self.open_kendric, highlightbackground='IndianRed4')
-        self.uzdaryti_rap = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti, highlightbackground='IndianRed4')
+        self.uzdaryti_rap = tk.Button(self.master, text = "\u2573 Uždaryti", width = 25, command = self.uzdaryti, highlightbackground='IndianRed4')
+        self.uzrasas1 = Label(self.master, text = "Išsirinkite atlikėją ir\njo dainą parinksime atsitiktinai.", font = ('Courier New', 15, "bold"), fg = 'white', bg = 'IndianRed4')
+        self.uzrasas2 = Label(self.master, text = "Arba išsirinkite atlikėją\n ir dainą, kurią norite klausyti.", font = ('Courier New', 15, "bold"), fg = 'white', bg = 'IndianRed4')
         self.atlikeju_sarasas = ["Eminem", "Snoop Dog", "2Pac", "N.W.A.", "Kendrick Lamar"]
         self.eminem_dainos = ["Stan",
                             "Without Me",
@@ -1587,21 +1589,22 @@ class VidinisRap:
                         ]
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
         self.atlikeju_boks.current(0)
-        self.atlikeju_boks.pack()
+        self.atlikeju_boks.grid(row = 7, column = 0)
         self.atlikeju_boks.bind("<<ComboboxSelected>>", self.pasirinkti_daina)
         self.dainu_boks = ttk.Combobox(self.master, value = [' '])
         self.dainu_boks.current(0)
-        self.dainu_boks.pack()
+        self.dainu_boks.grid(row = 7, column = 1)
 
         self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='IndianRed4', command = self.picker)
-        self.pasirinkti_mygtukas.pack()
-
-        self.eminem.pack()
-        self.snoop.pack()
-        self.pac.pack()
-        self.nwa.pack()
-        self.lamar.pack()
-        self.uzdaryti_rap.pack()
+        self.pasirinkti_mygtukas.grid(row = 8, columnspan=2)
+        self.uzrasas1.grid(row = 0, columnspan=2)
+        self.eminem.grid(row = 1, columnspan=2)
+        self.snoop.grid(row = 2, columnspan=2)
+        self.pac.grid(row = 3, columnspan=2)
+        self.nwa.grid(row = 4, columnspan=2)
+        self.lamar.grid(row = 5, columnspan=2)
+        self.uzrasas2.grid(row = 6, columnspan=2)
+        self.uzdaryti_rap.grid(row = 9, columnspan=2)
 
     def picker(self):
         if self.dainu_boks.get() == "Stan":
