@@ -1582,7 +1582,26 @@ class VidinisRap:
         self.uzdaryti_rap.pack()
 
     def picker(self):
-        pass
+        if self.dainu_boks.get() == "Stan":
+            webbrowser.open(('https://music.youtube.com/watch?v=HIqQ0PfuPo8'), new = 2)
+        if self.dainu_boks.get() == "Without Me":
+            webbrowser.open(('https://music.youtube.com/watch?v=tqxRidAWER8'), new = 2)
+        if self.dainu_boks.get() == "Lose Yourself":
+            webbrowser.open(('https://music.youtube.com/watch?v=zlJ0Aj9y67c'), new = 2)
+        if self.dainu_boks.get() == "Not Afraid":
+            webbrowser.open(('https://music.youtube.com/watch?v=-grPV-Fae6I'), new = 2)
+        if self.dainu_boks.get() == "Mockingbird":
+            webbrowser.open(('https://music.youtube.com/watch?v=9kznlAwE-8o'), new = 2)
+        if self.dainu_boks.get() == "When I am Gone":
+            webbrowser.open(('https://music.youtube.com/watch?v=hWqLuSnyqbI'), new = 2)
+        if self.dainu_boks.get() == "The Real Slim Shady":
+            webbrowser.open(('https://music.youtube.com/watch?v=BdfpV-cIkuA'), new = 2)
+        if self.dainu_boks.get() == "Rap God":
+            webbrowser.open(('https://music.youtube.com/watch?v=MBJFPq2Llps'), new = 2)
+        if self.dainu_boks.get() == "Till' I Collapse":
+            webbrowser.open(('https://music.youtube.com/watch?v=Obim8BYGnOE'), new = 2)
+        if self.dainu_boks.get() == "Drips":
+            webbrowser.open(('https://music.youtube.com/watch?v=HX0qXWwVKEA'), new = 2)
 
     def pasirinkti_daina(self, value):
         if self.atlikeju_boks.get() == "Eminem":
