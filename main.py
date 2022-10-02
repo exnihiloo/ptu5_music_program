@@ -1530,7 +1530,7 @@ class VidinisRap:
                                 "Boom",
                                 "Smoke the Weed"
                             ]
-        self.pac_daingos = ["California Love",
+        self.pac_dainos = ["California Love",
                             "Hit'Em Up",
                             "All Eyes On Me",
                             "Hail Mary",
@@ -1584,8 +1584,22 @@ class VidinisRap:
     def picker(self):
         pass
 
-    def pasirinkti_daina(self):
-        pass
+    def pasirinkti_daina(self, value):
+        if self.atlikeju_boks.get() == "Eminem":
+            self.dainu_boks.config(value = self.eminem_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Snoop Dog":
+            self.dainu_boks.config(value = self.snoop_dog_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "2Pac":
+            self.dainu_boks.config(value = self.pac_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "N.W.A.":
+            self.dainu_boks.config(value = self.nwa_dainos)
+            self.dainu_boks.current(0)
+        if self.atlikeju_boks.get() == "Kendrick Lamar":
+            self.dainu_boks.config(value = self.lamar_dainos)
+            self.dainu_boks.current(0)
 
     def open_eminem(self):
         self.random_eminem = ['https://music.youtube.com/watch?v=HIqQ0PfuPo8',
