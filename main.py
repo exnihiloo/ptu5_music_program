@@ -2073,16 +2073,16 @@ class VidinisDisco:
                             "Take a Chance On Me",
                             "Fernando"
                         ]
-        self.bee_gees_dainos = ["Stayin Alive",
+        self.bee_gees_dainos = ["Stayin' Alive",
                                 "How Deep is Your Love",
                                 "Words",
-                                " I started a Joke",
+                                "I started a Joke",
                                 "Too Much Heaven",
                                 "You Should Be Dancing",
                                 "Night Fever",
                                 "Secret Love",
                                 "My World",
-                                "Jive Talkin"
+                                "Jive Talkin'"
                             ]
         self.sandra_dainos = ["Maria Magdelena",
                             "Heaven Can Wait",
@@ -2155,6 +2155,26 @@ class VidinisDisco:
             webbrowser.open(('https://music.youtube.com/watch?v=DkkQ8dCPiwA'), new = 2)
         if self.dainu_boks.get() == "Fernando":
             webbrowser.open(('https://music.youtube.com/watch?v=b-U3-Sla8GM'), new = 2)
+        if self.dainu_boks.get() == "Stayin' Alive":
+            webbrowser.open(('https://music.youtube.com/watch?v=W_dDNNEdIJg'), new = 2)
+        if self.dainu_boks.get() == "How Deep is Your Love":
+            webbrowser.open(('https://music.youtube.com/watch?v=lQkB4i0KQa8'), new = 2)
+        if self.dainu_boks.get() == "Words":
+            webbrowser.open(('https://music.youtube.com/watch?v=UmoAMZg8MvI'), new = 2)
+        if self.dainu_boks.get() == "I started a Joke":
+            webbrowser.open(('https://music.youtube.com/watch?v=4ZWKR2zJESk'), new = 2)
+        if self.dainu_boks.get() == "Too Much Heaven":
+            webbrowser.open(('https://music.youtube.com/watch?v=gdqVP35IQqQ'), new = 2)
+        if self.dainu_boks.get() == "You Should Be Dancing":
+            webbrowser.open(('https://music.youtube.com/watch?v=1sqE6P3XyiQ'), new = 2)
+        if self.dainu_boks.get() == "Night Fever":
+            webbrowser.open(('https://music.youtube.com/watch?v=Lc8uj8eId7E'), new = 2)
+        if self.dainu_boks.get() == "Secret Love":
+            webbrowser.open(('https://music.youtube.com/watch?v=LQviz__oHug'), new = 2)
+        if self.dainu_boks.get() == "My World":
+            webbrowser.open(('https://music.youtube.com/watch?v=-t7PTruoz6s'), new = 2)
+        if self.dainu_boks.get() == "Jive Talkin'":
+            webbrowser.open(('https://music.youtube.com/watch?v=SYVT-FMeFts'), new = 2)
 
     def pasirinkti_daina(self, value):
         if self.atlikeju_boks.get() == "Abba":
