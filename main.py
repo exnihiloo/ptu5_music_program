@@ -1809,7 +1809,9 @@ class VidinisPop:
         self.britneysp = tk.Button(self.master, text = "Britney Spears", width = 15, command = self.open_britney, highlightbackground='hot pink')
         self.chaguilera = tk.Button(self.master, text = "Christina Aguilera", width = 15, command = self.open_christina, highlightbackground='hot pink')
         self.justint = tk.Button(self.master, text = "Justin Timberlake", width = 15, command = self.open_justint, highlightbackground='hot pink')
-        self.uzdaryti_pop = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti, highlightbackground='hot pink')
+        self.uzdaryti_pop = tk.Button(self.master, text = "\u2573 Uždaryti", width = 25, command = self.uzdaryti, highlightbackground='hot pink')
+        self.uzrasas1 = Label(self.master, text = "Išsirinkite atlikėją ir\njo dainą parinksime atsitiktinai.", font = ('Courier New', 15, "bold"), fg = 'white', bg = 'hot pink')
+        self.uzrasas2 = Label(self.master, text = "Arba išsirinkite atlikėją\n ir dainą, kurią norite klausyti.", font = ('Courier New', 15, "bold"), fg = 'white', bg = 'hot pink')
         self.atlikeju_sarasas = ["Lady Gaga", "Beyoncé", "Britney Spears", "Christina Aguilera", "Justin Timberlake"]
         self.lady_gaga_dainos = ["Bad Romance",
                                 "Alejandro",
@@ -1868,20 +1870,22 @@ class VidinisPop:
                             ]
         self.atlikeju_boks = ttk.Combobox(self.master, value = self.atlikeju_sarasas)
         self.atlikeju_boks.current(0)
-        self.atlikeju_boks.pack()
+        self.atlikeju_boks.grid(row = 7, column=0)
         self.atlikeju_boks.bind("<<ComboboxSelected>>", self.pasirinkti_daina)
         self.dainu_boks = ttk.Combobox(self.master, value = [' '])
         self.dainu_boks.current(0)
-        self.dainu_boks.pack()
+        self.dainu_boks.grid(row = 7, column=1)
 
         self.pasirinkti_mygtukas = tk.Button(self.master, text = 'Pasirinkti', highlightbackground='hot pink', command = self.picker)
-        self.pasirinkti_mygtukas.pack()
-        self.ladygaga.pack()
-        self.beyonce.pack()
-        self.britneysp.pack()
-        self.chaguilera.pack()
-        self.justint.pack()
-        self.uzdaryti_pop.pack()
+        self.pasirinkti_mygtukas.grid(row = 8, columnspan=2)
+        self.uzrasas1.grid(row = 0, columnspan=2)
+        self.ladygaga.grid(row = 1, columnspan=2)
+        self.beyonce.grid(row = 2, columnspan=2)
+        self.britneysp.grid(row = 3, columnspan=2)
+        self.chaguilera.grid(row = 4, columnspan=2)
+        self.justint.grid(row = 5, columnspan=2)
+        self.uzrasas2.grid(row = 6, columnspan=2)
+        self.uzdaryti_pop.grid(row = 9, columnspan=2)
 
     def picker(self):
         if self.dainu_boks.get() == "Bad Romance":
