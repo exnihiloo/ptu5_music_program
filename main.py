@@ -2663,10 +2663,10 @@ class VidinisBlues:
         self.smokehouse_dainos = ["Cadillac in the Swamps",
                                 "Haints in my House",
                                 "Go Down Moses",
-                                "Hoodoo You",
-                                "Creepin Blues",
-                                "Nice N' Round",
-                                "Crack Smokin Blues",
+                                "Hoodoo You?",
+                                "Creepin' Blues",
+                                "Nice 'N' Round",
+                                "Crack Smokin' Blues",
                                 "Bisquit Roller",
                                 "Martin Luther \"The King\"",
                                 "American Dream"
@@ -2769,8 +2769,27 @@ class VidinisBlues:
         if self.dainu_boks.get() == "Tomorrow Isn't Promised":
             webbrowser.open(('https://music.youtube.com/watch?v=4x6o8kZe50w'), new = 2)
         if self.dainu_boks.get() == "Cadillac Ranch":
-            webbrowser.open(('https://music.youtube.com/watch?v=PQ0Y3JwLw0g'), new = 2)
-
+            webbrowser.open(('https://music.youtube.com/watch?v=PQ0Y3JwLw0g'), new = 2)      
+        if self.dainu_boks.get() == "Cadillac in the Swamps":
+            webbrowser.open(('https://music.youtube.com/watch?v=p8TXKF0s3so'), new = 2)
+        if self.dainu_boks.get() == "Haints in my House":
+            webbrowser.open(('https://music.youtube.com/watch?v=I_bHdWzTvlo'), new = 2)
+        if self.dainu_boks.get() == "Go Down Moses":
+            webbrowser.open(('https://music.youtube.com/watch?v=Yx_pDRBXDC4'), new = 2)
+        if self.dainu_boks.get() == "Hoodoo You?":
+            webbrowser.open(('https://music.youtube.com/watch?v=l0cNCHZTFGA'), new = 2)
+        if self.dainu_boks.get() == "Creepin' Blues":
+            webbrowser.open(('https://music.youtube.com/watch?v=tQcDpXMKBHQ'), new = 2)
+        if self.dainu_boks.get() == "Nice 'N' Round":
+            webbrowser.open(('https://music.youtube.com/watch?v=prcsHtYoxpI'), new = 2)
+        if self.dainu_boks.get() == "Crack Smokin' Blues":
+            webbrowser.open(('https://music.youtube.com/watch?v=6AkgMobH8Q4'), new = 2)
+        if self.dainu_boks.get() == "Bisquit Roller":
+            webbrowser.open(('https://music.youtube.com/watch?v=0y3IIDAwJcc'), new = 2)
+        if self.dainu_boks.get() == "Martin Luther \"The King\"":
+            webbrowser.open(('https://music.youtube.com/watch?v=N_Ua5KE2iQY'), new = 2)
+        if self.dainu_boks.get() == "American Dream":
+            webbrowser.open(('https://music.youtube.com/watch?v=XtpB7NYfAyU'), new = 2)
 
     
     def pasirinkti_daina(self, value):
