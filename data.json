@@ -1,0 +1,80 @@
+{
+    "question": [
+      "1. Kuri ilgiausia Queen daina?",
+      "2. Kada susikūrė AC/DC?",
+      "3. Kuri buvo viena pirmųjų Lady Gaga dainų išgarsinusių daininkę?",
+      "4. Kur užgimė džiazo žanras?",
+      "5. Kurioje šalyje užgimė sunkusis metalas?",
+      "6. Koks buvo Bob Marley hobis, neskaitant muzikos?",
+      "7. Kuri punk žanro grupė savo dainas kuria pagal siaubo filmus?",
+      "8. Kuris reperis palikęs grupę N.W.A. tapo žymiu solo reperiu?",
+      "9. Pagal kokią grupę yra pastatytas\n siaubo filmas “Lords of Chaos”?",
+      "10. Kurioje šalyje nufilmuotas filmas “Mama Mia”,\n kuris buvo paremtas “Abba” grupės dainomis?"
+    ],
+    "answer": [
+        3,
+        1,
+        2,
+        4,
+        2,
+        3,
+        4,
+        1,
+        2,
+        3
+    ],
+    "options": [
+    
+        ["Bohemian Rhapsody",
+          "The show must go on",
+          "Prophet's Song",
+          "Who wants to live forever"
+        ],
+        ["1973m.",
+          "1975m.",
+          "1976m.",
+          "1971m."
+        ],
+        ["Poker Face",
+          "Just Dance",
+          "Love Game",
+          "Monster"
+        ],
+        ["Niujorke",
+          "Mefyje",
+          "Našvilyje",
+          "Naujajame Orleane"
+        ],
+        ["JAV",
+          "Jungtinėje Karalystėje",
+          "Suomijoje",
+          "Vokietijoje"
+        ],
+        ["Šachmatai",
+          "Dailė",
+          "Futbolas",
+          "Šokiai"
+        ],
+        ["The Offspring",
+          "The Clash",
+          "Sex Pistols",
+          "Misfits"
+        ],
+        ["Ice Cube",
+          "Eminem",
+          "Kendrick Lamar",
+          "Snoop Dog"
+        ],
+        ["Watain",
+          "Mayhem",
+          "Luctus",
+          "Behemoth"
+        ],
+        ["Kipre",
+          "Italijoje",
+          "Graikijoje",
+          "Kroatijoje"
+        ]
+    ]
+}
+    
