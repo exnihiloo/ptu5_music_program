@@ -1622,6 +1622,26 @@ class VidinisRap:
             webbrowser.open(('https://music.youtube.com/watch?v=RT8LrkaaSHk'), new = 2)
         if self.dainu_boks.get() == "Smoke the Weed":
             webbrowser.open(('https://music.youtube.com/watch?v=Wo9xc7G9KOg'), new = 2)
+        if self.dainu_boks.get() == "California Love":
+            webbrowser.open(('https://music.youtube.com/watch?v=LRt6TdSvHag'), new = 2)
+        if self.dainu_boks.get() == "Hit'Em Up":
+            webbrowser.open(('https://music.youtube.com/watch?v=ugD3_yt756w'), new = 2)
+        if self.dainu_boks.get() == "All Eyes On Me":
+            webbrowser.open(('https://music.youtube.com/watch?v=zgZ52M4a_R0'), new = 2)
+        if self.dainu_boks.get() == "Hail Mary":
+            webbrowser.open(('https://music.youtube.com/watch?v=x9bPGZIBt7Y'), new = 2)
+        if self.dainu_boks.get() == "Ambitionz Az a Ridah":
+            webbrowser.open(('https://music.youtube.com/watch?v=6glk4oMbgKE'), new = 2)
+        if self.dainu_boks.get() == "Dear Mama":
+            webbrowser.open(('https://music.youtube.com/watch?v=S0Zc8ofInSQ'), new = 2)
+        if self.dainu_boks.get() == "Better Dayz":
+            webbrowser.open(('https://music.youtube.com/watch?v=Mk2RXIEMK8Y'), new = 2)
+        if self.dainu_boks.get() == "Do For Love":
+            webbrowser.open(('https://music.youtube.com/watch?v=Y2cWHiKaFjc'), new = 2)
+        if self.dainu_boks.get() == "Hellrazor":
+            webbrowser.open(('https://music.youtube.com/watch?v=T92u3_z7dS8'), new = 2)
+        if self.dainu_boks.get() == "Ghetto Gospel":
+            webbrowser.open(('https://music.youtube.com/watch?v=EyBwEbdI0H0'), new = 2)
 
 
     def pasirinkti_daina(self, value):
