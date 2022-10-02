@@ -1815,7 +1815,7 @@ class VidinisPop:
                                 "Opps I did it Again",
                                 "Bombastic Love",
                                 "Gimme More",
-                                "Early Mornin",
+                                "Early Mornin'",
                                 "Sometimes",
                                 "Piece of Me"
                             ]
@@ -1899,6 +1899,26 @@ class VidinisPop:
             webbrowser.open(('https://music.youtube.com/watch?v=MKSR7T7TQRA'), new = 2)
         if self.dainu_boks.get() == "Sorry":
             webbrowser.open(('https://music.youtube.com/watch?v=oKtAurJxlIg'), new = 2)
+        if self.dainu_boks.get() == "Toxic":
+            webbrowser.open(('https://music.youtube.com/watch?v=tVdr_JWmnsA'), new = 2)
+        if self.dainu_boks.get() == "Baby One More Time":
+            webbrowser.open(('https://music.youtube.com/watch?v=91Niv2q4gvc'), new = 2)
+        if self.dainu_boks.get() == "Criminal":
+            webbrowser.open(('https://music.youtube.com/watch?v=ux9-_2SN1h0'), new = 2)
+        if self.dainu_boks.get() == "Work Bitch":
+            webbrowser.open(('https://music.youtube.com/watch?v=2lLBLjn3FCI'), new = 2)
+        if self.dainu_boks.get() == "Opps I did it Again":
+            webbrowser.open(('https://music.youtube.com/watch?v=wsHbHR3Os6U'), new = 2)
+        if self.dainu_boks.get() == "Bombastic Love":
+            webbrowser.open(('https://music.youtube.com/watch?v=wNcZ6SSq49Q'), new = 2)
+        if self.dainu_boks.get() == "Gimme More":
+            webbrowser.open(('https://music.youtube.com/watch?v=_tnyHbiuQAc'), new = 2)
+        if self.dainu_boks.get() == "Early Mornin'":
+            webbrowser.open(('https://music.youtube.com/watch?v=gJn81ivTXZg'), new = 2)
+        if self.dainu_boks.get() == "Sometimes":
+            webbrowser.open(('https://music.youtube.com/watch?v=CbuLnJqUFLQ'), new = 2)
+        if self.dainu_boks.get() == "Piece of Me":
+            webbrowser.open(('https://music.youtube.com/watch?v=IyFizEee7vY'), new = 2)
 
     def pasirinkti_daina(self, value):
         if self.atlikeju_boks.get() == "Lady Gaga":
