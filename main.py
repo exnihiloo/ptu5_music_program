@@ -1879,6 +1879,26 @@ class VidinisPop:
             webbrowser.open(('https://music.youtube.com/watch?v=41CjTbmI9aQ'), new = 2)
         if self.dainu_boks.get() == "Love Game":
             webbrowser.open(('https://music.youtube.com/watch?v=cSRxQoeKbVM'), new = 2)
+        if self.dainu_boks.get() == "Break My Soul":
+            webbrowser.open(('https://music.youtube.com/watch?v=y6dw-v4BH-Y'), new = 2)
+        if self.dainu_boks.get() == "Love on Top":
+            webbrowser.open(('https://music.youtube.com/watch?v=n0R5uUEjjCk'), new = 2)
+        if self.dainu_boks.get() == "Crazy Love":
+            webbrowser.open(('https://music.youtube.com/watch?v=5BnF0_LksYI'), new = 2)
+        if self.dainu_boks.get() == "Halo":
+            webbrowser.open(('https://music.youtube.com/watch?v=VqQeT7wKqvs'), new = 2)
+        if self.dainu_boks.get() == "Single Ladies":
+            webbrowser.open(('https://music.youtube.com/watch?v=4z-bOdAdias'), new = 2)
+        if self.dainu_boks.get() == "I was Here":
+            webbrowser.open(('https://music.youtube.com/watch?v=hDb3jZfWpoA'), new = 2)
+        if self.dainu_boks.get() == "Run the World":
+            webbrowser.open(('https://music.youtube.com/watch?v=XC7eRmnfZ_A'), new = 2)
+        if self.dainu_boks.get() == "All up in Your Mind":
+            webbrowser.open(('https://music.youtube.com/watch?v=35zH9TppB4w'), new = 2)
+        if self.dainu_boks.get() == "My Myself and I":
+            webbrowser.open(('https://music.youtube.com/watch?v=MKSR7T7TQRA'), new = 2)
+        if self.dainu_boks.get() == "Sorry":
+            webbrowser.open(('https://music.youtube.com/watch?v=oKtAurJxlIg'), new = 2)
 
     def pasirinkti_daina(self, value):
         if self.atlikeju_boks.get() == "Lady Gaga":
