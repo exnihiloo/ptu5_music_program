@@ -2616,6 +2616,62 @@ class VidinisBlues:
         self.smokehouse = tk.Button(self.master, text = "Smokehouse", width = 15, command = self.open_smokehouse, highlightbackground = "burlywood4")
         self.uzdaryti_blues = tk.Button(self.master, text = "\u2573 Uždaryti", width = 15, command = self.uzdaryti, highlightbackground = "burlywood4")
         self.atlikeju_sarasas = ["Mighty Sam McClain", "Sam Myers", "Albert Cummings", "Mighty Mo Rodgers", "Smokehouse"]
+        self.mcclain_dainos = ["When The Hurt is Over",
+                                "Don't Worry About Me",
+                                "I am so Lonely",
+                                "I am Tired of These Blues",
+                                "Where You Been So Long",
+                                "If You Could See",
+                                "Where Is the Love",
+                                "A Soul That Has Been Abused",
+                                "Other Side of the Tracks",
+                                "If It Wasn't for Blues"
+                            ]
+        self.myers_dainos = ["I Got the Blues",
+                            "Let You Slowly Bring Me Down",
+                            "I am Tired of Your Jive",
+                            "Burning Fire",
+                            "My Daily Wish",
+                            "Coming from the Old School",
+                            "Burning Fire",
+                            "Sad and Lonesome",
+                            "Sleeping in the Ground",
+                            "Ninety Nine"
+                        ]
+        self.cummings_dainos = ["Workin Man Blues",
+                                "Meet the Man",
+                                "Need Somebody",
+                                "Lonely Bed",
+                                "Little Bird",
+                                "Rumors",
+                                "Too Old To Grow Up",
+                                "So Strong",
+                                "Last Call",
+                                "Get Out of Here"
+                            ]
+        self.rodgers_dainos = ["Picasso Blues",
+                                "Black Paris Blues",
+                                "Blues is a Woman Woe is a Man",
+                                "My Blues, My Woman and My Car",
+                                "Black Coffee and Cigarettes",
+                                "The Boy Who Stole the Blues",
+                                "Shame",
+                                "No Regrets",
+                                "Tomorrow Isn't Promised",
+                                "Cadillac Ranch"
+                            ]
+        self.smokehouse_dainos = ["Cadillac in the Swamps",
+                                "Haints in my House",
+                                "Go Down Moses",
+                                "Hoodoo You",
+                                "Creepin Blues",
+                                "Nice N' Round",
+                                "Crack Smokin Blues",
+                                "Bisquit Roller",
+                                "Martin Luther \"The King\"",
+                                "American Dream"
+                            ]
+
         self.mightysam.pack()
         self.myers.pack()
         self.cummings.pack()
