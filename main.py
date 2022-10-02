@@ -39,7 +39,7 @@ class PagrindinisLangas:
         self.vidinis = tk.Toplevel(self.master)
         self.vidinis.title("\U0001F918 Rock")
         self.vidinis.configure(bg = "red")
-        self.vidinis.geometry("430x400")
+        self.vidinis.geometry("410x350")
         self.app = VidinisRock(self.vidinis)
 
     def new_window2(self):
