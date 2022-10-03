@@ -59,17 +59,17 @@ class Quiz:
             self.rodyti_pasirinkimus()
 
     def mygtukai(self):
-        next_button = Button(langas, text="Kitas", command=self.kitas_mygtukas,
-        width=15,fg="black",font=("Menlo", 16, "bold"))
-        next_button.place(x=100,y=220)
-        quit_button = Button(langas, text="Išeiti", command=langas.destroy,
-        width=5, fg="black",font=("Menlo", 16, " bold"))
-        quit_button.place(x=460,y=0)
+        next_button = Button(langas, text = "Kitas", command = self.kitas_mygtukas,
+        width = 15, fg = "black", font = ("Menlo", 16, "bold"))
+        next_button.place(x = 100, y = 220)
+        quit_button = Button(langas, text = "Išeiti", command = langas.destroy,
+        width = 5, fg = "black", font = ("Menlo", 16, " bold"))
+        quit_button.place(x = 460, y = 0)
 
     def rodyti_klausima(self):
-        klausimai = Label(langas, text = question[self.klausimai], width=60,
-        font = ('ariel', 14, 'bold' ), anchor= 'w' )
-        klausimai.place(x=40, y=50)
+        klausimai = Label(langas, text = question[self.klausimai], width = 60,
+        font = ('ariel', 14, 'bold' ), anchor = 'w' )
+        klausimai.place(x = 40, y = 50)
 
     def rodyti_pasirinkimus(self):
         val = 0
@@ -88,7 +88,7 @@ class Quiz:
         # pridedame pasirinkimus į sąrašą
         while len(q_list) < 4:
             # nustatome radio buttons ypatybes
-            radio_btn = Radiobutton(langas, text=" ", variable = self.pasirinktas_ats,
+            radio_btn = Radiobutton(langas, text = " ", variable = self.pasirinktas_ats,
             value = len(q_list) + 1, font = ("ariel", 14))
             # pridedame radio mygtuką į sąrašą
             q_list.append(radio_btn)
